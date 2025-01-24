@@ -78,3 +78,14 @@ C:\Users\EJ30\Desktop\PM4MAto v3\PM4MAto\obj\Debug\PM4MAto.pdb
 C:\Users\EJ30\Desktop\PM4MAto v3\PM4MAto\bin\Debug\PM4MAto.exe.config
 C:\Users\EJ30\Desktop\PM4MAto v3\PM4MAto\bin\Debug\PM4MAto.exe
 C:\Users\EJ30\Desktop\PM4MAto v3\PM4MAto\bin\Debug\PM4MAto.pdb
+D:\github\pm4\PM4MAto\bin\Debug\PM4MAto.exe.config
+D:\github\pm4\PM4MAto\bin\Debug\PM4MAto.exe
+D:\github\pm4\PM4MAto\bin\Debug\PM4MAto.pdb
+D:\github\pm4\PM4MAto\obj\Debug\PM4MAto.csproj.AssemblyReference.cache
+D:\github\pm4\PM4MAto\obj\Debug\PM4MAto.Frm_Main.resources
+D:\github\pm4\PM4MAto\obj\Debug\PM4MAto.Properties.Resources.resources
+D:\github\pm4\PM4MAto\obj\Debug\PM4MAto.csproj.GenerateResource.cache
+D:\github\pm4\PM4MAto\obj\Debug\PM4MAto.csproj.CoreCompileInputs.cache
+D:\github\pm4\PM4MAto\obj\Debug\PM4MAto.exe
+D:\github\pm4\PM4MAto\obj\Debug\PM4MAto.pdb
+D:\github\pm4\PM4MAto\obj\Debug\PM4MAto.frmXacNhan.resources
