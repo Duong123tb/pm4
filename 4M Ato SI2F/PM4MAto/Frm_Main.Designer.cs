@@ -167,12 +167,12 @@
             this.lb_vtri2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.name1 = new System.Windows.Forms.Label();
-            this.code1 = new System.Windows.Forms.Label();
             this.lb_vtri1 = new System.Windows.Forms.Label();
             this.code2 = new System.Windows.Forms.Label();
             this.name2 = new System.Windows.Forms.Label();
             this.code3 = new System.Windows.Forms.Label();
             this.name3 = new System.Windows.Forms.Label();
+            this.code1 = new System.Windows.Forms.Label();
             this.label123 = new System.Windows.Forms.Label();
             this.label124 = new System.Windows.Forms.Label();
             this.label125 = new System.Windows.Forms.Label();
@@ -402,6 +402,10 @@
             this.lb_ChuaCoNguoiHoc = new System.Windows.Forms.Label();
             this.lb_ViTriHoTro = new System.Windows.Forms.Label();
             this.lb_ViTriHocViec = new System.Windows.Forms.Label();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnDungChuyen = new System.Windows.Forms.Button();
+            this.ThoiGian = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel11.SuspendLayout();
             this.tableLayoutPanel12.SuspendLayout();
             this.tableLayoutPanel9.SuspendLayout();
@@ -438,6 +442,8 @@
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel28.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
+            this.txtDungChuyen.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // QL
@@ -446,9 +452,10 @@
             this.QL.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.QL.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.QL.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.QL.Location = new System.Drawing.Point(41, 55);
+            this.QL.Location = new System.Drawing.Point(55, 68);
+            this.QL.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.QL.Name = "QL";
-            this.QL.Size = new System.Drawing.Size(171, 18);
+            this.QL.Size = new System.Drawing.Size(227, 22);
             this.QL.TabIndex = 14;
             this.QL.Text = "QUẢN LÍ CHUYỀN 監督者";
             this.QL.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -462,13 +469,14 @@
             this.tableLayoutPanel11.Controls.Add(this.code34, 0, 0);
             this.tableLayoutPanel11.Controls.Add(this.lb_vtri34, 0, 2);
             this.tableLayoutPanel11.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tableLayoutPanel11.Location = new System.Drawing.Point(5, 251);
+            this.tableLayoutPanel11.Location = new System.Drawing.Point(7, 309);
+            this.tableLayoutPanel11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel11.Name = "tableLayoutPanel11";
             this.tableLayoutPanel11.RowCount = 3;
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel11.Size = new System.Drawing.Size(76, 45);
+            this.tableLayoutPanel11.Size = new System.Drawing.Size(101, 55);
             this.tableLayoutPanel11.TabIndex = 19;
             // 
             // name34
@@ -476,9 +484,10 @@
             this.name34.BackColor = System.Drawing.Color.Red;
             this.name34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name34.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name34.Location = new System.Drawing.Point(3, 15);
+            this.name34.Location = new System.Drawing.Point(4, 18);
+            this.name34.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name34.Name = "name34";
-            this.name34.Size = new System.Drawing.Size(70, 15);
+            this.name34.Size = new System.Drawing.Size(93, 18);
             this.name34.TabIndex = 5;
             this.name34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -487,9 +496,10 @@
             this.code34.BackColor = System.Drawing.Color.Red;
             this.code34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code34.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code34.Location = new System.Drawing.Point(3, 0);
+            this.code34.Location = new System.Drawing.Point(4, 0);
+            this.code34.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code34.Name = "code34";
-            this.code34.Size = new System.Drawing.Size(70, 15);
+            this.code34.Size = new System.Drawing.Size(93, 18);
             this.code34.TabIndex = 4;
             this.code34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -499,9 +509,10 @@
             this.lb_vtri34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri34.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri34.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri34.Location = new System.Drawing.Point(3, 30);
+            this.lb_vtri34.Location = new System.Drawing.Point(4, 36);
+            this.lb_vtri34.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri34.Name = "lb_vtri34";
-            this.lb_vtri34.Size = new System.Drawing.Size(70, 15);
+            this.lb_vtri34.Size = new System.Drawing.Size(93, 18);
             this.lb_vtri34.TabIndex = 21;
             this.lb_vtri34.Text = "TAPE 6";
             this.lb_vtri34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -512,9 +523,10 @@
             this.label120.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label120.Font = new System.Drawing.Font("Arial", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label120.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label120.Location = new System.Drawing.Point(5, 176);
+            this.label120.Location = new System.Drawing.Point(7, 217);
+            this.label120.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label120.Name = "label120";
-            this.label120.Size = new System.Drawing.Size(80, 16);
+            this.label120.Size = new System.Drawing.Size(106, 19);
             this.label120.TabIndex = 52;
             this.label120.Text = "PACKING 工程";
             this.label120.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -525,9 +537,10 @@
             this.label121.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label121.Font = new System.Drawing.Font("Arial", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label121.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label121.Location = new System.Drawing.Point(91, 176);
+            this.label121.Location = new System.Drawing.Point(121, 217);
+            this.label121.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label121.Name = "label121";
-            this.label121.Size = new System.Drawing.Size(166, 16);
+            this.label121.Size = new System.Drawing.Size(221, 19);
             this.label121.TabIndex = 53;
             this.label121.Text = "<------------------------------------QA 工程";
             this.label121.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -538,9 +551,10 @@
             this.label122.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label122.Font = new System.Drawing.Font("Arial", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label122.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label122.Location = new System.Drawing.Point(8, 454);
+            this.label122.Location = new System.Drawing.Point(11, 559);
+            this.label122.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label122.Name = "label122";
-            this.label122.Size = new System.Drawing.Size(1120, 14);
+            this.label122.Size = new System.Drawing.Size(1493, 17);
             this.label122.TabIndex = 54;
             this.label122.Text = resources.GetString("label122.Text");
             this.label122.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -551,9 +565,10 @@
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label2.Font = new System.Drawing.Font("Arial", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(8, 303);
+            this.label2.Location = new System.Drawing.Point(11, 373);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(147, 16);
+            this.label2.Size = new System.Drawing.Size(195, 19);
             this.label2.TabIndex = 55;
             this.label2.Text = "JIGU 8";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -567,13 +582,14 @@
             this.tableLayoutPanel12.Controls.Add(this.name42, 0, 1);
             this.tableLayoutPanel12.Controls.Add(this.code42, 0, 0);
             this.tableLayoutPanel12.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tableLayoutPanel12.Location = new System.Drawing.Point(585, 252);
+            this.tableLayoutPanel12.Location = new System.Drawing.Point(780, 310);
+            this.tableLayoutPanel12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel12.Name = "tableLayoutPanel12";
             this.tableLayoutPanel12.RowCount = 3;
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel12.Size = new System.Drawing.Size(76, 45);
+            this.tableLayoutPanel12.Size = new System.Drawing.Size(101, 55);
             this.tableLayoutPanel12.TabIndex = 59;
             // 
             // lb_vtri42
@@ -582,9 +598,10 @@
             this.lb_vtri42.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri42.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri42.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri42.Location = new System.Drawing.Point(3, 30);
+            this.lb_vtri42.Location = new System.Drawing.Point(4, 36);
+            this.lb_vtri42.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri42.Name = "lb_vtri42";
-            this.lb_vtri42.Size = new System.Drawing.Size(70, 15);
+            this.lb_vtri42.Size = new System.Drawing.Size(93, 18);
             this.lb_vtri42.TabIndex = 33;
             this.lb_vtri42.Text = "TAPE 14";
             this.lb_vtri42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -594,9 +611,10 @@
             this.name42.BackColor = System.Drawing.Color.Red;
             this.name42.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name42.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name42.Location = new System.Drawing.Point(3, 15);
+            this.name42.Location = new System.Drawing.Point(4, 18);
+            this.name42.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name42.Name = "name42";
-            this.name42.Size = new System.Drawing.Size(70, 14);
+            this.name42.Size = new System.Drawing.Size(93, 17);
             this.name42.TabIndex = 5;
             this.name42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -605,9 +623,10 @@
             this.code42.BackColor = System.Drawing.Color.Red;
             this.code42.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code42.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code42.Location = new System.Drawing.Point(3, 0);
+            this.code42.Location = new System.Drawing.Point(4, 0);
+            this.code42.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code42.Name = "code42";
-            this.code42.Size = new System.Drawing.Size(70, 14);
+            this.code42.Size = new System.Drawing.Size(93, 17);
             this.code42.TabIndex = 4;
             this.code42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -616,9 +635,10 @@
             this.code35.BackColor = System.Drawing.Color.Red;
             this.code35.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code35.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code35.Location = new System.Drawing.Point(3, 0);
+            this.code35.Location = new System.Drawing.Point(4, 0);
+            this.code35.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code35.Name = "code35";
-            this.code35.Size = new System.Drawing.Size(68, 15);
+            this.code35.Size = new System.Drawing.Size(90, 18);
             this.code35.TabIndex = 4;
             this.code35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -627,9 +647,10 @@
             this.name35.BackColor = System.Drawing.Color.Red;
             this.name35.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name35.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name35.Location = new System.Drawing.Point(3, 15);
+            this.name35.Location = new System.Drawing.Point(4, 18);
+            this.name35.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name35.Name = "name35";
-            this.name35.Size = new System.Drawing.Size(68, 15);
+            this.name35.Size = new System.Drawing.Size(90, 18);
             this.name35.TabIndex = 5;
             this.name35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -646,13 +667,14 @@
             this.tableLayoutPanel9.Controls.Add(this.lb_vtri36, 1, 2);
             this.tableLayoutPanel9.Controls.Add(this.lb_vtri35, 0, 2);
             this.tableLayoutPanel9.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tableLayoutPanel9.Location = new System.Drawing.Point(84, 251);
+            this.tableLayoutPanel9.Location = new System.Drawing.Point(112, 309);
+            this.tableLayoutPanel9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
             this.tableLayoutPanel9.RowCount = 3;
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel9.Size = new System.Drawing.Size(150, 45);
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(200, 55);
             this.tableLayoutPanel9.TabIndex = 58;
             // 
             // name36
@@ -660,9 +682,10 @@
             this.name36.BackColor = System.Drawing.Color.Red;
             this.name36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name36.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name36.Location = new System.Drawing.Point(77, 15);
+            this.name36.Location = new System.Drawing.Point(103, 18);
+            this.name36.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name36.Name = "name36";
-            this.name36.Size = new System.Drawing.Size(70, 15);
+            this.name36.Size = new System.Drawing.Size(93, 18);
             this.name36.TabIndex = 25;
             this.name36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -671,9 +694,10 @@
             this.code36.BackColor = System.Drawing.Color.Red;
             this.code36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code36.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code36.Location = new System.Drawing.Point(77, 0);
+            this.code36.Location = new System.Drawing.Point(103, 0);
+            this.code36.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code36.Name = "code36";
-            this.code36.Size = new System.Drawing.Size(70, 15);
+            this.code36.Size = new System.Drawing.Size(93, 18);
             this.code36.TabIndex = 24;
             this.code36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -683,9 +707,10 @@
             this.lb_vtri36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri36.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri36.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri36.Location = new System.Drawing.Point(77, 30);
+            this.lb_vtri36.Location = new System.Drawing.Point(103, 36);
+            this.lb_vtri36.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri36.Name = "lb_vtri36";
-            this.lb_vtri36.Size = new System.Drawing.Size(70, 14);
+            this.lb_vtri36.Size = new System.Drawing.Size(93, 17);
             this.lb_vtri36.TabIndex = 22;
             this.lb_vtri36.Text = "TAPE 8";
             this.lb_vtri36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -696,9 +721,10 @@
             this.lb_vtri35.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri35.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri35.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri35.Location = new System.Drawing.Point(3, 30);
+            this.lb_vtri35.Location = new System.Drawing.Point(4, 36);
+            this.lb_vtri35.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri35.Name = "lb_vtri35";
-            this.lb_vtri35.Size = new System.Drawing.Size(68, 14);
+            this.lb_vtri35.Size = new System.Drawing.Size(90, 17);
             this.lb_vtri35.TabIndex = 23;
             this.lb_vtri35.Text = "TAPE 7";
             this.lb_vtri35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -708,9 +734,10 @@
             this.code52.BackColor = System.Drawing.Color.Red;
             this.code52.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code52.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code52.Location = new System.Drawing.Point(3, 0);
+            this.code52.Location = new System.Drawing.Point(4, 0);
+            this.code52.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code52.Name = "code52";
-            this.code52.Size = new System.Drawing.Size(66, 15);
+            this.code52.Size = new System.Drawing.Size(87, 18);
             this.code52.TabIndex = 4;
             this.code52.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -720,9 +747,10 @@
             this.lb_vtri48.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri48.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri48.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri48.Location = new System.Drawing.Point(291, 30);
+            this.lb_vtri48.Location = new System.Drawing.Point(388, 36);
+            this.lb_vtri48.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri48.Name = "lb_vtri48";
-            this.lb_vtri48.Size = new System.Drawing.Size(67, 15);
+            this.lb_vtri48.Size = new System.Drawing.Size(89, 18);
             this.lb_vtri48.TabIndex = 14;
             this.lb_vtri48.Text = "LAYOUT 4";
             this.lb_vtri48.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -733,9 +761,10 @@
             this.lb_vtri49.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri49.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri49.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri49.Location = new System.Drawing.Point(219, 30);
+            this.lb_vtri49.Location = new System.Drawing.Point(292, 36);
+            this.lb_vtri49.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri49.Name = "lb_vtri49";
-            this.lb_vtri49.Size = new System.Drawing.Size(66, 15);
+            this.lb_vtri49.Size = new System.Drawing.Size(87, 18);
             this.lb_vtri49.TabIndex = 13;
             this.lb_vtri49.Text = "LAYOUT 5";
             this.lb_vtri49.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -746,9 +775,10 @@
             this.lb_vtri50.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri50.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri50.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri50.Location = new System.Drawing.Point(147, 30);
+            this.lb_vtri50.Location = new System.Drawing.Point(196, 36);
+            this.lb_vtri50.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri50.Name = "lb_vtri50";
-            this.lb_vtri50.Size = new System.Drawing.Size(66, 15);
+            this.lb_vtri50.Size = new System.Drawing.Size(87, 18);
             this.lb_vtri50.TabIndex = 12;
             this.lb_vtri50.Text = "LAYOUT 6";
             this.lb_vtri50.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -759,9 +789,10 @@
             this.lb_vtri51.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri51.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri51.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri51.Location = new System.Drawing.Point(75, 30);
+            this.lb_vtri51.Location = new System.Drawing.Point(100, 36);
+            this.lb_vtri51.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri51.Name = "lb_vtri51";
-            this.lb_vtri51.Size = new System.Drawing.Size(66, 15);
+            this.lb_vtri51.Size = new System.Drawing.Size(87, 18);
             this.lb_vtri51.TabIndex = 22;
             this.lb_vtri51.Text = "LAYOUT 7";
             this.lb_vtri51.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -772,9 +803,10 @@
             this.lb_vtri52.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri52.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri52.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri52.Location = new System.Drawing.Point(3, 30);
+            this.lb_vtri52.Location = new System.Drawing.Point(4, 36);
+            this.lb_vtri52.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri52.Name = "lb_vtri52";
-            this.lb_vtri52.Size = new System.Drawing.Size(66, 15);
+            this.lb_vtri52.Size = new System.Drawing.Size(87, 18);
             this.lb_vtri52.TabIndex = 21;
             this.lb_vtri52.Text = "LAYOUT 8";
             this.lb_vtri52.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -784,9 +816,10 @@
             this.name52.BackColor = System.Drawing.Color.Red;
             this.name52.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name52.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name52.Location = new System.Drawing.Point(3, 15);
+            this.name52.Location = new System.Drawing.Point(4, 18);
+            this.name52.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name52.Name = "name52";
-            this.name52.Size = new System.Drawing.Size(66, 15);
+            this.name52.Size = new System.Drawing.Size(87, 18);
             this.name52.TabIndex = 5;
             this.name52.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -815,13 +848,14 @@
             this.tableLayoutPanel16.Controls.Add(this.lb_vtri48, 4, 2);
             this.tableLayoutPanel16.Controls.Add(this.code52, 0, 0);
             this.tableLayoutPanel16.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tableLayoutPanel16.Location = new System.Drawing.Point(537, 348);
+            this.tableLayoutPanel16.Location = new System.Drawing.Point(716, 428);
+            this.tableLayoutPanel16.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel16.Name = "tableLayoutPanel16";
             this.tableLayoutPanel16.RowCount = 3;
             this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel16.Size = new System.Drawing.Size(361, 45);
+            this.tableLayoutPanel16.Size = new System.Drawing.Size(481, 55);
             this.tableLayoutPanel16.TabIndex = 64;
             // 
             // name48
@@ -829,9 +863,10 @@
             this.name48.BackColor = System.Drawing.Color.Red;
             this.name48.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name48.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name48.Location = new System.Drawing.Point(291, 15);
+            this.name48.Location = new System.Drawing.Point(388, 18);
+            this.name48.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name48.Name = "name48";
-            this.name48.Size = new System.Drawing.Size(66, 15);
+            this.name48.Size = new System.Drawing.Size(87, 18);
             this.name48.TabIndex = 30;
             this.name48.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -840,9 +875,10 @@
             this.name49.BackColor = System.Drawing.Color.Red;
             this.name49.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name49.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name49.Location = new System.Drawing.Point(219, 15);
+            this.name49.Location = new System.Drawing.Point(292, 18);
+            this.name49.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name49.Name = "name49";
-            this.name49.Size = new System.Drawing.Size(66, 15);
+            this.name49.Size = new System.Drawing.Size(87, 18);
             this.name49.TabIndex = 29;
             this.name49.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -851,9 +887,10 @@
             this.name50.BackColor = System.Drawing.Color.Red;
             this.name50.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name50.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name50.Location = new System.Drawing.Point(147, 15);
+            this.name50.Location = new System.Drawing.Point(196, 18);
+            this.name50.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name50.Name = "name50";
-            this.name50.Size = new System.Drawing.Size(66, 15);
+            this.name50.Size = new System.Drawing.Size(87, 18);
             this.name50.TabIndex = 28;
             this.name50.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -862,9 +899,10 @@
             this.name51.BackColor = System.Drawing.Color.Red;
             this.name51.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name51.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name51.Location = new System.Drawing.Point(75, 15);
+            this.name51.Location = new System.Drawing.Point(100, 18);
+            this.name51.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name51.Name = "name51";
-            this.name51.Size = new System.Drawing.Size(66, 15);
+            this.name51.Size = new System.Drawing.Size(87, 18);
             this.name51.TabIndex = 27;
             this.name51.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -873,9 +911,10 @@
             this.code48.BackColor = System.Drawing.Color.Red;
             this.code48.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code48.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code48.Location = new System.Drawing.Point(291, 0);
+            this.code48.Location = new System.Drawing.Point(388, 0);
+            this.code48.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code48.Name = "code48";
-            this.code48.Size = new System.Drawing.Size(66, 15);
+            this.code48.Size = new System.Drawing.Size(87, 18);
             this.code48.TabIndex = 26;
             this.code48.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -884,9 +923,10 @@
             this.code49.BackColor = System.Drawing.Color.Red;
             this.code49.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code49.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code49.Location = new System.Drawing.Point(219, 0);
+            this.code49.Location = new System.Drawing.Point(292, 0);
+            this.code49.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code49.Name = "code49";
-            this.code49.Size = new System.Drawing.Size(66, 15);
+            this.code49.Size = new System.Drawing.Size(87, 18);
             this.code49.TabIndex = 25;
             this.code49.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -895,9 +935,10 @@
             this.code50.BackColor = System.Drawing.Color.Red;
             this.code50.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code50.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code50.Location = new System.Drawing.Point(147, 0);
+            this.code50.Location = new System.Drawing.Point(196, 0);
+            this.code50.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code50.Name = "code50";
-            this.code50.Size = new System.Drawing.Size(66, 15);
+            this.code50.Size = new System.Drawing.Size(87, 18);
             this.code50.TabIndex = 24;
             this.code50.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -906,9 +947,10 @@
             this.code51.BackColor = System.Drawing.Color.Red;
             this.code51.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code51.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code51.Location = new System.Drawing.Point(75, 0);
+            this.code51.Location = new System.Drawing.Point(100, 0);
+            this.code51.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code51.Name = "code51";
-            this.code51.Size = new System.Drawing.Size(66, 15);
+            this.code51.Size = new System.Drawing.Size(87, 18);
             this.code51.TabIndex = 23;
             this.code51.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -918,9 +960,10 @@
             this.lb_vtri53.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri53.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri53.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri53.Location = new System.Drawing.Point(383, 28);
+            this.lb_vtri53.Location = new System.Drawing.Point(509, 36);
+            this.lb_vtri53.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri53.Name = "lb_vtri53";
-            this.lb_vtri53.Size = new System.Drawing.Size(70, 16);
+            this.lb_vtri53.Size = new System.Drawing.Size(93, 18);
             this.lb_vtri53.TabIndex = 15;
             this.lb_vtri53.Text = "LAYOUT 9";
             this.lb_vtri53.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -930,9 +973,10 @@
             this.code33.BackColor = System.Drawing.Color.Red;
             this.code33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code33.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code33.Location = new System.Drawing.Point(3, 0);
+            this.code33.Location = new System.Drawing.Point(4, 0);
+            this.code33.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code33.Name = "code33";
-            this.code33.Size = new System.Drawing.Size(70, 14);
+            this.code33.Size = new System.Drawing.Size(91, 17);
             this.code33.TabIndex = 4;
             this.code33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -942,9 +986,10 @@
             this.lb_vtri29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri29.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri29.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri29.Location = new System.Drawing.Point(307, 28);
+            this.lb_vtri29.Location = new System.Drawing.Point(408, 36);
+            this.lb_vtri29.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri29.Name = "lb_vtri29";
-            this.lb_vtri29.Size = new System.Drawing.Size(70, 16);
+            this.lb_vtri29.Size = new System.Drawing.Size(91, 18);
             this.lb_vtri29.TabIndex = 14;
             this.lb_vtri29.Text = "TAPE 1";
             this.lb_vtri29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -955,9 +1000,10 @@
             this.lb_vtri30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri30.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri30.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri30.Location = new System.Drawing.Point(231, 28);
+            this.lb_vtri30.Location = new System.Drawing.Point(307, 36);
+            this.lb_vtri30.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri30.Name = "lb_vtri30";
-            this.lb_vtri30.Size = new System.Drawing.Size(70, 16);
+            this.lb_vtri30.Size = new System.Drawing.Size(91, 18);
             this.lb_vtri30.TabIndex = 13;
             this.lb_vtri30.Text = "TAPE 2";
             this.lb_vtri30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -968,9 +1014,10 @@
             this.lb_vtri31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri31.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri31.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri31.Location = new System.Drawing.Point(155, 28);
+            this.lb_vtri31.Location = new System.Drawing.Point(206, 36);
+            this.lb_vtri31.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri31.Name = "lb_vtri31";
-            this.lb_vtri31.Size = new System.Drawing.Size(70, 16);
+            this.lb_vtri31.Size = new System.Drawing.Size(91, 18);
             this.lb_vtri31.TabIndex = 12;
             this.lb_vtri31.Text = "TAPE 3";
             this.lb_vtri31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -981,9 +1028,10 @@
             this.lb_vtri32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri32.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri32.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri32.Location = new System.Drawing.Point(79, 28);
+            this.lb_vtri32.Location = new System.Drawing.Point(105, 36);
+            this.lb_vtri32.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri32.Name = "lb_vtri32";
-            this.lb_vtri32.Size = new System.Drawing.Size(70, 16);
+            this.lb_vtri32.Size = new System.Drawing.Size(91, 18);
             this.lb_vtri32.TabIndex = 22;
             this.lb_vtri32.Text = "TAPE 4";
             this.lb_vtri32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -994,9 +1042,10 @@
             this.lb_vtri33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri33.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri33.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri33.Location = new System.Drawing.Point(3, 28);
+            this.lb_vtri33.Location = new System.Drawing.Point(4, 36);
+            this.lb_vtri33.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri33.Name = "lb_vtri33";
-            this.lb_vtri33.Size = new System.Drawing.Size(70, 16);
+            this.lb_vtri33.Size = new System.Drawing.Size(91, 18);
             this.lb_vtri33.TabIndex = 21;
             this.lb_vtri33.Text = "TAPE 5";
             this.lb_vtri33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1006,9 +1055,10 @@
             this.name33.BackColor = System.Drawing.Color.Red;
             this.name33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name33.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name33.Location = new System.Drawing.Point(3, 14);
+            this.name33.Location = new System.Drawing.Point(4, 18);
+            this.name33.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name33.Name = "name33";
-            this.name33.Size = new System.Drawing.Size(70, 14);
+            this.name33.Size = new System.Drawing.Size(91, 17);
             this.name33.TabIndex = 5;
             this.name33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1041,13 +1091,14 @@
             this.tableLayoutPanel15.Controls.Add(this.code33, 0, 0);
             this.tableLayoutPanel15.Controls.Add(this.lb_vtri53, 5, 2);
             this.tableLayoutPanel15.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tableLayoutPanel15.Location = new System.Drawing.Point(78, 349);
+            this.tableLayoutPanel15.Location = new System.Drawing.Point(104, 430);
+            this.tableLayoutPanel15.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel15.Name = "tableLayoutPanel15";
             this.tableLayoutPanel15.RowCount = 3;
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel15.Size = new System.Drawing.Size(456, 44);
+            this.tableLayoutPanel15.Size = new System.Drawing.Size(608, 54);
             this.tableLayoutPanel15.TabIndex = 63;
             // 
             // name53
@@ -1055,9 +1106,10 @@
             this.name53.BackColor = System.Drawing.Color.Red;
             this.name53.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name53.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name53.Location = new System.Drawing.Point(383, 14);
+            this.name53.Location = new System.Drawing.Point(509, 18);
+            this.name53.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name53.Name = "name53";
-            this.name53.Size = new System.Drawing.Size(70, 14);
+            this.name53.Size = new System.Drawing.Size(93, 17);
             this.name53.TabIndex = 32;
             this.name53.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1066,9 +1118,10 @@
             this.name29.BackColor = System.Drawing.Color.Red;
             this.name29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name29.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name29.Location = new System.Drawing.Point(307, 14);
+            this.name29.Location = new System.Drawing.Point(408, 18);
+            this.name29.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name29.Name = "name29";
-            this.name29.Size = new System.Drawing.Size(70, 14);
+            this.name29.Size = new System.Drawing.Size(91, 17);
             this.name29.TabIndex = 31;
             this.name29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1077,9 +1130,10 @@
             this.name30.BackColor = System.Drawing.Color.Red;
             this.name30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name30.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name30.Location = new System.Drawing.Point(231, 14);
+            this.name30.Location = new System.Drawing.Point(307, 18);
+            this.name30.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name30.Name = "name30";
-            this.name30.Size = new System.Drawing.Size(70, 14);
+            this.name30.Size = new System.Drawing.Size(91, 17);
             this.name30.TabIndex = 30;
             this.name30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1088,9 +1142,10 @@
             this.name31.BackColor = System.Drawing.Color.Red;
             this.name31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name31.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name31.Location = new System.Drawing.Point(155, 14);
+            this.name31.Location = new System.Drawing.Point(206, 18);
+            this.name31.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name31.Name = "name31";
-            this.name31.Size = new System.Drawing.Size(70, 14);
+            this.name31.Size = new System.Drawing.Size(91, 17);
             this.name31.TabIndex = 29;
             this.name31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1099,9 +1154,10 @@
             this.name32.BackColor = System.Drawing.Color.Red;
             this.name32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name32.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name32.Location = new System.Drawing.Point(79, 14);
+            this.name32.Location = new System.Drawing.Point(105, 18);
+            this.name32.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name32.Name = "name32";
-            this.name32.Size = new System.Drawing.Size(70, 14);
+            this.name32.Size = new System.Drawing.Size(91, 17);
             this.name32.TabIndex = 28;
             this.name32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1110,9 +1166,10 @@
             this.code53.BackColor = System.Drawing.Color.Red;
             this.code53.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code53.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code53.Location = new System.Drawing.Point(383, 0);
+            this.code53.Location = new System.Drawing.Point(509, 0);
+            this.code53.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code53.Name = "code53";
-            this.code53.Size = new System.Drawing.Size(70, 14);
+            this.code53.Size = new System.Drawing.Size(93, 17);
             this.code53.TabIndex = 27;
             this.code53.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1121,9 +1178,10 @@
             this.code29.BackColor = System.Drawing.Color.Red;
             this.code29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code29.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code29.Location = new System.Drawing.Point(307, 0);
+            this.code29.Location = new System.Drawing.Point(408, 0);
+            this.code29.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code29.Name = "code29";
-            this.code29.Size = new System.Drawing.Size(70, 14);
+            this.code29.Size = new System.Drawing.Size(91, 17);
             this.code29.TabIndex = 26;
             this.code29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1132,9 +1190,10 @@
             this.code30.BackColor = System.Drawing.Color.Red;
             this.code30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code30.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code30.Location = new System.Drawing.Point(231, 0);
+            this.code30.Location = new System.Drawing.Point(307, 0);
+            this.code30.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code30.Name = "code30";
-            this.code30.Size = new System.Drawing.Size(70, 14);
+            this.code30.Size = new System.Drawing.Size(91, 17);
             this.code30.TabIndex = 25;
             this.code30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1143,9 +1202,10 @@
             this.code31.BackColor = System.Drawing.Color.Red;
             this.code31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code31.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code31.Location = new System.Drawing.Point(155, 0);
+            this.code31.Location = new System.Drawing.Point(206, 0);
+            this.code31.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code31.Name = "code31";
-            this.code31.Size = new System.Drawing.Size(70, 14);
+            this.code31.Size = new System.Drawing.Size(91, 17);
             this.code31.TabIndex = 24;
             this.code31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1154,9 +1214,10 @@
             this.code32.BackColor = System.Drawing.Color.Red;
             this.code32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code32.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code32.Location = new System.Drawing.Point(79, 0);
+            this.code32.Location = new System.Drawing.Point(105, 0);
+            this.code32.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code32.Name = "code32";
-            this.code32.Size = new System.Drawing.Size(70, 14);
+            this.code32.Size = new System.Drawing.Size(91, 17);
             this.code32.TabIndex = 23;
             this.code32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1165,9 +1226,10 @@
             this.code37.BackColor = System.Drawing.Color.Red;
             this.code37.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code37.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code37.Location = new System.Drawing.Point(3, 0);
+            this.code37.Location = new System.Drawing.Point(4, 0);
+            this.code37.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code37.Name = "code37";
-            this.code37.Size = new System.Drawing.Size(63, 15);
+            this.code37.Size = new System.Drawing.Size(83, 18);
             this.code37.TabIndex = 4;
             this.code37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1177,9 +1239,10 @@
             this.lb_vtri40.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri40.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri40.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri40.Location = new System.Drawing.Point(210, 30);
+            this.lb_vtri40.Location = new System.Drawing.Point(280, 36);
+            this.lb_vtri40.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri40.Name = "lb_vtri40";
-            this.lb_vtri40.Size = new System.Drawing.Size(63, 15);
+            this.lb_vtri40.Size = new System.Drawing.Size(83, 18);
             this.lb_vtri40.TabIndex = 13;
             this.lb_vtri40.Text = "TAPE 12";
             this.lb_vtri40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1190,9 +1253,10 @@
             this.lb_vtri39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri39.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri39.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri39.Location = new System.Drawing.Point(141, 30);
+            this.lb_vtri39.Location = new System.Drawing.Point(188, 36);
+            this.lb_vtri39.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri39.Name = "lb_vtri39";
-            this.lb_vtri39.Size = new System.Drawing.Size(63, 15);
+            this.lb_vtri39.Size = new System.Drawing.Size(83, 18);
             this.lb_vtri39.TabIndex = 12;
             this.lb_vtri39.Text = "TAPE 11";
             this.lb_vtri39.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1203,9 +1267,10 @@
             this.lb_vtri38.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri38.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri38.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri38.Location = new System.Drawing.Point(72, 30);
+            this.lb_vtri38.Location = new System.Drawing.Point(96, 36);
+            this.lb_vtri38.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri38.Name = "lb_vtri38";
-            this.lb_vtri38.Size = new System.Drawing.Size(63, 15);
+            this.lb_vtri38.Size = new System.Drawing.Size(83, 18);
             this.lb_vtri38.TabIndex = 22;
             this.lb_vtri38.Text = "TAPE 10";
             this.lb_vtri38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1215,9 +1280,10 @@
             this.name37.BackColor = System.Drawing.Color.Red;
             this.name37.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name37.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name37.Location = new System.Drawing.Point(3, 15);
+            this.name37.Location = new System.Drawing.Point(4, 18);
+            this.name37.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name37.Name = "name37";
-            this.name37.Size = new System.Drawing.Size(63, 15);
+            this.name37.Size = new System.Drawing.Size(83, 18);
             this.name37.TabIndex = 5;
             this.name37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1246,14 +1312,15 @@
             this.tableLayoutPanel10.Controls.Add(this.code37, 0, 0);
             this.tableLayoutPanel10.Controls.Add(this.lb_vtri37, 0, 2);
             this.tableLayoutPanel10.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tableLayoutPanel10.Location = new System.Drawing.Point(237, 252);
+            this.tableLayoutPanel10.Location = new System.Drawing.Point(316, 310);
+            this.tableLayoutPanel10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel10.Name = "tableLayoutPanel10";
             this.tableLayoutPanel10.RowCount = 3;
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel10.Size = new System.Drawing.Size(345, 45);
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel10.Size = new System.Drawing.Size(460, 55);
             this.tableLayoutPanel10.TabIndex = 62;
             // 
             // lb_vtri41
@@ -1262,9 +1329,10 @@
             this.lb_vtri41.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri41.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri41.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri41.Location = new System.Drawing.Point(279, 30);
+            this.lb_vtri41.Location = new System.Drawing.Point(372, 36);
+            this.lb_vtri41.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri41.Name = "lb_vtri41";
-            this.lb_vtri41.Size = new System.Drawing.Size(63, 15);
+            this.lb_vtri41.Size = new System.Drawing.Size(83, 18);
             this.lb_vtri41.TabIndex = 32;
             this.lb_vtri41.Text = "TAPE 13";
             this.lb_vtri41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1274,9 +1342,10 @@
             this.name41.BackColor = System.Drawing.Color.Red;
             this.name41.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name41.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name41.Location = new System.Drawing.Point(279, 15);
+            this.name41.Location = new System.Drawing.Point(372, 18);
+            this.name41.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name41.Name = "name41";
-            this.name41.Size = new System.Drawing.Size(63, 15);
+            this.name41.Size = new System.Drawing.Size(83, 18);
             this.name41.TabIndex = 31;
             this.name41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1285,9 +1354,10 @@
             this.name40.BackColor = System.Drawing.Color.Red;
             this.name40.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name40.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name40.Location = new System.Drawing.Point(210, 15);
+            this.name40.Location = new System.Drawing.Point(280, 18);
+            this.name40.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name40.Name = "name40";
-            this.name40.Size = new System.Drawing.Size(63, 15);
+            this.name40.Size = new System.Drawing.Size(83, 18);
             this.name40.TabIndex = 30;
             this.name40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1296,9 +1366,10 @@
             this.name39.BackColor = System.Drawing.Color.Red;
             this.name39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name39.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name39.Location = new System.Drawing.Point(141, 15);
+            this.name39.Location = new System.Drawing.Point(188, 18);
+            this.name39.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name39.Name = "name39";
-            this.name39.Size = new System.Drawing.Size(63, 15);
+            this.name39.Size = new System.Drawing.Size(83, 18);
             this.name39.TabIndex = 29;
             this.name39.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1307,9 +1378,10 @@
             this.name38.BackColor = System.Drawing.Color.Red;
             this.name38.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name38.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name38.Location = new System.Drawing.Point(72, 15);
+            this.name38.Location = new System.Drawing.Point(96, 18);
+            this.name38.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name38.Name = "name38";
-            this.name38.Size = new System.Drawing.Size(63, 15);
+            this.name38.Size = new System.Drawing.Size(83, 18);
             this.name38.TabIndex = 28;
             this.name38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1318,9 +1390,10 @@
             this.code41.BackColor = System.Drawing.Color.Red;
             this.code41.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code41.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code41.Location = new System.Drawing.Point(279, 0);
+            this.code41.Location = new System.Drawing.Point(372, 0);
+            this.code41.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code41.Name = "code41";
-            this.code41.Size = new System.Drawing.Size(63, 15);
+            this.code41.Size = new System.Drawing.Size(83, 18);
             this.code41.TabIndex = 27;
             this.code41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1329,9 +1402,10 @@
             this.code40.BackColor = System.Drawing.Color.Red;
             this.code40.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code40.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code40.Location = new System.Drawing.Point(210, 0);
+            this.code40.Location = new System.Drawing.Point(280, 0);
+            this.code40.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code40.Name = "code40";
-            this.code40.Size = new System.Drawing.Size(63, 15);
+            this.code40.Size = new System.Drawing.Size(83, 18);
             this.code40.TabIndex = 26;
             this.code40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1340,9 +1414,10 @@
             this.code39.BackColor = System.Drawing.Color.Red;
             this.code39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code39.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code39.Location = new System.Drawing.Point(141, 0);
+            this.code39.Location = new System.Drawing.Point(188, 0);
+            this.code39.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code39.Name = "code39";
-            this.code39.Size = new System.Drawing.Size(63, 15);
+            this.code39.Size = new System.Drawing.Size(83, 18);
             this.code39.TabIndex = 25;
             this.code39.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1351,9 +1426,10 @@
             this.code38.BackColor = System.Drawing.Color.Red;
             this.code38.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code38.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code38.Location = new System.Drawing.Point(72, 0);
+            this.code38.Location = new System.Drawing.Point(96, 0);
+            this.code38.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code38.Name = "code38";
-            this.code38.Size = new System.Drawing.Size(63, 15);
+            this.code38.Size = new System.Drawing.Size(83, 18);
             this.code38.TabIndex = 24;
             this.code38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1363,9 +1439,10 @@
             this.lb_vtri37.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri37.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri37.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri37.Location = new System.Drawing.Point(3, 30);
+            this.lb_vtri37.Location = new System.Drawing.Point(4, 36);
+            this.lb_vtri37.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri37.Name = "lb_vtri37";
-            this.lb_vtri37.Size = new System.Drawing.Size(63, 14);
+            this.lb_vtri37.Size = new System.Drawing.Size(83, 17);
             this.lb_vtri37.TabIndex = 23;
             this.lb_vtri37.Text = "TAPE 9";
             this.lb_vtri37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1375,9 +1452,10 @@
             this.code18.BackColor = System.Drawing.Color.Red;
             this.code18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code18.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code18.Location = new System.Drawing.Point(3, 0);
+            this.code18.Location = new System.Drawing.Point(4, 0);
+            this.code18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code18.Name = "code18";
-            this.code18.Size = new System.Drawing.Size(80, 13);
+            this.code18.Size = new System.Drawing.Size(106, 16);
             this.code18.TabIndex = 4;
             this.code18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1387,9 +1465,10 @@
             this.lb_vtri18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri18.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri18.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri18.Location = new System.Drawing.Point(3, 26);
+            this.lb_vtri18.Location = new System.Drawing.Point(4, 32);
+            this.lb_vtri18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri18.Name = "lb_vtri18";
-            this.lb_vtri18.Size = new System.Drawing.Size(80, 14);
+            this.lb_vtri18.Size = new System.Drawing.Size(106, 17);
             this.lb_vtri18.TabIndex = 21;
             this.lb_vtri18.Text = "CHECKA 4";
             this.lb_vtri18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1399,9 +1478,10 @@
             this.name18.BackColor = System.Drawing.Color.Red;
             this.name18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name18.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name18.Location = new System.Drawing.Point(3, 13);
+            this.name18.Location = new System.Drawing.Point(4, 16);
+            this.name18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name18.Name = "name18";
-            this.name18.Size = new System.Drawing.Size(80, 13);
+            this.name18.Size = new System.Drawing.Size(106, 16);
             this.name18.TabIndex = 5;
             this.name18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1434,13 +1514,14 @@
             this.tableLayoutPanel6.Controls.Add(this.code18, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.lb_vtri17, 1, 2);
             this.tableLayoutPanel6.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(517, 199);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(689, 245);
+            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 3;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(517, 40);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(689, 49);
             this.tableLayoutPanel6.TabIndex = 15;
             // 
             // lb_vtri8
@@ -1449,9 +1530,10 @@
             this.lb_vtri8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri8.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri8.Location = new System.Drawing.Point(433, 26);
+            this.lb_vtri8.Location = new System.Drawing.Point(574, 32);
+            this.lb_vtri8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri8.Name = "lb_vtri8";
-            this.lb_vtri8.Size = new System.Drawing.Size(81, 14);
+            this.lb_vtri8.Size = new System.Drawing.Size(107, 17);
             this.lb_vtri8.TabIndex = 36;
             this.lb_vtri8.Text = "BUHIN 2";
             this.lb_vtri8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1462,9 +1544,10 @@
             this.lb_vtri12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri12.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri12.Location = new System.Drawing.Point(347, 26);
+            this.lb_vtri12.Location = new System.Drawing.Point(460, 32);
+            this.lb_vtri12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri12.Name = "lb_vtri12";
-            this.lb_vtri12.Size = new System.Drawing.Size(80, 14);
+            this.lb_vtri12.Size = new System.Drawing.Size(106, 17);
             this.lb_vtri12.TabIndex = 35;
             this.lb_vtri12.Text = "OFFLINE 4";
             this.lb_vtri12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1475,9 +1558,10 @@
             this.lb_vtri13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri13.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri13.Location = new System.Drawing.Point(261, 26);
+            this.lb_vtri13.Location = new System.Drawing.Point(346, 32);
+            this.lb_vtri13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri13.Name = "lb_vtri13";
-            this.lb_vtri13.Size = new System.Drawing.Size(80, 14);
+            this.lb_vtri13.Size = new System.Drawing.Size(106, 17);
             this.lb_vtri13.TabIndex = 34;
             this.lb_vtri13.Text = "OFFLINE 5";
             this.lb_vtri13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1488,9 +1572,10 @@
             this.lb_vtri14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri14.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri14.Location = new System.Drawing.Point(175, 26);
+            this.lb_vtri14.Location = new System.Drawing.Point(232, 32);
+            this.lb_vtri14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri14.Name = "lb_vtri14";
-            this.lb_vtri14.Size = new System.Drawing.Size(80, 14);
+            this.lb_vtri14.Size = new System.Drawing.Size(106, 17);
             this.lb_vtri14.TabIndex = 33;
             this.lb_vtri14.Text = "OFFLINE 6";
             this.lb_vtri14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1500,9 +1585,10 @@
             this.name8.BackColor = System.Drawing.Color.Red;
             this.name8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name8.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name8.Location = new System.Drawing.Point(433, 13);
+            this.name8.Location = new System.Drawing.Point(574, 16);
+            this.name8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name8.Name = "name8";
-            this.name8.Size = new System.Drawing.Size(81, 13);
+            this.name8.Size = new System.Drawing.Size(107, 16);
             this.name8.TabIndex = 32;
             this.name8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1511,9 +1597,10 @@
             this.name12.BackColor = System.Drawing.Color.Red;
             this.name12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name12.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name12.Location = new System.Drawing.Point(347, 13);
+            this.name12.Location = new System.Drawing.Point(460, 16);
+            this.name12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name12.Name = "name12";
-            this.name12.Size = new System.Drawing.Size(80, 13);
+            this.name12.Size = new System.Drawing.Size(106, 16);
             this.name12.TabIndex = 31;
             this.name12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1522,9 +1609,10 @@
             this.name13.BackColor = System.Drawing.Color.Red;
             this.name13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name13.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name13.Location = new System.Drawing.Point(261, 13);
+            this.name13.Location = new System.Drawing.Point(346, 16);
+            this.name13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name13.Name = "name13";
-            this.name13.Size = new System.Drawing.Size(80, 13);
+            this.name13.Size = new System.Drawing.Size(106, 16);
             this.name13.TabIndex = 30;
             this.name13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1533,9 +1621,10 @@
             this.name14.BackColor = System.Drawing.Color.Red;
             this.name14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name14.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name14.Location = new System.Drawing.Point(175, 13);
+            this.name14.Location = new System.Drawing.Point(232, 16);
+            this.name14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name14.Name = "name14";
-            this.name14.Size = new System.Drawing.Size(80, 13);
+            this.name14.Size = new System.Drawing.Size(106, 16);
             this.name14.TabIndex = 29;
             this.name14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1544,9 +1633,10 @@
             this.name17.BackColor = System.Drawing.Color.Red;
             this.name17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name17.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name17.Location = new System.Drawing.Point(89, 13);
+            this.name17.Location = new System.Drawing.Point(118, 16);
+            this.name17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name17.Name = "name17";
-            this.name17.Size = new System.Drawing.Size(80, 13);
+            this.name17.Size = new System.Drawing.Size(106, 16);
             this.name17.TabIndex = 28;
             this.name17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1555,9 +1645,10 @@
             this.code8.BackColor = System.Drawing.Color.Red;
             this.code8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code8.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code8.Location = new System.Drawing.Point(433, 0);
+            this.code8.Location = new System.Drawing.Point(574, 0);
+            this.code8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code8.Name = "code8";
-            this.code8.Size = new System.Drawing.Size(81, 13);
+            this.code8.Size = new System.Drawing.Size(107, 16);
             this.code8.TabIndex = 27;
             this.code8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1566,9 +1657,10 @@
             this.code12.BackColor = System.Drawing.Color.Red;
             this.code12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code12.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code12.Location = new System.Drawing.Point(347, 0);
+            this.code12.Location = new System.Drawing.Point(460, 0);
+            this.code12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code12.Name = "code12";
-            this.code12.Size = new System.Drawing.Size(80, 13);
+            this.code12.Size = new System.Drawing.Size(106, 16);
             this.code12.TabIndex = 26;
             this.code12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1577,9 +1669,10 @@
             this.code14.BackColor = System.Drawing.Color.Red;
             this.code14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code14.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code14.Location = new System.Drawing.Point(175, 0);
+            this.code14.Location = new System.Drawing.Point(232, 0);
+            this.code14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code14.Name = "code14";
-            this.code14.Size = new System.Drawing.Size(80, 13);
+            this.code14.Size = new System.Drawing.Size(106, 16);
             this.code14.TabIndex = 25;
             this.code14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1588,9 +1681,10 @@
             this.code17.BackColor = System.Drawing.Color.Red;
             this.code17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code17.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code17.Location = new System.Drawing.Point(89, 0);
+            this.code17.Location = new System.Drawing.Point(118, 0);
+            this.code17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code17.Name = "code17";
-            this.code17.Size = new System.Drawing.Size(80, 13);
+            this.code17.Size = new System.Drawing.Size(106, 16);
             this.code17.TabIndex = 23;
             this.code17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1599,9 +1693,10 @@
             this.code13.BackColor = System.Drawing.Color.Red;
             this.code13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code13.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code13.Location = new System.Drawing.Point(261, 0);
+            this.code13.Location = new System.Drawing.Point(346, 0);
+            this.code13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code13.Name = "code13";
-            this.code13.Size = new System.Drawing.Size(80, 13);
+            this.code13.Size = new System.Drawing.Size(106, 16);
             this.code13.TabIndex = 22;
             this.code13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1611,9 +1706,10 @@
             this.lb_vtri17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri17.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri17.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri17.Location = new System.Drawing.Point(89, 26);
+            this.lb_vtri17.Location = new System.Drawing.Point(118, 32);
+            this.lb_vtri17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri17.Name = "lb_vtri17";
-            this.lb_vtri17.Size = new System.Drawing.Size(80, 14);
+            this.lb_vtri17.Size = new System.Drawing.Size(106, 17);
             this.lb_vtri17.TabIndex = 24;
             this.lb_vtri17.Text = "CHECKA 3";
             this.lb_vtri17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1623,9 +1719,10 @@
             this.code27.BackColor = System.Drawing.Color.Red;
             this.code27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code27.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code27.Location = new System.Drawing.Point(3, 0);
+            this.code27.Location = new System.Drawing.Point(4, 0);
+            this.code27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code27.Name = "code27";
-            this.code27.Size = new System.Drawing.Size(78, 15);
+            this.code27.Size = new System.Drawing.Size(103, 18);
             this.code27.TabIndex = 4;
             this.code27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1634,9 +1731,10 @@
             this.name27.BackColor = System.Drawing.Color.Red;
             this.name27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name27.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name27.Location = new System.Drawing.Point(3, 15);
+            this.name27.Location = new System.Drawing.Point(4, 18);
+            this.name27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name27.Name = "name27";
-            this.name27.Size = new System.Drawing.Size(78, 15);
+            this.name27.Size = new System.Drawing.Size(103, 18);
             this.name27.TabIndex = 5;
             this.name27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1653,14 +1751,15 @@
             this.tableLayoutPanel8.Controls.Add(this.code27, 0, 0);
             this.tableLayoutPanel8.Controls.Add(this.lb_vtri27, 0, 2);
             this.tableLayoutPanel8.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tableLayoutPanel8.Location = new System.Drawing.Point(88, 199);
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(117, 245);
+            this.tableLayoutPanel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 3;
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(169, 45);
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(225, 55);
             this.tableLayoutPanel8.TabIndex = 17;
             // 
             // code26
@@ -1668,9 +1767,10 @@
             this.code26.BackColor = System.Drawing.Color.Red;
             this.code26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code26.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code26.Location = new System.Drawing.Point(87, 0);
+            this.code26.Location = new System.Drawing.Point(116, 0);
+            this.code26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code26.Name = "code26";
-            this.code26.Size = new System.Drawing.Size(79, 15);
+            this.code26.Size = new System.Drawing.Size(105, 18);
             this.code26.TabIndex = 16;
             this.code26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1679,9 +1779,10 @@
             this.name26.BackColor = System.Drawing.Color.Red;
             this.name26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name26.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name26.Location = new System.Drawing.Point(87, 15);
+            this.name26.Location = new System.Drawing.Point(116, 18);
+            this.name26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name26.Name = "name26";
-            this.name26.Size = new System.Drawing.Size(79, 15);
+            this.name26.Size = new System.Drawing.Size(105, 18);
             this.name26.TabIndex = 15;
             this.name26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1691,9 +1792,10 @@
             this.lb_vtri26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri26.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri26.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri26.Location = new System.Drawing.Point(87, 30);
+            this.lb_vtri26.Location = new System.Drawing.Point(116, 36);
+            this.lb_vtri26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri26.Name = "lb_vtri26";
-            this.lb_vtri26.Size = new System.Drawing.Size(79, 15);
+            this.lb_vtri26.Size = new System.Drawing.Size(105, 18);
             this.lb_vtri26.TabIndex = 17;
             this.lb_vtri26.Text = " GAIKAN 3";
             this.lb_vtri26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1704,9 +1806,10 @@
             this.lb_vtri27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri27.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri27.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri27.Location = new System.Drawing.Point(3, 30);
+            this.lb_vtri27.Location = new System.Drawing.Point(4, 36);
+            this.lb_vtri27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri27.Name = "lb_vtri27";
-            this.lb_vtri27.Size = new System.Drawing.Size(78, 15);
+            this.lb_vtri27.Size = new System.Drawing.Size(103, 18);
             this.lb_vtri27.TabIndex = 14;
             this.lb_vtri27.Text = " GAIKAN 4";
             this.lb_vtri27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1717,9 +1820,10 @@
             this.lb_vtri7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri7.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri7.Location = new System.Drawing.Point(949, 30);
+            this.lb_vtri7.Location = new System.Drawing.Point(1258, 36);
+            this.lb_vtri7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri7.Name = "lb_vtri7";
-            this.lb_vtri7.Size = new System.Drawing.Size(80, 14);
+            this.lb_vtri7.Size = new System.Drawing.Size(106, 17);
             this.lb_vtri7.TabIndex = 23;
             this.lb_vtri7.Text = "BUHIN 1";
             this.lb_vtri7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1730,9 +1834,10 @@
             this.lb_vtri28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri28.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri28.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri28.Location = new System.Drawing.Point(3, 30);
+            this.lb_vtri28.Location = new System.Drawing.Point(4, 36);
+            this.lb_vtri28.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri28.Name = "lb_vtri28";
-            this.lb_vtri28.Size = new System.Drawing.Size(80, 15);
+            this.lb_vtri28.Size = new System.Drawing.Size(105, 18);
             this.lb_vtri28.TabIndex = 21;
             this.lb_vtri28.Text = "PACKING";
             this.lb_vtri28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1743,9 +1848,10 @@
             this.lb_vtri25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri25.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri25.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri25.Location = new System.Drawing.Point(89, 30);
+            this.lb_vtri25.Location = new System.Drawing.Point(118, 36);
+            this.lb_vtri25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri25.Name = "lb_vtri25";
-            this.lb_vtri25.Size = new System.Drawing.Size(80, 15);
+            this.lb_vtri25.Size = new System.Drawing.Size(105, 18);
             this.lb_vtri25.TabIndex = 22;
             this.lb_vtri25.Text = "GAIKAN 2";
             this.lb_vtri25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1756,9 +1862,10 @@
             this.lb_vtri24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri24.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri24.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri24.Location = new System.Drawing.Point(175, 30);
+            this.lb_vtri24.Location = new System.Drawing.Point(232, 36);
+            this.lb_vtri24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri24.Name = "lb_vtri24";
-            this.lb_vtri24.Size = new System.Drawing.Size(80, 15);
+            this.lb_vtri24.Size = new System.Drawing.Size(105, 18);
             this.lb_vtri24.TabIndex = 12;
             this.lb_vtri24.Text = "GAIKAN 1";
             this.lb_vtri24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1769,9 +1876,10 @@
             this.lb_vtri21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri21.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri21.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri21.Location = new System.Drawing.Point(261, 30);
+            this.lb_vtri21.Location = new System.Drawing.Point(346, 36);
+            this.lb_vtri21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri21.Name = "lb_vtri21";
-            this.lb_vtri21.Size = new System.Drawing.Size(80, 14);
+            this.lb_vtri21.Size = new System.Drawing.Size(105, 17);
             this.lb_vtri21.TabIndex = 13;
             this.lb_vtri21.Text = "SHIAGE 3";
             this.lb_vtri21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1782,9 +1890,10 @@
             this.lb_vtri20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri20.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri20.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri20.Location = new System.Drawing.Point(347, 30);
+            this.lb_vtri20.Location = new System.Drawing.Point(460, 36);
+            this.lb_vtri20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri20.Name = "lb_vtri20";
-            this.lb_vtri20.Size = new System.Drawing.Size(80, 14);
+            this.lb_vtri20.Size = new System.Drawing.Size(105, 17);
             this.lb_vtri20.TabIndex = 14;
             this.lb_vtri20.Text = "SHIAGE 2";
             this.lb_vtri20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1795,9 +1904,10 @@
             this.lb_vtri19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri19.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri19.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri19.Location = new System.Drawing.Point(433, 30);
+            this.lb_vtri19.Location = new System.Drawing.Point(574, 36);
+            this.lb_vtri19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri19.Name = "lb_vtri19";
-            this.lb_vtri19.Size = new System.Drawing.Size(80, 14);
+            this.lb_vtri19.Size = new System.Drawing.Size(105, 17);
             this.lb_vtri19.TabIndex = 15;
             this.lb_vtri19.Text = "SHIAGE 1";
             this.lb_vtri19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1808,9 +1918,10 @@
             this.lb_vtri16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri16.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri16.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri16.Location = new System.Drawing.Point(519, 30);
+            this.lb_vtri16.Location = new System.Drawing.Point(688, 36);
+            this.lb_vtri16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri16.Name = "lb_vtri16";
-            this.lb_vtri16.Size = new System.Drawing.Size(80, 14);
+            this.lb_vtri16.Size = new System.Drawing.Size(105, 17);
             this.lb_vtri16.TabIndex = 16;
             this.lb_vtri16.Text = "CHECKA 2";
             this.lb_vtri16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1821,9 +1932,10 @@
             this.lb_vtri15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri15.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri15.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri15.Location = new System.Drawing.Point(605, 30);
+            this.lb_vtri15.Location = new System.Drawing.Point(802, 36);
+            this.lb_vtri15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri15.Name = "lb_vtri15";
-            this.lb_vtri15.Size = new System.Drawing.Size(80, 14);
+            this.lb_vtri15.Size = new System.Drawing.Size(105, 17);
             this.lb_vtri15.TabIndex = 17;
             this.lb_vtri15.Text = "CHECKA 1";
             this.lb_vtri15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1834,9 +1946,10 @@
             this.lb_vtri11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri11.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri11.Location = new System.Drawing.Point(691, 30);
+            this.lb_vtri11.Location = new System.Drawing.Point(916, 36);
+            this.lb_vtri11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri11.Name = "lb_vtri11";
-            this.lb_vtri11.Size = new System.Drawing.Size(80, 14);
+            this.lb_vtri11.Size = new System.Drawing.Size(105, 17);
             this.lb_vtri11.TabIndex = 18;
             this.lb_vtri11.Text = "OFFLINE 3";
             this.lb_vtri11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1847,9 +1960,10 @@
             this.lb_vtri10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri10.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri10.Location = new System.Drawing.Point(777, 30);
+            this.lb_vtri10.Location = new System.Drawing.Point(1030, 36);
+            this.lb_vtri10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri10.Name = "lb_vtri10";
-            this.lb_vtri10.Size = new System.Drawing.Size(80, 14);
+            this.lb_vtri10.Size = new System.Drawing.Size(105, 17);
             this.lb_vtri10.TabIndex = 19;
             this.lb_vtri10.Text = "OFFLINE 2";
             this.lb_vtri10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1860,9 +1974,10 @@
             this.lb_vtri9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri9.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri9.Location = new System.Drawing.Point(863, 30);
+            this.lb_vtri9.Location = new System.Drawing.Point(1144, 36);
+            this.lb_vtri9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri9.Name = "lb_vtri9";
-            this.lb_vtri9.Size = new System.Drawing.Size(80, 14);
+            this.lb_vtri9.Size = new System.Drawing.Size(105, 17);
             this.lb_vtri9.TabIndex = 20;
             this.lb_vtri9.Text = "OFFLINE 1";
             this.lb_vtri9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1920,13 +2035,14 @@
             this.tableLayoutPanel5.Controls.Add(this.lb_vtri28, 0, 2);
             this.tableLayoutPanel5.Controls.Add(this.lb_vtri7, 11, 2);
             this.tableLayoutPanel5.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(2, 129);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 159);
+            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 3;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(1032, 45);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(1376, 55);
             this.tableLayoutPanel5.TabIndex = 12;
             // 
             // code25
@@ -1934,9 +2050,10 @@
             this.code25.BackColor = System.Drawing.Color.Red;
             this.code25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code25.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code25.Location = new System.Drawing.Point(89, 0);
+            this.code25.Location = new System.Drawing.Point(118, 0);
+            this.code25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code25.Name = "code25";
-            this.code25.Size = new System.Drawing.Size(80, 15);
+            this.code25.Size = new System.Drawing.Size(105, 18);
             this.code25.TabIndex = 49;
             this.code25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1945,9 +2062,10 @@
             this.name25.BackColor = System.Drawing.Color.Red;
             this.name25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name25.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name25.Location = new System.Drawing.Point(89, 15);
+            this.name25.Location = new System.Drawing.Point(118, 18);
+            this.name25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name25.Name = "name25";
-            this.name25.Size = new System.Drawing.Size(80, 15);
+            this.name25.Size = new System.Drawing.Size(105, 18);
             this.name25.TabIndex = 48;
             this.name25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1956,9 +2074,10 @@
             this.name9.BackColor = System.Drawing.Color.Red;
             this.name9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name9.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name9.Location = new System.Drawing.Point(863, 15);
+            this.name9.Location = new System.Drawing.Point(1144, 18);
+            this.name9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name9.Name = "name9";
-            this.name9.Size = new System.Drawing.Size(80, 15);
+            this.name9.Size = new System.Drawing.Size(105, 18);
             this.name9.TabIndex = 47;
             this.name9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1967,9 +2086,10 @@
             this.name7.BackColor = System.Drawing.Color.Red;
             this.name7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name7.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name7.Location = new System.Drawing.Point(949, 15);
+            this.name7.Location = new System.Drawing.Point(1258, 18);
+            this.name7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name7.Name = "name7";
-            this.name7.Size = new System.Drawing.Size(80, 15);
+            this.name7.Size = new System.Drawing.Size(106, 18);
             this.name7.TabIndex = 46;
             this.name7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1978,9 +2098,10 @@
             this.name11.BackColor = System.Drawing.Color.Red;
             this.name11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name11.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name11.Location = new System.Drawing.Point(691, 15);
+            this.name11.Location = new System.Drawing.Point(916, 18);
+            this.name11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name11.Name = "name11";
-            this.name11.Size = new System.Drawing.Size(80, 15);
+            this.name11.Size = new System.Drawing.Size(105, 18);
             this.name11.TabIndex = 45;
             this.name11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1989,9 +2110,10 @@
             this.name10.BackColor = System.Drawing.Color.Red;
             this.name10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name10.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name10.Location = new System.Drawing.Point(777, 15);
+            this.name10.Location = new System.Drawing.Point(1030, 18);
+            this.name10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name10.Name = "name10";
-            this.name10.Size = new System.Drawing.Size(80, 15);
+            this.name10.Size = new System.Drawing.Size(105, 18);
             this.name10.TabIndex = 44;
             this.name10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2000,9 +2122,10 @@
             this.name16.BackColor = System.Drawing.Color.Red;
             this.name16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name16.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name16.Location = new System.Drawing.Point(519, 15);
+            this.name16.Location = new System.Drawing.Point(688, 18);
+            this.name16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name16.Name = "name16";
-            this.name16.Size = new System.Drawing.Size(80, 15);
+            this.name16.Size = new System.Drawing.Size(105, 18);
             this.name16.TabIndex = 43;
             this.name16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2011,9 +2134,10 @@
             this.name15.BackColor = System.Drawing.Color.Red;
             this.name15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name15.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name15.Location = new System.Drawing.Point(605, 15);
+            this.name15.Location = new System.Drawing.Point(802, 18);
+            this.name15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name15.Name = "name15";
-            this.name15.Size = new System.Drawing.Size(80, 15);
+            this.name15.Size = new System.Drawing.Size(105, 18);
             this.name15.TabIndex = 42;
             this.name15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2022,9 +2146,10 @@
             this.name20.BackColor = System.Drawing.Color.Red;
             this.name20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name20.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name20.Location = new System.Drawing.Point(347, 15);
+            this.name20.Location = new System.Drawing.Point(460, 18);
+            this.name20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name20.Name = "name20";
-            this.name20.Size = new System.Drawing.Size(80, 15);
+            this.name20.Size = new System.Drawing.Size(105, 18);
             this.name20.TabIndex = 41;
             this.name20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2033,9 +2158,10 @@
             this.name19.BackColor = System.Drawing.Color.Red;
             this.name19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name19.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name19.Location = new System.Drawing.Point(433, 15);
+            this.name19.Location = new System.Drawing.Point(574, 18);
+            this.name19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name19.Name = "name19";
-            this.name19.Size = new System.Drawing.Size(80, 15);
+            this.name19.Size = new System.Drawing.Size(105, 18);
             this.name19.TabIndex = 40;
             this.name19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2044,9 +2170,10 @@
             this.name24.BackColor = System.Drawing.Color.Red;
             this.name24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name24.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name24.Location = new System.Drawing.Point(175, 15);
+            this.name24.Location = new System.Drawing.Point(232, 18);
+            this.name24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name24.Name = "name24";
-            this.name24.Size = new System.Drawing.Size(80, 15);
+            this.name24.Size = new System.Drawing.Size(105, 18);
             this.name24.TabIndex = 39;
             this.name24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2055,9 +2182,10 @@
             this.name21.BackColor = System.Drawing.Color.Red;
             this.name21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name21.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name21.Location = new System.Drawing.Point(261, 15);
+            this.name21.Location = new System.Drawing.Point(346, 18);
+            this.name21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name21.Name = "name21";
-            this.name21.Size = new System.Drawing.Size(80, 15);
+            this.name21.Size = new System.Drawing.Size(105, 18);
             this.name21.TabIndex = 38;
             this.name21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2067,9 +2195,10 @@
             this.code7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code7.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.code7.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.code7.Location = new System.Drawing.Point(949, 0);
+            this.code7.Location = new System.Drawing.Point(1258, 0);
+            this.code7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code7.Name = "code7";
-            this.code7.Size = new System.Drawing.Size(80, 15);
+            this.code7.Size = new System.Drawing.Size(106, 18);
             this.code7.TabIndex = 37;
             this.code7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2078,9 +2207,10 @@
             this.name28.BackColor = System.Drawing.Color.Red;
             this.name28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name28.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name28.Location = new System.Drawing.Point(3, 15);
+            this.name28.Location = new System.Drawing.Point(4, 18);
+            this.name28.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name28.Name = "name28";
-            this.name28.Size = new System.Drawing.Size(80, 15);
+            this.name28.Size = new System.Drawing.Size(105, 18);
             this.name28.TabIndex = 36;
             this.name28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2089,9 +2219,10 @@
             this.code10.BackColor = System.Drawing.Color.Red;
             this.code10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code10.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code10.Location = new System.Drawing.Point(777, 0);
+            this.code10.Location = new System.Drawing.Point(1030, 0);
+            this.code10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code10.Name = "code10";
-            this.code10.Size = new System.Drawing.Size(80, 15);
+            this.code10.Size = new System.Drawing.Size(105, 18);
             this.code10.TabIndex = 35;
             this.code10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2100,9 +2231,10 @@
             this.code9.BackColor = System.Drawing.Color.Red;
             this.code9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code9.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code9.Location = new System.Drawing.Point(863, 0);
+            this.code9.Location = new System.Drawing.Point(1144, 0);
+            this.code9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code9.Name = "code9";
-            this.code9.Size = new System.Drawing.Size(80, 15);
+            this.code9.Size = new System.Drawing.Size(105, 18);
             this.code9.TabIndex = 34;
             this.code9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2111,9 +2243,10 @@
             this.code15.BackColor = System.Drawing.Color.Red;
             this.code15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code15.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code15.Location = new System.Drawing.Point(605, 0);
+            this.code15.Location = new System.Drawing.Point(802, 0);
+            this.code15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code15.Name = "code15";
-            this.code15.Size = new System.Drawing.Size(80, 15);
+            this.code15.Size = new System.Drawing.Size(105, 18);
             this.code15.TabIndex = 33;
             this.code15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2122,9 +2255,10 @@
             this.code11.BackColor = System.Drawing.Color.Red;
             this.code11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code11.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code11.Location = new System.Drawing.Point(691, 0);
+            this.code11.Location = new System.Drawing.Point(916, 0);
+            this.code11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code11.Name = "code11";
-            this.code11.Size = new System.Drawing.Size(80, 15);
+            this.code11.Size = new System.Drawing.Size(105, 18);
             this.code11.TabIndex = 32;
             this.code11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2133,9 +2267,10 @@
             this.code19.BackColor = System.Drawing.Color.Red;
             this.code19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code19.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code19.Location = new System.Drawing.Point(433, 0);
+            this.code19.Location = new System.Drawing.Point(574, 0);
+            this.code19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code19.Name = "code19";
-            this.code19.Size = new System.Drawing.Size(80, 15);
+            this.code19.Size = new System.Drawing.Size(105, 18);
             this.code19.TabIndex = 31;
             this.code19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2144,9 +2279,10 @@
             this.code16.BackColor = System.Drawing.Color.Red;
             this.code16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code16.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code16.Location = new System.Drawing.Point(519, 0);
+            this.code16.Location = new System.Drawing.Point(688, 0);
+            this.code16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code16.Name = "code16";
-            this.code16.Size = new System.Drawing.Size(80, 15);
+            this.code16.Size = new System.Drawing.Size(105, 18);
             this.code16.TabIndex = 30;
             this.code16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2155,9 +2291,10 @@
             this.code21.BackColor = System.Drawing.Color.Red;
             this.code21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code21.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code21.Location = new System.Drawing.Point(261, 0);
+            this.code21.Location = new System.Drawing.Point(346, 0);
+            this.code21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code21.Name = "code21";
-            this.code21.Size = new System.Drawing.Size(80, 15);
+            this.code21.Size = new System.Drawing.Size(105, 18);
             this.code21.TabIndex = 29;
             this.code21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2166,9 +2303,10 @@
             this.code20.BackColor = System.Drawing.Color.Red;
             this.code20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code20.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code20.Location = new System.Drawing.Point(347, 0);
+            this.code20.Location = new System.Drawing.Point(460, 0);
+            this.code20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code20.Name = "code20";
-            this.code20.Size = new System.Drawing.Size(80, 15);
+            this.code20.Size = new System.Drawing.Size(105, 18);
             this.code20.TabIndex = 28;
             this.code20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2177,9 +2315,10 @@
             this.code28.BackColor = System.Drawing.Color.Red;
             this.code28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code28.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code28.Location = new System.Drawing.Point(3, 0);
+            this.code28.Location = new System.Drawing.Point(4, 0);
+            this.code28.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code28.Name = "code28";
-            this.code28.Size = new System.Drawing.Size(80, 15);
+            this.code28.Size = new System.Drawing.Size(105, 18);
             this.code28.TabIndex = 27;
             this.code28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2188,9 +2327,10 @@
             this.code24.BackColor = System.Drawing.Color.Red;
             this.code24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code24.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code24.Location = new System.Drawing.Point(175, 0);
+            this.code24.Location = new System.Drawing.Point(232, 0);
+            this.code24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code24.Name = "code24";
-            this.code24.Size = new System.Drawing.Size(80, 15);
+            this.code24.Size = new System.Drawing.Size(105, 18);
             this.code24.TabIndex = 26;
             this.code24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2200,9 +2340,10 @@
             this.lb_vtri3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri3.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri3.ForeColor = System.Drawing.SystemColors.Window;
-            this.lb_vtri3.Location = new System.Drawing.Point(85, 30);
+            this.lb_vtri3.Location = new System.Drawing.Point(114, 36);
+            this.lb_vtri3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri3.Name = "lb_vtri3";
-            this.lb_vtri3.Size = new System.Drawing.Size(76, 15);
+            this.lb_vtri3.Size = new System.Drawing.Size(101, 18);
             this.lb_vtri3.TabIndex = 12;
             this.lb_vtri3.Text = "LQC";
             this.lb_vtri3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2213,9 +2354,10 @@
             this.lb_vtri2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri2.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri2.ForeColor = System.Drawing.SystemColors.Window;
-            this.lb_vtri2.Location = new System.Drawing.Point(3, 30);
+            this.lb_vtri2.Location = new System.Drawing.Point(4, 36);
+            this.lb_vtri2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri2.Name = "lb_vtri2";
-            this.lb_vtri2.Size = new System.Drawing.Size(76, 15);
+            this.lb_vtri2.Size = new System.Drawing.Size(101, 18);
             this.lb_vtri2.TabIndex = 10;
             this.lb_vtri2.Text = "LQC";
             this.lb_vtri2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2237,13 +2379,14 @@
             this.tableLayoutPanel3.Controls.Add(this.lb_vtri3, 1, 2);
             this.tableLayoutPanel3.Controls.Add(this.code1, 2, 0);
             this.tableLayoutPanel3.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(2, 76);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 94);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 3;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(248, 45);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(331, 55);
             this.tableLayoutPanel3.TabIndex = 3;
             // 
             // name1
@@ -2251,22 +2394,12 @@
             this.name1.BackColor = System.Drawing.Color.Red;
             this.name1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name1.Location = new System.Drawing.Point(167, 15);
+            this.name1.Location = new System.Drawing.Point(224, 18);
+            this.name1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name1.Name = "name1";
-            this.name1.Size = new System.Drawing.Size(76, 15);
+            this.name1.Size = new System.Drawing.Size(101, 18);
             this.name1.TabIndex = 25;
             this.name1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // code1
-            // 
-            this.code1.BackColor = System.Drawing.Color.Red;
-            this.code1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.code1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code1.Location = new System.Drawing.Point(167, 0);
-            this.code1.Name = "code1";
-            this.code1.Size = new System.Drawing.Size(76, 15);
-            this.code1.TabIndex = 24;
-            this.code1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lb_vtri1
             // 
@@ -2274,9 +2407,10 @@
             this.lb_vtri1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri1.Location = new System.Drawing.Point(167, 30);
+            this.lb_vtri1.Location = new System.Drawing.Point(224, 36);
+            this.lb_vtri1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri1.Name = "lb_vtri1";
-            this.lb_vtri1.Size = new System.Drawing.Size(76, 15);
+            this.lb_vtri1.Size = new System.Drawing.Size(101, 18);
             this.lb_vtri1.TabIndex = 23;
             this.lb_vtri1.Text = "LINE CHOU";
             this.lb_vtri1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2286,9 +2420,10 @@
             this.code2.BackColor = System.Drawing.Color.Red;
             this.code2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code2.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code2.Location = new System.Drawing.Point(3, 0);
+            this.code2.Location = new System.Drawing.Point(4, 0);
+            this.code2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code2.Name = "code2";
-            this.code2.Size = new System.Drawing.Size(76, 15);
+            this.code2.Size = new System.Drawing.Size(101, 18);
             this.code2.TabIndex = 21;
             this.code2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2297,9 +2432,10 @@
             this.name2.BackColor = System.Drawing.Color.Red;
             this.name2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name2.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name2.Location = new System.Drawing.Point(3, 15);
+            this.name2.Location = new System.Drawing.Point(4, 18);
+            this.name2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name2.Name = "name2";
-            this.name2.Size = new System.Drawing.Size(76, 15);
+            this.name2.Size = new System.Drawing.Size(101, 18);
             this.name2.TabIndex = 22;
             this.name2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2308,9 +2444,10 @@
             this.code3.BackColor = System.Drawing.Color.Red;
             this.code3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code3.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code3.Location = new System.Drawing.Point(85, 0);
+            this.code3.Location = new System.Drawing.Point(114, 0);
+            this.code3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code3.Name = "code3";
-            this.code3.Size = new System.Drawing.Size(76, 15);
+            this.code3.Size = new System.Drawing.Size(101, 18);
             this.code3.TabIndex = 18;
             this.code3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2319,11 +2456,24 @@
             this.name3.BackColor = System.Drawing.Color.Red;
             this.name3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name3.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name3.Location = new System.Drawing.Point(85, 15);
+            this.name3.Location = new System.Drawing.Point(114, 18);
+            this.name3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name3.Name = "name3";
-            this.name3.Size = new System.Drawing.Size(76, 15);
+            this.name3.Size = new System.Drawing.Size(101, 18);
             this.name3.TabIndex = 20;
             this.name3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // code1
+            // 
+            this.code1.BackColor = System.Drawing.Color.Red;
+            this.code1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.code1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.code1.Location = new System.Drawing.Point(224, 0);
+            this.code1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.code1.Name = "code1";
+            this.code1.Size = new System.Drawing.Size(101, 18);
+            this.code1.TabIndex = 24;
+            this.code1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label123
             // 
@@ -2331,9 +2481,10 @@
             this.label123.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label123.Font = new System.Drawing.Font("Arial", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label123.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label123.Location = new System.Drawing.Point(951, 177);
+            this.label123.Location = new System.Drawing.Point(1268, 218);
+            this.label123.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label123.Name = "label123";
-            this.label123.Size = new System.Drawing.Size(81, 16);
+            this.label123.Size = new System.Drawing.Size(107, 19);
             this.label123.TabIndex = 68;
             this.label123.Text = "BUHIN 工程";
             this.label123.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2344,9 +2495,10 @@
             this.label124.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label124.Font = new System.Drawing.Font("Arial", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label124.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label124.Location = new System.Drawing.Point(263, 177);
+            this.label124.Location = new System.Drawing.Point(351, 218);
+            this.label124.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label124.Name = "label124";
-            this.label124.Size = new System.Drawing.Size(252, 16);
+            this.label124.Size = new System.Drawing.Size(335, 19);
             this.label124.TabIndex = 69;
             this.label124.Text = "<--------------------------------------------------------SHIAGE   工程";
             this.label124.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2357,9 +2509,10 @@
             this.label125.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label125.Font = new System.Drawing.Font("Arial", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label125.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label125.Location = new System.Drawing.Point(521, 177);
+            this.label125.Location = new System.Drawing.Point(695, 218);
+            this.label125.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label125.Name = "label125";
-            this.label125.Size = new System.Drawing.Size(165, 16);
+            this.label125.Size = new System.Drawing.Size(219, 19);
             this.label125.TabIndex = 70;
             this.label125.Text = "<---------------------------------CHECKA工程";
             this.label125.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2370,9 +2523,10 @@
             this.label126.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label126.Font = new System.Drawing.Font("Arial", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label126.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label126.Location = new System.Drawing.Point(693, 177);
+            this.label126.Location = new System.Drawing.Point(924, 218);
+            this.label126.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label126.Name = "label126";
-            this.label126.Size = new System.Drawing.Size(250, 16);
+            this.label126.Size = new System.Drawing.Size(333, 19);
             this.label126.TabIndex = 71;
             this.label126.Text = "<------------------------------------------------------------OFFLINE工程";
             this.label126.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2390,13 +2544,14 @@
             this.tableLayoutPanel7.Controls.Add(this.code23, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.lb_vtri23, 0, 2);
             this.tableLayoutPanel7.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(292, 199);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(389, 245);
+            this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 3;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(174, 45);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(232, 55);
             this.tableLayoutPanel7.TabIndex = 72;
             // 
             // code22
@@ -2404,9 +2559,10 @@
             this.code22.BackColor = System.Drawing.Color.Red;
             this.code22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code22.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code22.Location = new System.Drawing.Point(89, 0);
+            this.code22.Location = new System.Drawing.Point(119, 0);
+            this.code22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code22.Name = "code22";
-            this.code22.Size = new System.Drawing.Size(82, 15);
+            this.code22.Size = new System.Drawing.Size(109, 18);
             this.code22.TabIndex = 16;
             this.code22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2415,9 +2571,10 @@
             this.name22.BackColor = System.Drawing.Color.Red;
             this.name22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name22.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name22.Location = new System.Drawing.Point(89, 15);
+            this.name22.Location = new System.Drawing.Point(119, 18);
+            this.name22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name22.Name = "name22";
-            this.name22.Size = new System.Drawing.Size(82, 15);
+            this.name22.Size = new System.Drawing.Size(109, 18);
             this.name22.TabIndex = 15;
             this.name22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2427,9 +2584,10 @@
             this.lb_vtri22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri22.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri22.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri22.Location = new System.Drawing.Point(89, 30);
+            this.lb_vtri22.Location = new System.Drawing.Point(119, 36);
+            this.lb_vtri22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri22.Name = "lb_vtri22";
-            this.lb_vtri22.Size = new System.Drawing.Size(82, 15);
+            this.lb_vtri22.Size = new System.Drawing.Size(109, 18);
             this.lb_vtri22.TabIndex = 17;
             this.lb_vtri22.Text = "SHIAGE 4";
             this.lb_vtri22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2439,9 +2597,10 @@
             this.name23.BackColor = System.Drawing.Color.Red;
             this.name23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name23.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name23.Location = new System.Drawing.Point(3, 15);
+            this.name23.Location = new System.Drawing.Point(4, 18);
+            this.name23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name23.Name = "name23";
-            this.name23.Size = new System.Drawing.Size(80, 15);
+            this.name23.Size = new System.Drawing.Size(106, 18);
             this.name23.TabIndex = 5;
             this.name23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2450,9 +2609,10 @@
             this.code23.BackColor = System.Drawing.Color.Red;
             this.code23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code23.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code23.Location = new System.Drawing.Point(3, 0);
+            this.code23.Location = new System.Drawing.Point(4, 0);
+            this.code23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code23.Name = "code23";
-            this.code23.Size = new System.Drawing.Size(80, 15);
+            this.code23.Size = new System.Drawing.Size(106, 18);
             this.code23.TabIndex = 4;
             this.code23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2462,9 +2622,10 @@
             this.lb_vtri23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri23.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri23.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri23.Location = new System.Drawing.Point(3, 30);
+            this.lb_vtri23.Location = new System.Drawing.Point(4, 36);
+            this.lb_vtri23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri23.Name = "lb_vtri23";
-            this.lb_vtri23.Size = new System.Drawing.Size(80, 15);
+            this.lb_vtri23.Size = new System.Drawing.Size(106, 18);
             this.lb_vtri23.TabIndex = 14;
             this.lb_vtri23.Text = "SHIAGE 5";
             this.lb_vtri23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2478,13 +2639,14 @@
             this.tableLayoutPanel13.Controls.Add(this.name43, 0, 1);
             this.tableLayoutPanel13.Controls.Add(this.code43, 0, 0);
             this.tableLayoutPanel13.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tableLayoutPanel13.Location = new System.Drawing.Point(663, 252);
+            this.tableLayoutPanel13.Location = new System.Drawing.Point(884, 310);
+            this.tableLayoutPanel13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel13.Name = "tableLayoutPanel13";
             this.tableLayoutPanel13.RowCount = 3;
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel13.Size = new System.Drawing.Size(76, 45);
+            this.tableLayoutPanel13.Size = new System.Drawing.Size(101, 55);
             this.tableLayoutPanel13.TabIndex = 73;
             // 
             // lb_vtri43
@@ -2493,9 +2655,10 @@
             this.lb_vtri43.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri43.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri43.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri43.Location = new System.Drawing.Point(3, 30);
+            this.lb_vtri43.Location = new System.Drawing.Point(4, 36);
+            this.lb_vtri43.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri43.Name = "lb_vtri43";
-            this.lb_vtri43.Size = new System.Drawing.Size(70, 15);
+            this.lb_vtri43.Size = new System.Drawing.Size(93, 18);
             this.lb_vtri43.TabIndex = 33;
             this.lb_vtri43.Text = "TAPE 15";
             this.lb_vtri43.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2505,9 +2668,10 @@
             this.name43.BackColor = System.Drawing.Color.Red;
             this.name43.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name43.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name43.Location = new System.Drawing.Point(3, 15);
+            this.name43.Location = new System.Drawing.Point(4, 18);
+            this.name43.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name43.Name = "name43";
-            this.name43.Size = new System.Drawing.Size(70, 14);
+            this.name43.Size = new System.Drawing.Size(93, 17);
             this.name43.TabIndex = 5;
             this.name43.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2516,9 +2680,10 @@
             this.code43.BackColor = System.Drawing.Color.Red;
             this.code43.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code43.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code43.Location = new System.Drawing.Point(3, 0);
+            this.code43.Location = new System.Drawing.Point(4, 0);
+            this.code43.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code43.Name = "code43";
-            this.code43.Size = new System.Drawing.Size(70, 14);
+            this.code43.Size = new System.Drawing.Size(93, 17);
             this.code43.TabIndex = 4;
             this.code43.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2531,13 +2696,14 @@
             this.tableLayoutPanel14.Controls.Add(this.name44, 0, 1);
             this.tableLayoutPanel14.Controls.Add(this.code44, 0, 0);
             this.tableLayoutPanel14.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tableLayoutPanel14.Location = new System.Drawing.Point(778, 252);
+            this.tableLayoutPanel14.Location = new System.Drawing.Point(1037, 310);
+            this.tableLayoutPanel14.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel14.Name = "tableLayoutPanel14";
             this.tableLayoutPanel14.RowCount = 3;
             this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel14.Size = new System.Drawing.Size(76, 45);
+            this.tableLayoutPanel14.Size = new System.Drawing.Size(101, 55);
             this.tableLayoutPanel14.TabIndex = 74;
             // 
             // lb_vtri44
@@ -2546,9 +2712,10 @@
             this.lb_vtri44.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri44.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri44.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri44.Location = new System.Drawing.Point(3, 30);
+            this.lb_vtri44.Location = new System.Drawing.Point(4, 36);
+            this.lb_vtri44.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri44.Name = "lb_vtri44";
-            this.lb_vtri44.Size = new System.Drawing.Size(70, 15);
+            this.lb_vtri44.Size = new System.Drawing.Size(93, 18);
             this.lb_vtri44.TabIndex = 33;
             this.lb_vtri44.Text = "TAPE 16";
             this.lb_vtri44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2558,9 +2725,10 @@
             this.name44.BackColor = System.Drawing.Color.Red;
             this.name44.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name44.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name44.Location = new System.Drawing.Point(3, 15);
+            this.name44.Location = new System.Drawing.Point(4, 18);
+            this.name44.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name44.Name = "name44";
-            this.name44.Size = new System.Drawing.Size(70, 14);
+            this.name44.Size = new System.Drawing.Size(93, 17);
             this.name44.TabIndex = 5;
             this.name44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2569,9 +2737,10 @@
             this.code44.BackColor = System.Drawing.Color.Red;
             this.code44.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code44.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code44.Location = new System.Drawing.Point(3, 0);
+            this.code44.Location = new System.Drawing.Point(4, 0);
+            this.code44.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code44.Name = "code44";
-            this.code44.Size = new System.Drawing.Size(70, 14);
+            this.code44.Size = new System.Drawing.Size(93, 17);
             this.code44.TabIndex = 4;
             this.code44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2581,9 +2750,10 @@
             this.label151.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label151.Font = new System.Drawing.Font("Arial", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label151.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label151.Location = new System.Drawing.Point(161, 303);
+            this.label151.Location = new System.Drawing.Point(215, 373);
+            this.label151.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label151.Name = "label151";
-            this.label151.Size = new System.Drawing.Size(142, 16);
+            this.label151.Size = new System.Drawing.Size(189, 19);
             this.label151.TabIndex = 75;
             this.label151.Text = "JIGU 9";
             this.label151.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2594,9 +2764,10 @@
             this.label152.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label152.Font = new System.Drawing.Font("Arial", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label152.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label152.Location = new System.Drawing.Point(309, 303);
+            this.label152.Location = new System.Drawing.Point(412, 373);
+            this.label152.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label152.Name = "label152";
-            this.label152.Size = new System.Drawing.Size(132, 16);
+            this.label152.Size = new System.Drawing.Size(175, 19);
             this.label152.TabIndex = 76;
             this.label152.Text = "JIGU 10";
             this.label152.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2607,9 +2778,10 @@
             this.label153.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label153.Font = new System.Drawing.Font("Arial", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label153.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label153.Location = new System.Drawing.Point(447, 303);
+            this.label153.Location = new System.Drawing.Point(596, 373);
+            this.label153.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label153.Name = "label153";
-            this.label153.Size = new System.Drawing.Size(135, 16);
+            this.label153.Size = new System.Drawing.Size(179, 19);
             this.label153.TabIndex = 77;
             this.label153.Text = "JIGU 11";
             this.label153.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2620,9 +2792,10 @@
             this.label154.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label154.Font = new System.Drawing.Font("Arial", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label154.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label154.Location = new System.Drawing.Point(588, 303);
+            this.label154.Location = new System.Drawing.Point(784, 373);
+            this.label154.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label154.Name = "label154";
-            this.label154.Size = new System.Drawing.Size(148, 16);
+            this.label154.Size = new System.Drawing.Size(197, 19);
             this.label154.TabIndex = 78;
             this.label154.Text = "JIGU 12";
             this.label154.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2633,9 +2806,10 @@
             this.label155.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label155.Font = new System.Drawing.Font("Arial", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label155.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label155.Location = new System.Drawing.Point(743, 303);
+            this.label155.Location = new System.Drawing.Point(991, 373);
+            this.label155.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label155.Name = "label155";
-            this.label155.Size = new System.Drawing.Size(148, 16);
+            this.label155.Size = new System.Drawing.Size(197, 19);
             this.label155.TabIndex = 79;
             this.label155.Text = "JIGU 13";
             this.label155.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2646,9 +2820,10 @@
             this.label156.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label156.Font = new System.Drawing.Font("Arial", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label156.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label156.Location = new System.Drawing.Point(897, 303);
+            this.label156.Location = new System.Drawing.Point(1196, 373);
+            this.label156.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label156.Name = "label156";
-            this.label156.Size = new System.Drawing.Size(137, 16);
+            this.label156.Size = new System.Drawing.Size(182, 19);
             this.label156.TabIndex = 80;
             this.label156.Text = "JIGU 14";
             this.label156.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2659,9 +2834,10 @@
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label1.Font = new System.Drawing.Font("Arial", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(78, 325);
+            this.label1.Location = new System.Drawing.Point(104, 400);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(149, 16);
+            this.label1.Size = new System.Drawing.Size(198, 19);
             this.label1.TabIndex = 81;
             this.label1.Text = "JIGU 7";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2672,9 +2848,10 @@
             this.label157.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label157.Font = new System.Drawing.Font("Arial", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label157.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label157.Location = new System.Drawing.Point(233, 325);
+            this.label157.Location = new System.Drawing.Point(311, 400);
+            this.label157.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label157.Name = "label157";
-            this.label157.Size = new System.Drawing.Size(142, 16);
+            this.label157.Size = new System.Drawing.Size(189, 19);
             this.label157.TabIndex = 82;
             this.label157.Text = "JIGU 6";
             this.label157.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2685,9 +2862,10 @@
             this.label158.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label158.Font = new System.Drawing.Font("Arial", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label158.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label158.Location = new System.Drawing.Point(537, 325);
+            this.label158.Location = new System.Drawing.Point(716, 400);
+            this.label158.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label158.Name = "label158";
-            this.label158.Size = new System.Drawing.Size(141, 16);
+            this.label158.Size = new System.Drawing.Size(187, 19);
             this.label158.TabIndex = 84;
             this.label158.Text = "JIGU 4";
             this.label158.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2698,9 +2876,10 @@
             this.label159.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label159.Font = new System.Drawing.Font("Arial", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label159.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label159.Location = new System.Drawing.Point(381, 325);
+            this.label159.Location = new System.Drawing.Point(508, 400);
+            this.label159.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label159.Name = "label159";
-            this.label159.Size = new System.Drawing.Size(150, 16);
+            this.label159.Size = new System.Drawing.Size(199, 19);
             this.label159.TabIndex = 83;
             this.label159.Text = "JIGU 5";
             this.label159.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2711,9 +2890,10 @@
             this.label160.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label160.Font = new System.Drawing.Font("Arial", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label160.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label160.Location = new System.Drawing.Point(826, 325);
+            this.label160.Location = new System.Drawing.Point(1101, 400);
+            this.label160.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label160.Name = "label160";
-            this.label160.Size = new System.Drawing.Size(140, 16);
+            this.label160.Size = new System.Drawing.Size(186, 19);
             this.label160.TabIndex = 86;
             this.label160.Text = "JIGU 2";
             this.label160.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2724,9 +2904,10 @@
             this.label161.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label161.Font = new System.Drawing.Font("Arial", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label161.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label161.Location = new System.Drawing.Point(684, 325);
+            this.label161.Location = new System.Drawing.Point(912, 400);
+            this.label161.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label161.Name = "label161";
-            this.label161.Size = new System.Drawing.Size(138, 16);
+            this.label161.Size = new System.Drawing.Size(183, 19);
             this.label161.TabIndex = 85;
             this.label161.Text = "JIGU 3";
             this.label161.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2737,9 +2918,10 @@
             this.label163.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label163.Font = new System.Drawing.Font("Arial", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label163.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label163.Location = new System.Drawing.Point(972, 325);
+            this.label163.Location = new System.Drawing.Point(1296, 400);
+            this.label163.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label163.Name = "label163";
-            this.label163.Size = new System.Drawing.Size(135, 16);
+            this.label163.Size = new System.Drawing.Size(179, 19);
             this.label163.TabIndex = 87;
             this.label163.Text = "JIGU 1";
             this.label163.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2747,10 +2929,10 @@
             // button19
             // 
             this.button19.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button19.Location = new System.Drawing.Point(0, 22);
+            this.button19.Location = new System.Drawing.Point(0, 27);
             this.button19.Margin = new System.Windows.Forms.Padding(0);
             this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(198, 22);
+            this.button19.Size = new System.Drawing.Size(264, 27);
             this.button19.TabIndex = 1;
             this.button19.Text = "Số người thiết đặt 人員設定";
             this.button19.UseVisualStyleBackColor = true;
@@ -2758,10 +2940,10 @@
             // button18
             // 
             this.button18.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button18.Location = new System.Drawing.Point(0, 44);
+            this.button18.Location = new System.Drawing.Point(0, 54);
             this.button18.Margin = new System.Windows.Forms.Padding(0);
             this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(198, 23);
+            this.button18.Size = new System.Drawing.Size(264, 28);
             this.button18.TabIndex = 2;
             this.button18.Text = "Số người thực tế 人員実際";
             this.button18.UseVisualStyleBackColor = true;
@@ -2772,7 +2954,7 @@
             this.button17.Location = new System.Drawing.Point(0, 0);
             this.button17.Margin = new System.Windows.Forms.Padding(0);
             this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(198, 22);
+            this.button17.Size = new System.Drawing.Size(264, 27);
             this.button17.TabIndex = 0;
             this.button17.Text = "Vị trí 位置";
             this.button17.UseVisualStyleBackColor = true;
@@ -2782,9 +2964,10 @@
             this.txtSUBTong.BackColor = System.Drawing.Color.White;
             this.txtSUBTong.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSUBTong.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSUBTong.Location = new System.Drawing.Point(202, 22);
+            this.txtSUBTong.Location = new System.Drawing.Point(269, 27);
+            this.txtSUBTong.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtSUBTong.Name = "txtSUBTong";
-            this.txtSUBTong.Size = new System.Drawing.Size(70, 22);
+            this.txtSUBTong.Size = new System.Drawing.Size(93, 27);
             this.txtSUBTong.TabIndex = 28;
             this.txtSUBTong.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2793,9 +2976,10 @@
             this.txtSUBCoMat.BackColor = System.Drawing.Color.White;
             this.txtSUBCoMat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSUBCoMat.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSUBCoMat.Location = new System.Drawing.Point(202, 44);
+            this.txtSUBCoMat.Location = new System.Drawing.Point(269, 54);
+            this.txtSUBCoMat.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtSUBCoMat.Name = "txtSUBCoMat";
-            this.txtSUBCoMat.Size = new System.Drawing.Size(70, 23);
+            this.txtSUBCoMat.Size = new System.Drawing.Size(93, 28);
             this.txtSUBCoMat.TabIndex = 37;
             this.txtSUBCoMat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2804,9 +2988,10 @@
             this.txtOSUBTong.BackColor = System.Drawing.Color.White;
             this.txtOSUBTong.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtOSUBTong.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtOSUBTong.Location = new System.Drawing.Point(278, 22);
+            this.txtOSUBTong.Location = new System.Drawing.Point(371, 27);
+            this.txtOSUBTong.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtOSUBTong.Name = "txtOSUBTong";
-            this.txtOSUBTong.Size = new System.Drawing.Size(70, 22);
+            this.txtOSUBTong.Size = new System.Drawing.Size(93, 27);
             this.txtOSUBTong.TabIndex = 68;
             this.txtOSUBTong.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2815,9 +3000,10 @@
             this.txtSETTATong.BackColor = System.Drawing.Color.White;
             this.txtSETTATong.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSETTATong.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSETTATong.Location = new System.Drawing.Point(354, 22);
+            this.txtSETTATong.Location = new System.Drawing.Point(473, 27);
+            this.txtSETTATong.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtSETTATong.Name = "txtSETTATong";
-            this.txtSETTATong.Size = new System.Drawing.Size(70, 22);
+            this.txtSETTATong.Size = new System.Drawing.Size(93, 27);
             this.txtSETTATong.TabIndex = 69;
             this.txtSETTATong.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2826,9 +3012,10 @@
             this.txtKANBANTong.BackColor = System.Drawing.Color.White;
             this.txtKANBANTong.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtKANBANTong.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtKANBANTong.Location = new System.Drawing.Point(430, 22);
+            this.txtKANBANTong.Location = new System.Drawing.Point(575, 27);
+            this.txtKANBANTong.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtKANBANTong.Name = "txtKANBANTong";
-            this.txtKANBANTong.Size = new System.Drawing.Size(70, 22);
+            this.txtKANBANTong.Size = new System.Drawing.Size(93, 27);
             this.txtKANBANTong.TabIndex = 70;
             this.txtKANBANTong.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2837,9 +3024,10 @@
             this.txtBUHINTong.BackColor = System.Drawing.Color.White;
             this.txtBUHINTong.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBUHINTong.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBUHINTong.Location = new System.Drawing.Point(506, 22);
+            this.txtBUHINTong.Location = new System.Drawing.Point(677, 27);
+            this.txtBUHINTong.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtBUHINTong.Name = "txtBUHINTong";
-            this.txtBUHINTong.Size = new System.Drawing.Size(70, 22);
+            this.txtBUHINTong.Size = new System.Drawing.Size(93, 27);
             this.txtBUHINTong.TabIndex = 71;
             this.txtBUHINTong.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2848,9 +3036,10 @@
             this.txtLAYOUTTong.BackColor = System.Drawing.Color.White;
             this.txtLAYOUTTong.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtLAYOUTTong.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLAYOUTTong.Location = new System.Drawing.Point(582, 22);
+            this.txtLAYOUTTong.Location = new System.Drawing.Point(779, 27);
+            this.txtLAYOUTTong.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtLAYOUTTong.Name = "txtLAYOUTTong";
-            this.txtLAYOUTTong.Size = new System.Drawing.Size(70, 22);
+            this.txtLAYOUTTong.Size = new System.Drawing.Size(93, 27);
             this.txtLAYOUTTong.TabIndex = 72;
             this.txtLAYOUTTong.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2859,9 +3048,10 @@
             this.txtTAPETong.BackColor = System.Drawing.Color.White;
             this.txtTAPETong.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtTAPETong.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTAPETong.Location = new System.Drawing.Point(658, 22);
+            this.txtTAPETong.Location = new System.Drawing.Point(881, 27);
+            this.txtTAPETong.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtTAPETong.Name = "txtTAPETong";
-            this.txtTAPETong.Size = new System.Drawing.Size(70, 22);
+            this.txtTAPETong.Size = new System.Drawing.Size(93, 27);
             this.txtTAPETong.TabIndex = 73;
             this.txtTAPETong.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2870,9 +3060,10 @@
             this.txtOFFLINETong.BackColor = System.Drawing.Color.White;
             this.txtOFFLINETong.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtOFFLINETong.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtOFFLINETong.Location = new System.Drawing.Point(734, 22);
+            this.txtOFFLINETong.Location = new System.Drawing.Point(983, 27);
+            this.txtOFFLINETong.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtOFFLINETong.Name = "txtOFFLINETong";
-            this.txtOFFLINETong.Size = new System.Drawing.Size(70, 22);
+            this.txtOFFLINETong.Size = new System.Drawing.Size(93, 27);
             this.txtOFFLINETong.TabIndex = 74;
             this.txtOFFLINETong.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2881,9 +3072,10 @@
             this.txtCHECKATong.BackColor = System.Drawing.Color.White;
             this.txtCHECKATong.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCHECKATong.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCHECKATong.Location = new System.Drawing.Point(810, 22);
+            this.txtCHECKATong.Location = new System.Drawing.Point(1085, 27);
+            this.txtCHECKATong.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtCHECKATong.Name = "txtCHECKATong";
-            this.txtCHECKATong.Size = new System.Drawing.Size(70, 22);
+            this.txtCHECKATong.Size = new System.Drawing.Size(93, 27);
             this.txtCHECKATong.TabIndex = 75;
             this.txtCHECKATong.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2892,9 +3084,10 @@
             this.txtSHIAGETong.BackColor = System.Drawing.Color.White;
             this.txtSHIAGETong.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSHIAGETong.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSHIAGETong.Location = new System.Drawing.Point(886, 22);
+            this.txtSHIAGETong.Location = new System.Drawing.Point(1187, 27);
+            this.txtSHIAGETong.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtSHIAGETong.Name = "txtSHIAGETong";
-            this.txtSHIAGETong.Size = new System.Drawing.Size(70, 22);
+            this.txtSHIAGETong.Size = new System.Drawing.Size(93, 27);
             this.txtSHIAGETong.TabIndex = 76;
             this.txtSHIAGETong.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2903,9 +3096,10 @@
             this.txtGAIKANTong.BackColor = System.Drawing.Color.White;
             this.txtGAIKANTong.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtGAIKANTong.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGAIKANTong.Location = new System.Drawing.Point(962, 22);
+            this.txtGAIKANTong.Location = new System.Drawing.Point(1289, 27);
+            this.txtGAIKANTong.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtGAIKANTong.Name = "txtGAIKANTong";
-            this.txtGAIKANTong.Size = new System.Drawing.Size(70, 22);
+            this.txtGAIKANTong.Size = new System.Drawing.Size(93, 27);
             this.txtGAIKANTong.TabIndex = 77;
             this.txtGAIKANTong.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2914,9 +3108,10 @@
             this.txtPACKINGTong.BackColor = System.Drawing.Color.White;
             this.txtPACKINGTong.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPACKINGTong.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPACKINGTong.Location = new System.Drawing.Point(1038, 22);
+            this.txtPACKINGTong.Location = new System.Drawing.Point(1391, 27);
+            this.txtPACKINGTong.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtPACKINGTong.Name = "txtPACKINGTong";
-            this.txtPACKINGTong.Size = new System.Drawing.Size(70, 22);
+            this.txtPACKINGTong.Size = new System.Drawing.Size(93, 27);
             this.txtPACKINGTong.TabIndex = 78;
             this.txtPACKINGTong.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2925,9 +3120,10 @@
             this.txtLEADERTong.BackColor = System.Drawing.Color.White;
             this.txtLEADERTong.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtLEADERTong.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLEADERTong.Location = new System.Drawing.Point(1114, 22);
+            this.txtLEADERTong.Location = new System.Drawing.Point(1493, 27);
+            this.txtLEADERTong.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtLEADERTong.Name = "txtLEADERTong";
-            this.txtLEADERTong.Size = new System.Drawing.Size(70, 22);
+            this.txtLEADERTong.Size = new System.Drawing.Size(93, 27);
             this.txtLEADERTong.TabIndex = 79;
             this.txtLEADERTong.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2936,9 +3132,10 @@
             this.txtDOIUNGTong.BackColor = System.Drawing.Color.White;
             this.txtDOIUNGTong.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDOIUNGTong.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDOIUNGTong.Location = new System.Drawing.Point(1190, 22);
+            this.txtDOIUNGTong.Location = new System.Drawing.Point(1595, 27);
+            this.txtDOIUNGTong.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtDOIUNGTong.Name = "txtDOIUNGTong";
-            this.txtDOIUNGTong.Size = new System.Drawing.Size(70, 22);
+            this.txtDOIUNGTong.Size = new System.Drawing.Size(93, 27);
             this.txtDOIUNGTong.TabIndex = 80;
             this.txtDOIUNGTong.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2947,9 +3144,10 @@
             this.txtTOTALTong.BackColor = System.Drawing.Color.White;
             this.txtTOTALTong.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtTOTALTong.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTOTALTong.Location = new System.Drawing.Point(1266, 22);
+            this.txtTOTALTong.Location = new System.Drawing.Point(1697, 27);
+            this.txtTOTALTong.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtTOTALTong.Name = "txtTOTALTong";
-            this.txtTOTALTong.Size = new System.Drawing.Size(78, 22);
+            this.txtTOTALTong.Size = new System.Drawing.Size(95, 27);
             this.txtTOTALTong.TabIndex = 81;
             this.txtTOTALTong.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.txtTOTALTong.TextChanged += new System.EventHandler(this.txtTOTALTong_TextChanged);
@@ -2959,9 +3157,10 @@
             this.txtOSUBCoMat.BackColor = System.Drawing.Color.White;
             this.txtOSUBCoMat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtOSUBCoMat.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtOSUBCoMat.Location = new System.Drawing.Point(278, 44);
+            this.txtOSUBCoMat.Location = new System.Drawing.Point(371, 54);
+            this.txtOSUBCoMat.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtOSUBCoMat.Name = "txtOSUBCoMat";
-            this.txtOSUBCoMat.Size = new System.Drawing.Size(70, 22);
+            this.txtOSUBCoMat.Size = new System.Drawing.Size(93, 27);
             this.txtOSUBCoMat.TabIndex = 82;
             this.txtOSUBCoMat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2970,9 +3169,10 @@
             this.txtSETTACoMat.BackColor = System.Drawing.Color.White;
             this.txtSETTACoMat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSETTACoMat.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSETTACoMat.Location = new System.Drawing.Point(354, 44);
+            this.txtSETTACoMat.Location = new System.Drawing.Point(473, 54);
+            this.txtSETTACoMat.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtSETTACoMat.Name = "txtSETTACoMat";
-            this.txtSETTACoMat.Size = new System.Drawing.Size(70, 22);
+            this.txtSETTACoMat.Size = new System.Drawing.Size(93, 27);
             this.txtSETTACoMat.TabIndex = 83;
             this.txtSETTACoMat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2981,9 +3181,10 @@
             this.txtKANBANCoMat.BackColor = System.Drawing.Color.White;
             this.txtKANBANCoMat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtKANBANCoMat.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtKANBANCoMat.Location = new System.Drawing.Point(430, 44);
+            this.txtKANBANCoMat.Location = new System.Drawing.Point(575, 54);
+            this.txtKANBANCoMat.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtKANBANCoMat.Name = "txtKANBANCoMat";
-            this.txtKANBANCoMat.Size = new System.Drawing.Size(70, 22);
+            this.txtKANBANCoMat.Size = new System.Drawing.Size(93, 27);
             this.txtKANBANCoMat.TabIndex = 84;
             this.txtKANBANCoMat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -2992,9 +3193,10 @@
             this.txtBUHINCoMat.BackColor = System.Drawing.Color.White;
             this.txtBUHINCoMat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBUHINCoMat.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBUHINCoMat.Location = new System.Drawing.Point(506, 44);
+            this.txtBUHINCoMat.Location = new System.Drawing.Point(677, 54);
+            this.txtBUHINCoMat.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtBUHINCoMat.Name = "txtBUHINCoMat";
-            this.txtBUHINCoMat.Size = new System.Drawing.Size(70, 22);
+            this.txtBUHINCoMat.Size = new System.Drawing.Size(93, 27);
             this.txtBUHINCoMat.TabIndex = 85;
             this.txtBUHINCoMat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -3003,9 +3205,10 @@
             this.txtLAYOUTCoMat.BackColor = System.Drawing.Color.White;
             this.txtLAYOUTCoMat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtLAYOUTCoMat.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLAYOUTCoMat.Location = new System.Drawing.Point(582, 44);
+            this.txtLAYOUTCoMat.Location = new System.Drawing.Point(779, 54);
+            this.txtLAYOUTCoMat.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtLAYOUTCoMat.Name = "txtLAYOUTCoMat";
-            this.txtLAYOUTCoMat.Size = new System.Drawing.Size(70, 22);
+            this.txtLAYOUTCoMat.Size = new System.Drawing.Size(93, 27);
             this.txtLAYOUTCoMat.TabIndex = 86;
             this.txtLAYOUTCoMat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -3014,9 +3217,10 @@
             this.txtTAPECoMat.BackColor = System.Drawing.Color.White;
             this.txtTAPECoMat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtTAPECoMat.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTAPECoMat.Location = new System.Drawing.Point(658, 44);
+            this.txtTAPECoMat.Location = new System.Drawing.Point(881, 54);
+            this.txtTAPECoMat.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtTAPECoMat.Name = "txtTAPECoMat";
-            this.txtTAPECoMat.Size = new System.Drawing.Size(70, 22);
+            this.txtTAPECoMat.Size = new System.Drawing.Size(93, 27);
             this.txtTAPECoMat.TabIndex = 87;
             this.txtTAPECoMat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -3025,9 +3229,10 @@
             this.txtOFFLINECoMat.BackColor = System.Drawing.Color.White;
             this.txtOFFLINECoMat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtOFFLINECoMat.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtOFFLINECoMat.Location = new System.Drawing.Point(734, 44);
+            this.txtOFFLINECoMat.Location = new System.Drawing.Point(983, 54);
+            this.txtOFFLINECoMat.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtOFFLINECoMat.Name = "txtOFFLINECoMat";
-            this.txtOFFLINECoMat.Size = new System.Drawing.Size(70, 22);
+            this.txtOFFLINECoMat.Size = new System.Drawing.Size(93, 27);
             this.txtOFFLINECoMat.TabIndex = 88;
             this.txtOFFLINECoMat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -3036,9 +3241,10 @@
             this.txtCHECKACoMat.BackColor = System.Drawing.Color.White;
             this.txtCHECKACoMat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCHECKACoMat.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCHECKACoMat.Location = new System.Drawing.Point(810, 44);
+            this.txtCHECKACoMat.Location = new System.Drawing.Point(1085, 54);
+            this.txtCHECKACoMat.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtCHECKACoMat.Name = "txtCHECKACoMat";
-            this.txtCHECKACoMat.Size = new System.Drawing.Size(70, 22);
+            this.txtCHECKACoMat.Size = new System.Drawing.Size(93, 27);
             this.txtCHECKACoMat.TabIndex = 89;
             this.txtCHECKACoMat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -3047,9 +3253,10 @@
             this.txtSHIAGECoMat.BackColor = System.Drawing.Color.White;
             this.txtSHIAGECoMat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSHIAGECoMat.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSHIAGECoMat.Location = new System.Drawing.Point(886, 44);
+            this.txtSHIAGECoMat.Location = new System.Drawing.Point(1187, 54);
+            this.txtSHIAGECoMat.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtSHIAGECoMat.Name = "txtSHIAGECoMat";
-            this.txtSHIAGECoMat.Size = new System.Drawing.Size(70, 22);
+            this.txtSHIAGECoMat.Size = new System.Drawing.Size(93, 27);
             this.txtSHIAGECoMat.TabIndex = 90;
             this.txtSHIAGECoMat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -3058,9 +3265,10 @@
             this.txtGAIKANCoMat.BackColor = System.Drawing.Color.White;
             this.txtGAIKANCoMat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtGAIKANCoMat.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGAIKANCoMat.Location = new System.Drawing.Point(962, 44);
+            this.txtGAIKANCoMat.Location = new System.Drawing.Point(1289, 54);
+            this.txtGAIKANCoMat.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtGAIKANCoMat.Name = "txtGAIKANCoMat";
-            this.txtGAIKANCoMat.Size = new System.Drawing.Size(70, 22);
+            this.txtGAIKANCoMat.Size = new System.Drawing.Size(93, 27);
             this.txtGAIKANCoMat.TabIndex = 91;
             this.txtGAIKANCoMat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -3069,9 +3277,10 @@
             this.txtPACKINGCoMat.BackColor = System.Drawing.Color.White;
             this.txtPACKINGCoMat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPACKINGCoMat.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPACKINGCoMat.Location = new System.Drawing.Point(1038, 44);
+            this.txtPACKINGCoMat.Location = new System.Drawing.Point(1391, 54);
+            this.txtPACKINGCoMat.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtPACKINGCoMat.Name = "txtPACKINGCoMat";
-            this.txtPACKINGCoMat.Size = new System.Drawing.Size(70, 22);
+            this.txtPACKINGCoMat.Size = new System.Drawing.Size(93, 27);
             this.txtPACKINGCoMat.TabIndex = 92;
             this.txtPACKINGCoMat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -3080,9 +3289,10 @@
             this.txtLEADERCoMat.BackColor = System.Drawing.Color.White;
             this.txtLEADERCoMat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtLEADERCoMat.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLEADERCoMat.Location = new System.Drawing.Point(1114, 44);
+            this.txtLEADERCoMat.Location = new System.Drawing.Point(1493, 54);
+            this.txtLEADERCoMat.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtLEADERCoMat.Name = "txtLEADERCoMat";
-            this.txtLEADERCoMat.Size = new System.Drawing.Size(70, 22);
+            this.txtLEADERCoMat.Size = new System.Drawing.Size(93, 27);
             this.txtLEADERCoMat.TabIndex = 93;
             this.txtLEADERCoMat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -3091,9 +3301,10 @@
             this.txtDOIUNGCoMat.BackColor = System.Drawing.Color.White;
             this.txtDOIUNGCoMat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDOIUNGCoMat.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDOIUNGCoMat.Location = new System.Drawing.Point(1190, 44);
+            this.txtDOIUNGCoMat.Location = new System.Drawing.Point(1595, 54);
+            this.txtDOIUNGCoMat.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtDOIUNGCoMat.Name = "txtDOIUNGCoMat";
-            this.txtDOIUNGCoMat.Size = new System.Drawing.Size(70, 22);
+            this.txtDOIUNGCoMat.Size = new System.Drawing.Size(93, 27);
             this.txtDOIUNGCoMat.TabIndex = 94;
             this.txtDOIUNGCoMat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -3102,9 +3313,10 @@
             this.txtTOTALCoMat.BackColor = System.Drawing.Color.White;
             this.txtTOTALCoMat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtTOTALCoMat.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTOTALCoMat.Location = new System.Drawing.Point(1266, 44);
+            this.txtTOTALCoMat.Location = new System.Drawing.Point(1697, 54);
+            this.txtTOTALCoMat.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtTOTALCoMat.Name = "txtTOTALCoMat";
-            this.txtTOTALCoMat.Size = new System.Drawing.Size(78, 22);
+            this.txtTOTALCoMat.Size = new System.Drawing.Size(95, 27);
             this.txtTOTALCoMat.TabIndex = 95;
             this.txtTOTALCoMat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -3177,13 +3389,14 @@
             this.tableLayoutPanel18.Controls.Add(this.button18, 0, 2);
             this.tableLayoutPanel18.Controls.Add(this.button19, 0, 1);
             this.tableLayoutPanel18.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tableLayoutPanel18.Location = new System.Drawing.Point(2, 541);
+            this.tableLayoutPanel18.Location = new System.Drawing.Point(3, 666);
+            this.tableLayoutPanel18.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel18.Name = "tableLayoutPanel18";
             this.tableLayoutPanel18.RowCount = 3;
             this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel18.Size = new System.Drawing.Size(1347, 67);
+            this.tableLayoutPanel18.Size = new System.Drawing.Size(1796, 82);
             this.tableLayoutPanel18.TabIndex = 66;
             // 
             // label307
@@ -3192,9 +3405,10 @@
             this.label307.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label307.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label307.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label307.Location = new System.Drawing.Point(1266, 0);
+            this.label307.Location = new System.Drawing.Point(1697, 0);
+            this.label307.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label307.Name = "label307";
-            this.label307.Size = new System.Drawing.Size(78, 22);
+            this.label307.Size = new System.Drawing.Size(95, 27);
             this.label307.TabIndex = 110;
             this.label307.Text = "TOTAL";
             this.label307.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3205,9 +3419,10 @@
             this.label306.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label306.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label306.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label306.Location = new System.Drawing.Point(1190, 0);
+            this.label306.Location = new System.Drawing.Point(1595, 0);
+            this.label306.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label306.Name = "label306";
-            this.label306.Size = new System.Drawing.Size(70, 22);
+            this.label306.Size = new System.Drawing.Size(93, 27);
             this.label306.TabIndex = 109;
             this.label306.Text = "ĐỐI ỨNG";
             this.label306.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3218,9 +3433,10 @@
             this.label305.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label305.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label305.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label305.Location = new System.Drawing.Point(1114, 0);
+            this.label305.Location = new System.Drawing.Point(1493, 0);
+            this.label305.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label305.Name = "label305";
-            this.label305.Size = new System.Drawing.Size(70, 22);
+            this.label305.Size = new System.Drawing.Size(93, 27);
             this.label305.TabIndex = 108;
             this.label305.Text = "LEADER";
             this.label305.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3231,9 +3447,10 @@
             this.label304.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label304.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label304.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label304.Location = new System.Drawing.Point(1038, 0);
+            this.label304.Location = new System.Drawing.Point(1391, 0);
+            this.label304.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label304.Name = "label304";
-            this.label304.Size = new System.Drawing.Size(70, 22);
+            this.label304.Size = new System.Drawing.Size(93, 27);
             this.label304.TabIndex = 107;
             this.label304.Text = "PACKING";
             this.label304.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3244,9 +3461,10 @@
             this.label303.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label303.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label303.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label303.Location = new System.Drawing.Point(962, 0);
+            this.label303.Location = new System.Drawing.Point(1289, 0);
+            this.label303.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label303.Name = "label303";
-            this.label303.Size = new System.Drawing.Size(70, 22);
+            this.label303.Size = new System.Drawing.Size(93, 27);
             this.label303.TabIndex = 106;
             this.label303.Text = " GAIKAN";
             this.label303.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3257,9 +3475,10 @@
             this.label302.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label302.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label302.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label302.Location = new System.Drawing.Point(886, 0);
+            this.label302.Location = new System.Drawing.Point(1187, 0);
+            this.label302.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label302.Name = "label302";
-            this.label302.Size = new System.Drawing.Size(70, 22);
+            this.label302.Size = new System.Drawing.Size(93, 27);
             this.label302.TabIndex = 105;
             this.label302.Text = "SHIAGE";
             this.label302.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3270,9 +3489,10 @@
             this.label301.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label301.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label301.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label301.Location = new System.Drawing.Point(810, 0);
+            this.label301.Location = new System.Drawing.Point(1085, 0);
+            this.label301.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label301.Name = "label301";
-            this.label301.Size = new System.Drawing.Size(70, 22);
+            this.label301.Size = new System.Drawing.Size(93, 27);
             this.label301.TabIndex = 104;
             this.label301.Text = "CHECKA";
             this.label301.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3283,9 +3503,10 @@
             this.label300.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label300.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label300.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label300.Location = new System.Drawing.Point(734, 0);
+            this.label300.Location = new System.Drawing.Point(983, 0);
+            this.label300.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label300.Name = "label300";
-            this.label300.Size = new System.Drawing.Size(70, 22);
+            this.label300.Size = new System.Drawing.Size(93, 27);
             this.label300.TabIndex = 103;
             this.label300.Text = "OFFLINE";
             this.label300.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3296,9 +3517,10 @@
             this.label299.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label299.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label299.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label299.Location = new System.Drawing.Point(658, 0);
+            this.label299.Location = new System.Drawing.Point(881, 0);
+            this.label299.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label299.Name = "label299";
-            this.label299.Size = new System.Drawing.Size(70, 22);
+            this.label299.Size = new System.Drawing.Size(93, 27);
             this.label299.TabIndex = 102;
             this.label299.Text = "TAPE ";
             this.label299.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3309,9 +3531,10 @@
             this.label298.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label298.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label298.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label298.Location = new System.Drawing.Point(582, 0);
+            this.label298.Location = new System.Drawing.Point(779, 0);
+            this.label298.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label298.Name = "label298";
-            this.label298.Size = new System.Drawing.Size(70, 22);
+            this.label298.Size = new System.Drawing.Size(93, 27);
             this.label298.TabIndex = 101;
             this.label298.Text = "LAYOUT ";
             this.label298.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3322,9 +3545,10 @@
             this.label297.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label297.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label297.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label297.Location = new System.Drawing.Point(506, 0);
+            this.label297.Location = new System.Drawing.Point(677, 0);
+            this.label297.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label297.Name = "label297";
-            this.label297.Size = new System.Drawing.Size(70, 22);
+            this.label297.Size = new System.Drawing.Size(93, 27);
             this.label297.TabIndex = 100;
             this.label297.Text = "BUHIN ";
             this.label297.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3335,9 +3559,10 @@
             this.label296.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label296.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label296.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label296.Location = new System.Drawing.Point(430, 0);
+            this.label296.Location = new System.Drawing.Point(575, 0);
+            this.label296.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label296.Name = "label296";
-            this.label296.Size = new System.Drawing.Size(70, 22);
+            this.label296.Size = new System.Drawing.Size(93, 27);
             this.label296.TabIndex = 99;
             this.label296.Text = "KANBAN";
             this.label296.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3348,9 +3573,10 @@
             this.label295.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label295.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label295.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label295.Location = new System.Drawing.Point(354, 0);
+            this.label295.Location = new System.Drawing.Point(473, 0);
+            this.label295.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label295.Name = "label295";
-            this.label295.Size = new System.Drawing.Size(70, 22);
+            this.label295.Size = new System.Drawing.Size(93, 27);
             this.label295.TabIndex = 98;
             this.label295.Text = "SETTA ";
             this.label295.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3361,9 +3587,10 @@
             this.label294.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label294.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label294.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label294.Location = new System.Drawing.Point(278, 0);
+            this.label294.Location = new System.Drawing.Point(371, 0);
+            this.label294.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label294.Name = "label294";
-            this.label294.Size = new System.Drawing.Size(70, 22);
+            this.label294.Size = new System.Drawing.Size(93, 27);
             this.label294.TabIndex = 97;
             this.label294.Text = "OSUB ";
             this.label294.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3374,9 +3601,10 @@
             this.label293.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label293.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label293.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label293.Location = new System.Drawing.Point(202, 0);
+            this.label293.Location = new System.Drawing.Point(269, 0);
+            this.label293.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label293.Name = "label293";
-            this.label293.Size = new System.Drawing.Size(70, 22);
+            this.label293.Size = new System.Drawing.Size(93, 27);
             this.label293.TabIndex = 96;
             this.label293.Text = "SUB ";
             this.label293.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3384,9 +3612,10 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(2, 609);
+            this.pictureBox2.Location = new System.Drawing.Point(3, 750);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1347, 108);
+            this.pictureBox2.Size = new System.Drawing.Size(1796, 133);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 67;
             this.pictureBox2.TabStop = false;
@@ -3397,9 +3626,10 @@
             this.lb_vtri47.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri47.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri47.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri47.Location = new System.Drawing.Point(3, 30);
+            this.lb_vtri47.Location = new System.Drawing.Point(4, 36);
+            this.lb_vtri47.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri47.Name = "lb_vtri47";
-            this.lb_vtri47.Size = new System.Drawing.Size(63, 15);
+            this.lb_vtri47.Size = new System.Drawing.Size(83, 18);
             this.lb_vtri47.TabIndex = 14;
             this.lb_vtri47.Text = "LAYOUT 3";
             this.lb_vtri47.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3409,9 +3639,10 @@
             this.code47.BackColor = System.Drawing.Color.Red;
             this.code47.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code47.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code47.Location = new System.Drawing.Point(3, 0);
+            this.code47.Location = new System.Drawing.Point(4, 0);
+            this.code47.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code47.Name = "code47";
-            this.code47.Size = new System.Drawing.Size(63, 15);
+            this.code47.Size = new System.Drawing.Size(83, 18);
             this.code47.TabIndex = 4;
             this.code47.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -3420,9 +3651,10 @@
             this.name47.BackColor = System.Drawing.Color.Red;
             this.name47.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name47.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name47.Location = new System.Drawing.Point(3, 15);
+            this.name47.Location = new System.Drawing.Point(4, 18);
+            this.name47.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name47.Name = "name47";
-            this.name47.Size = new System.Drawing.Size(63, 15);
+            this.name47.Size = new System.Drawing.Size(83, 18);
             this.name47.TabIndex = 5;
             this.name47.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -3432,9 +3664,10 @@
             this.lb_vtri46.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri46.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri46.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri46.Location = new System.Drawing.Point(72, 30);
+            this.lb_vtri46.Location = new System.Drawing.Point(97, 36);
+            this.lb_vtri46.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri46.Name = "lb_vtri46";
-            this.lb_vtri46.Size = new System.Drawing.Size(65, 15);
+            this.lb_vtri46.Size = new System.Drawing.Size(86, 18);
             this.lb_vtri46.TabIndex = 17;
             this.lb_vtri46.Text = "LAYOUT 2";
             this.lb_vtri46.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3444,9 +3677,10 @@
             this.name46.BackColor = System.Drawing.Color.Red;
             this.name46.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name46.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name46.Location = new System.Drawing.Point(72, 15);
+            this.name46.Location = new System.Drawing.Point(97, 18);
+            this.name46.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name46.Name = "name46";
-            this.name46.Size = new System.Drawing.Size(65, 15);
+            this.name46.Size = new System.Drawing.Size(86, 18);
             this.name46.TabIndex = 15;
             this.name46.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -3455,9 +3689,10 @@
             this.code46.BackColor = System.Drawing.Color.Red;
             this.code46.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code46.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code46.Location = new System.Drawing.Point(72, 0);
+            this.code46.Location = new System.Drawing.Point(97, 0);
+            this.code46.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code46.Name = "code46";
-            this.code46.Size = new System.Drawing.Size(65, 15);
+            this.code46.Size = new System.Drawing.Size(86, 18);
             this.code46.TabIndex = 16;
             this.code46.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -3474,13 +3709,14 @@
             this.tableLayoutPanel19.Controls.Add(this.code47, 0, 0);
             this.tableLayoutPanel19.Controls.Add(this.lb_vtri47, 0, 2);
             this.tableLayoutPanel19.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tableLayoutPanel19.Location = new System.Drawing.Point(900, 348);
+            this.tableLayoutPanel19.Location = new System.Drawing.Point(1200, 428);
+            this.tableLayoutPanel19.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel19.Name = "tableLayoutPanel19";
             this.tableLayoutPanel19.RowCount = 3;
             this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel19.Size = new System.Drawing.Size(140, 45);
+            this.tableLayoutPanel19.Size = new System.Drawing.Size(187, 55);
             this.tableLayoutPanel19.TabIndex = 89;
             // 
             // code45
@@ -3488,9 +3724,10 @@
             this.code45.BackColor = System.Drawing.Color.Red;
             this.code45.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code45.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code45.Location = new System.Drawing.Point(3, 0);
+            this.code45.Location = new System.Drawing.Point(4, 0);
+            this.code45.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code45.Name = "code45";
-            this.code45.Size = new System.Drawing.Size(61, 14);
+            this.code45.Size = new System.Drawing.Size(81, 17);
             this.code45.TabIndex = 4;
             this.code45.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -3499,9 +3736,10 @@
             this.name45.BackColor = System.Drawing.Color.Red;
             this.name45.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name45.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name45.Location = new System.Drawing.Point(3, 15);
+            this.name45.Location = new System.Drawing.Point(4, 18);
+            this.name45.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name45.Name = "name45";
-            this.name45.Size = new System.Drawing.Size(61, 14);
+            this.name45.Size = new System.Drawing.Size(81, 17);
             this.name45.TabIndex = 5;
             this.name45.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -3511,9 +3749,10 @@
             this.lb_vtri45.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri45.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri45.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri45.Location = new System.Drawing.Point(3, 30);
+            this.lb_vtri45.Location = new System.Drawing.Point(4, 36);
+            this.lb_vtri45.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri45.Name = "lb_vtri45";
-            this.lb_vtri45.Size = new System.Drawing.Size(61, 15);
+            this.lb_vtri45.Size = new System.Drawing.Size(81, 18);
             this.lb_vtri45.TabIndex = 33;
             this.lb_vtri45.Text = "LAYOUT 1";
             this.lb_vtri45.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3527,13 +3766,14 @@
             this.tableLayoutPanel20.Controls.Add(this.name45, 0, 1);
             this.tableLayoutPanel20.Controls.Add(this.code45, 0, 0);
             this.tableLayoutPanel20.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tableLayoutPanel20.Location = new System.Drawing.Point(1040, 348);
+            this.tableLayoutPanel20.Location = new System.Drawing.Point(1387, 428);
+            this.tableLayoutPanel20.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel20.Name = "tableLayoutPanel20";
             this.tableLayoutPanel20.RowCount = 3;
             this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel20.Size = new System.Drawing.Size(67, 45);
+            this.tableLayoutPanel20.Size = new System.Drawing.Size(89, 55);
             this.tableLayoutPanel20.TabIndex = 90;
             // 
             // lb_vtri69
@@ -3542,9 +3782,10 @@
             this.lb_vtri69.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri69.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri69.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri69.Location = new System.Drawing.Point(828, 30);
+            this.lb_vtri69.Location = new System.Drawing.Point(1104, 36);
+            this.lb_vtri69.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri69.Name = "lb_vtri69";
-            this.lb_vtri69.Size = new System.Drawing.Size(69, 14);
+            this.lb_vtri69.Size = new System.Drawing.Size(91, 17);
             this.lb_vtri69.TabIndex = 23;
             this.lb_vtri69.Text = "SUB 15";
             this.lb_vtri69.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3555,9 +3796,10 @@
             this.lb_vtri64.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri64.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri64.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri64.Location = new System.Drawing.Point(3, 30);
+            this.lb_vtri64.Location = new System.Drawing.Point(4, 36);
+            this.lb_vtri64.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri64.Name = "lb_vtri64";
-            this.lb_vtri64.Size = new System.Drawing.Size(69, 15);
+            this.lb_vtri64.Size = new System.Drawing.Size(91, 18);
             this.lb_vtri64.TabIndex = 21;
             this.lb_vtri64.Text = "SUB 11";
             this.lb_vtri64.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3568,9 +3810,10 @@
             this.lb_vtri72.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri72.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri72.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri72.Location = new System.Drawing.Point(78, 30);
+            this.lb_vtri72.Location = new System.Drawing.Point(104, 36);
+            this.lb_vtri72.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri72.Name = "lb_vtri72";
-            this.lb_vtri72.Size = new System.Drawing.Size(69, 15);
+            this.lb_vtri72.Size = new System.Drawing.Size(91, 18);
             this.lb_vtri72.TabIndex = 22;
             this.lb_vtri72.Text = "OSUB 1";
             this.lb_vtri72.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3581,9 +3824,10 @@
             this.lb_vtri73.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri73.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri73.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri73.Location = new System.Drawing.Point(153, 30);
+            this.lb_vtri73.Location = new System.Drawing.Point(204, 36);
+            this.lb_vtri73.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri73.Name = "lb_vtri73";
-            this.lb_vtri73.Size = new System.Drawing.Size(69, 15);
+            this.lb_vtri73.Size = new System.Drawing.Size(91, 18);
             this.lb_vtri73.TabIndex = 12;
             this.lb_vtri73.Text = "OSUB 2";
             this.lb_vtri73.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3594,9 +3838,10 @@
             this.lb_vtri74.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri74.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri74.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri74.Location = new System.Drawing.Point(228, 30);
+            this.lb_vtri74.Location = new System.Drawing.Point(304, 36);
+            this.lb_vtri74.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri74.Name = "lb_vtri74";
-            this.lb_vtri74.Size = new System.Drawing.Size(69, 14);
+            this.lb_vtri74.Size = new System.Drawing.Size(91, 17);
             this.lb_vtri74.TabIndex = 13;
             this.lb_vtri74.Text = "OSUB 3";
             this.lb_vtri74.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3607,9 +3852,10 @@
             this.lb_vtri65.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri65.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri65.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri65.Location = new System.Drawing.Point(303, 30);
+            this.lb_vtri65.Location = new System.Drawing.Point(404, 36);
+            this.lb_vtri65.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri65.Name = "lb_vtri65";
-            this.lb_vtri65.Size = new System.Drawing.Size(69, 14);
+            this.lb_vtri65.Size = new System.Drawing.Size(91, 17);
             this.lb_vtri65.TabIndex = 14;
             this.lb_vtri65.Text = "SUB 12";
             this.lb_vtri65.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3620,9 +3866,10 @@
             this.lb_vtri66.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri66.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri66.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri66.Location = new System.Drawing.Point(378, 30);
+            this.lb_vtri66.Location = new System.Drawing.Point(504, 36);
+            this.lb_vtri66.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri66.Name = "lb_vtri66";
-            this.lb_vtri66.Size = new System.Drawing.Size(69, 14);
+            this.lb_vtri66.Size = new System.Drawing.Size(91, 17);
             this.lb_vtri66.TabIndex = 15;
             this.lb_vtri66.Text = "SUB13-SUB";
             this.lb_vtri66.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3633,9 +3880,10 @@
             this.lb_vtri67.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri67.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri67.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri67.Location = new System.Drawing.Point(453, 30);
+            this.lb_vtri67.Location = new System.Drawing.Point(604, 36);
+            this.lb_vtri67.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri67.Name = "lb_vtri67";
-            this.lb_vtri67.Size = new System.Drawing.Size(69, 14);
+            this.lb_vtri67.Size = new System.Drawing.Size(91, 17);
             this.lb_vtri67.TabIndex = 16;
             this.lb_vtri67.Text = "SUB13-TAPE";
             this.lb_vtri67.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3646,9 +3894,10 @@
             this.lb_vtri75.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri75.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri75.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri75.Location = new System.Drawing.Point(528, 30);
+            this.lb_vtri75.Location = new System.Drawing.Point(704, 36);
+            this.lb_vtri75.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri75.Name = "lb_vtri75";
-            this.lb_vtri75.Size = new System.Drawing.Size(69, 14);
+            this.lb_vtri75.Size = new System.Drawing.Size(91, 17);
             this.lb_vtri75.TabIndex = 17;
             this.lb_vtri75.Text = "OSUB 4";
             this.lb_vtri75.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3659,9 +3908,10 @@
             this.lb_vtri76.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri76.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri76.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri76.Location = new System.Drawing.Point(603, 30);
+            this.lb_vtri76.Location = new System.Drawing.Point(804, 36);
+            this.lb_vtri76.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri76.Name = "lb_vtri76";
-            this.lb_vtri76.Size = new System.Drawing.Size(69, 14);
+            this.lb_vtri76.Size = new System.Drawing.Size(91, 17);
             this.lb_vtri76.TabIndex = 18;
             this.lb_vtri76.Text = "OSUB 5";
             this.lb_vtri76.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3672,9 +3922,10 @@
             this.lb_vtri68.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri68.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri68.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri68.Location = new System.Drawing.Point(678, 30);
+            this.lb_vtri68.Location = new System.Drawing.Point(904, 36);
+            this.lb_vtri68.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri68.Name = "lb_vtri68";
-            this.lb_vtri68.Size = new System.Drawing.Size(69, 14);
+            this.lb_vtri68.Size = new System.Drawing.Size(91, 17);
             this.lb_vtri68.TabIndex = 19;
             this.lb_vtri68.Text = "SUB 14";
             this.lb_vtri68.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3685,9 +3936,10 @@
             this.lb_vtri77.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri77.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri77.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri77.Location = new System.Drawing.Point(753, 30);
+            this.lb_vtri77.Location = new System.Drawing.Point(1004, 36);
+            this.lb_vtri77.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri77.Name = "lb_vtri77";
-            this.lb_vtri77.Size = new System.Drawing.Size(69, 14);
+            this.lb_vtri77.Size = new System.Drawing.Size(91, 17);
             this.lb_vtri77.TabIndex = 20;
             this.lb_vtri77.Text = "OSUB  6.7.8";
             this.lb_vtri77.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3697,9 +3949,10 @@
             this.code73.BackColor = System.Drawing.Color.Red;
             this.code73.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code73.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code73.Location = new System.Drawing.Point(153, 0);
+            this.code73.Location = new System.Drawing.Point(204, 0);
+            this.code73.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code73.Name = "code73";
-            this.code73.Size = new System.Drawing.Size(69, 15);
+            this.code73.Size = new System.Drawing.Size(91, 18);
             this.code73.TabIndex = 26;
             this.code73.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -3708,9 +3961,10 @@
             this.code64.BackColor = System.Drawing.Color.Red;
             this.code64.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code64.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code64.Location = new System.Drawing.Point(3, 0);
+            this.code64.Location = new System.Drawing.Point(4, 0);
+            this.code64.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code64.Name = "code64";
-            this.code64.Size = new System.Drawing.Size(69, 15);
+            this.code64.Size = new System.Drawing.Size(91, 18);
             this.code64.TabIndex = 27;
             this.code64.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -3719,9 +3973,10 @@
             this.code65.BackColor = System.Drawing.Color.Red;
             this.code65.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code65.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code65.Location = new System.Drawing.Point(303, 0);
+            this.code65.Location = new System.Drawing.Point(404, 0);
+            this.code65.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code65.Name = "code65";
-            this.code65.Size = new System.Drawing.Size(69, 15);
+            this.code65.Size = new System.Drawing.Size(91, 18);
             this.code65.TabIndex = 28;
             this.code65.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -3730,9 +3985,10 @@
             this.code74.BackColor = System.Drawing.Color.Red;
             this.code74.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code74.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code74.Location = new System.Drawing.Point(228, 0);
+            this.code74.Location = new System.Drawing.Point(304, 0);
+            this.code74.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code74.Name = "code74";
-            this.code74.Size = new System.Drawing.Size(69, 15);
+            this.code74.Size = new System.Drawing.Size(91, 18);
             this.code74.TabIndex = 29;
             this.code74.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -3741,9 +3997,10 @@
             this.code67.BackColor = System.Drawing.Color.Red;
             this.code67.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code67.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code67.Location = new System.Drawing.Point(453, 0);
+            this.code67.Location = new System.Drawing.Point(604, 0);
+            this.code67.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code67.Name = "code67";
-            this.code67.Size = new System.Drawing.Size(69, 15);
+            this.code67.Size = new System.Drawing.Size(91, 18);
             this.code67.TabIndex = 30;
             this.code67.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -3752,9 +4009,10 @@
             this.code66.BackColor = System.Drawing.Color.Red;
             this.code66.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code66.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code66.Location = new System.Drawing.Point(378, 0);
+            this.code66.Location = new System.Drawing.Point(504, 0);
+            this.code66.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code66.Name = "code66";
-            this.code66.Size = new System.Drawing.Size(69, 15);
+            this.code66.Size = new System.Drawing.Size(91, 18);
             this.code66.TabIndex = 31;
             this.code66.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -3763,9 +4021,10 @@
             this.code76.BackColor = System.Drawing.Color.Red;
             this.code76.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code76.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code76.Location = new System.Drawing.Point(603, 0);
+            this.code76.Location = new System.Drawing.Point(804, 0);
+            this.code76.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code76.Name = "code76";
-            this.code76.Size = new System.Drawing.Size(69, 15);
+            this.code76.Size = new System.Drawing.Size(91, 18);
             this.code76.TabIndex = 32;
             this.code76.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -3774,9 +4033,10 @@
             this.code75.BackColor = System.Drawing.Color.Red;
             this.code75.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code75.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code75.Location = new System.Drawing.Point(528, 0);
+            this.code75.Location = new System.Drawing.Point(704, 0);
+            this.code75.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code75.Name = "code75";
-            this.code75.Size = new System.Drawing.Size(69, 15);
+            this.code75.Size = new System.Drawing.Size(91, 18);
             this.code75.TabIndex = 33;
             this.code75.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -3785,9 +4045,10 @@
             this.code77.BackColor = System.Drawing.Color.Red;
             this.code77.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code77.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code77.Location = new System.Drawing.Point(753, 0);
+            this.code77.Location = new System.Drawing.Point(1004, 0);
+            this.code77.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code77.Name = "code77";
-            this.code77.Size = new System.Drawing.Size(69, 15);
+            this.code77.Size = new System.Drawing.Size(91, 18);
             this.code77.TabIndex = 34;
             this.code77.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -3796,9 +4057,10 @@
             this.code68.BackColor = System.Drawing.Color.Red;
             this.code68.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code68.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code68.Location = new System.Drawing.Point(678, 0);
+            this.code68.Location = new System.Drawing.Point(904, 0);
+            this.code68.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code68.Name = "code68";
-            this.code68.Size = new System.Drawing.Size(69, 15);
+            this.code68.Size = new System.Drawing.Size(91, 18);
             this.code68.TabIndex = 35;
             this.code68.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -3807,9 +4069,10 @@
             this.name64.BackColor = System.Drawing.Color.Red;
             this.name64.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name64.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name64.Location = new System.Drawing.Point(3, 15);
+            this.name64.Location = new System.Drawing.Point(4, 18);
+            this.name64.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name64.Name = "name64";
-            this.name64.Size = new System.Drawing.Size(69, 15);
+            this.name64.Size = new System.Drawing.Size(91, 18);
             this.name64.TabIndex = 36;
             this.name64.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -3819,9 +4082,10 @@
             this.code69.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code69.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.code69.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.code69.Location = new System.Drawing.Point(828, 0);
+            this.code69.Location = new System.Drawing.Point(1104, 0);
+            this.code69.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code69.Name = "code69";
-            this.code69.Size = new System.Drawing.Size(69, 15);
+            this.code69.Size = new System.Drawing.Size(91, 18);
             this.code69.TabIndex = 37;
             this.code69.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -3830,9 +4094,10 @@
             this.name74.BackColor = System.Drawing.Color.Red;
             this.name74.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name74.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name74.Location = new System.Drawing.Point(228, 15);
+            this.name74.Location = new System.Drawing.Point(304, 18);
+            this.name74.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name74.Name = "name74";
-            this.name74.Size = new System.Drawing.Size(69, 15);
+            this.name74.Size = new System.Drawing.Size(91, 18);
             this.name74.TabIndex = 38;
             this.name74.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -3841,9 +4106,10 @@
             this.name73.BackColor = System.Drawing.Color.Red;
             this.name73.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name73.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name73.Location = new System.Drawing.Point(153, 15);
+            this.name73.Location = new System.Drawing.Point(204, 18);
+            this.name73.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name73.Name = "name73";
-            this.name73.Size = new System.Drawing.Size(69, 15);
+            this.name73.Size = new System.Drawing.Size(91, 18);
             this.name73.TabIndex = 39;
             this.name73.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -3852,9 +4118,10 @@
             this.name66.BackColor = System.Drawing.Color.Red;
             this.name66.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name66.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name66.Location = new System.Drawing.Point(378, 15);
+            this.name66.Location = new System.Drawing.Point(504, 18);
+            this.name66.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name66.Name = "name66";
-            this.name66.Size = new System.Drawing.Size(69, 15);
+            this.name66.Size = new System.Drawing.Size(91, 18);
             this.name66.TabIndex = 40;
             this.name66.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -3863,9 +4130,10 @@
             this.name65.BackColor = System.Drawing.Color.Red;
             this.name65.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name65.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name65.Location = new System.Drawing.Point(303, 15);
+            this.name65.Location = new System.Drawing.Point(404, 18);
+            this.name65.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name65.Name = "name65";
-            this.name65.Size = new System.Drawing.Size(69, 15);
+            this.name65.Size = new System.Drawing.Size(91, 18);
             this.name65.TabIndex = 41;
             this.name65.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -3874,9 +4142,10 @@
             this.name75.BackColor = System.Drawing.Color.Red;
             this.name75.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name75.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name75.Location = new System.Drawing.Point(528, 15);
+            this.name75.Location = new System.Drawing.Point(704, 18);
+            this.name75.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name75.Name = "name75";
-            this.name75.Size = new System.Drawing.Size(69, 15);
+            this.name75.Size = new System.Drawing.Size(91, 18);
             this.name75.TabIndex = 42;
             this.name75.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -3885,9 +4154,10 @@
             this.name67.BackColor = System.Drawing.Color.Red;
             this.name67.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name67.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name67.Location = new System.Drawing.Point(453, 15);
+            this.name67.Location = new System.Drawing.Point(604, 18);
+            this.name67.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name67.Name = "name67";
-            this.name67.Size = new System.Drawing.Size(69, 15);
+            this.name67.Size = new System.Drawing.Size(91, 18);
             this.name67.TabIndex = 43;
             this.name67.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -3896,9 +4166,10 @@
             this.name68.BackColor = System.Drawing.Color.Red;
             this.name68.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name68.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name68.Location = new System.Drawing.Point(678, 15);
+            this.name68.Location = new System.Drawing.Point(904, 18);
+            this.name68.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name68.Name = "name68";
-            this.name68.Size = new System.Drawing.Size(69, 15);
+            this.name68.Size = new System.Drawing.Size(91, 18);
             this.name68.TabIndex = 44;
             this.name68.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -3907,9 +4178,10 @@
             this.name76.BackColor = System.Drawing.Color.Red;
             this.name76.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name76.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name76.Location = new System.Drawing.Point(603, 15);
+            this.name76.Location = new System.Drawing.Point(804, 18);
+            this.name76.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name76.Name = "name76";
-            this.name76.Size = new System.Drawing.Size(69, 15);
+            this.name76.Size = new System.Drawing.Size(91, 18);
             this.name76.TabIndex = 45;
             this.name76.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -3918,9 +4190,10 @@
             this.name69.BackColor = System.Drawing.Color.Red;
             this.name69.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name69.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name69.Location = new System.Drawing.Point(828, 15);
+            this.name69.Location = new System.Drawing.Point(1104, 18);
+            this.name69.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name69.Name = "name69";
-            this.name69.Size = new System.Drawing.Size(69, 15);
+            this.name69.Size = new System.Drawing.Size(91, 18);
             this.name69.TabIndex = 46;
             this.name69.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -3929,9 +4202,10 @@
             this.name77.BackColor = System.Drawing.Color.Red;
             this.name77.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name77.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name77.Location = new System.Drawing.Point(753, 15);
+            this.name77.Location = new System.Drawing.Point(1004, 18);
+            this.name77.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name77.Name = "name77";
-            this.name77.Size = new System.Drawing.Size(69, 15);
+            this.name77.Size = new System.Drawing.Size(91, 18);
             this.name77.TabIndex = 47;
             this.name77.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -3940,9 +4214,10 @@
             this.name72.BackColor = System.Drawing.Color.Red;
             this.name72.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name72.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name72.Location = new System.Drawing.Point(78, 15);
+            this.name72.Location = new System.Drawing.Point(104, 18);
+            this.name72.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name72.Name = "name72";
-            this.name72.Size = new System.Drawing.Size(69, 15);
+            this.name72.Size = new System.Drawing.Size(91, 18);
             this.name72.TabIndex = 48;
             this.name72.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -3951,9 +4226,10 @@
             this.code72.BackColor = System.Drawing.Color.Red;
             this.code72.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code72.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code72.Location = new System.Drawing.Point(78, 0);
+            this.code72.Location = new System.Drawing.Point(104, 0);
+            this.code72.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code72.Name = "code72";
-            this.code72.Size = new System.Drawing.Size(69, 15);
+            this.code72.Size = new System.Drawing.Size(91, 18);
             this.code72.TabIndex = 49;
             this.code72.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -3963,9 +4239,10 @@
             this.code70.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code70.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.code70.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.code70.Location = new System.Drawing.Point(903, 0);
+            this.code70.Location = new System.Drawing.Point(1204, 0);
+            this.code70.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code70.Name = "code70";
-            this.code70.Size = new System.Drawing.Size(69, 15);
+            this.code70.Size = new System.Drawing.Size(91, 18);
             this.code70.TabIndex = 50;
             this.code70.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -3975,9 +4252,10 @@
             this.code71.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code71.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.code71.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.code71.Location = new System.Drawing.Point(978, 0);
+            this.code71.Location = new System.Drawing.Point(1304, 0);
+            this.code71.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code71.Name = "code71";
-            this.code71.Size = new System.Drawing.Size(69, 15);
+            this.code71.Size = new System.Drawing.Size(91, 18);
             this.code71.TabIndex = 51;
             this.code71.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -3987,9 +4265,10 @@
             this.code78.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code78.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.code78.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.code78.Location = new System.Drawing.Point(1053, 0);
+            this.code78.Location = new System.Drawing.Point(1404, 0);
+            this.code78.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code78.Name = "code78";
-            this.code78.Size = new System.Drawing.Size(70, 15);
+            this.code78.Size = new System.Drawing.Size(93, 18);
             this.code78.TabIndex = 52;
             this.code78.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -3999,9 +4278,10 @@
             this.name70.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name70.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.name70.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.name70.Location = new System.Drawing.Point(903, 15);
+            this.name70.Location = new System.Drawing.Point(1204, 18);
+            this.name70.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name70.Name = "name70";
-            this.name70.Size = new System.Drawing.Size(69, 15);
+            this.name70.Size = new System.Drawing.Size(91, 18);
             this.name70.TabIndex = 53;
             this.name70.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -4011,9 +4291,10 @@
             this.name71.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name71.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.name71.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.name71.Location = new System.Drawing.Point(978, 15);
+            this.name71.Location = new System.Drawing.Point(1304, 18);
+            this.name71.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name71.Name = "name71";
-            this.name71.Size = new System.Drawing.Size(69, 15);
+            this.name71.Size = new System.Drawing.Size(91, 18);
             this.name71.TabIndex = 54;
             this.name71.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -4023,9 +4304,10 @@
             this.name78.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name78.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.name78.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.name78.Location = new System.Drawing.Point(1053, 15);
+            this.name78.Location = new System.Drawing.Point(1404, 18);
+            this.name78.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name78.Name = "name78";
-            this.name78.Size = new System.Drawing.Size(70, 15);
+            this.name78.Size = new System.Drawing.Size(93, 18);
             this.name78.TabIndex = 55;
             this.name78.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -4035,9 +4317,10 @@
             this.lb_vtri70.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri70.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri70.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri70.Location = new System.Drawing.Point(903, 30);
+            this.lb_vtri70.Location = new System.Drawing.Point(1204, 36);
+            this.lb_vtri70.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri70.Name = "lb_vtri70";
-            this.lb_vtri70.Size = new System.Drawing.Size(69, 14);
+            this.lb_vtri70.Size = new System.Drawing.Size(91, 17);
             this.lb_vtri70.TabIndex = 56;
             this.lb_vtri70.Text = "SUB 16";
             this.lb_vtri70.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4048,9 +4331,10 @@
             this.lb_vtri71.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri71.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri71.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri71.Location = new System.Drawing.Point(978, 30);
+            this.lb_vtri71.Location = new System.Drawing.Point(1304, 36);
+            this.lb_vtri71.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri71.Name = "lb_vtri71";
-            this.lb_vtri71.Size = new System.Drawing.Size(69, 14);
+            this.lb_vtri71.Size = new System.Drawing.Size(91, 17);
             this.lb_vtri71.TabIndex = 57;
             this.lb_vtri71.Text = "SUB 17";
             this.lb_vtri71.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4061,9 +4345,10 @@
             this.lb_vtri78.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri78.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri78.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri78.Location = new System.Drawing.Point(1053, 30);
+            this.lb_vtri78.Location = new System.Drawing.Point(1404, 36);
+            this.lb_vtri78.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri78.Name = "lb_vtri78";
-            this.lb_vtri78.Size = new System.Drawing.Size(70, 14);
+            this.lb_vtri78.Size = new System.Drawing.Size(93, 17);
             this.lb_vtri78.TabIndex = 58;
             this.lb_vtri78.Text = "OSUB  9";
             this.lb_vtri78.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4133,13 +4418,14 @@
             this.tableLayoutPanel21.Controls.Add(this.lb_vtri64, 0, 2);
             this.tableLayoutPanel21.Controls.Add(this.lb_vtri69, 11, 2);
             this.tableLayoutPanel21.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tableLayoutPanel21.Location = new System.Drawing.Point(8, 406);
+            this.tableLayoutPanel21.Location = new System.Drawing.Point(11, 500);
+            this.tableLayoutPanel21.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel21.Name = "tableLayoutPanel21";
             this.tableLayoutPanel21.RowCount = 3;
             this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel21.Size = new System.Drawing.Size(1126, 45);
+            this.tableLayoutPanel21.Size = new System.Drawing.Size(1501, 55);
             this.tableLayoutPanel21.TabIndex = 91;
             // 
             // button22
@@ -4147,10 +4433,10 @@
             this.button22.BackColor = System.Drawing.Color.Violet;
             this.button22.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button22.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button22.Location = new System.Drawing.Point(151, 38);
+            this.button22.Location = new System.Drawing.Point(202, 47);
             this.button22.Margin = new System.Windows.Forms.Padding(0);
             this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(151, 38);
+            this.button22.Size = new System.Drawing.Size(201, 47);
             this.button22.TabIndex = 2;
             this.button22.Text = "Người mới học vị trí\r\n作業位置勉強新者";
             this.button22.UseVisualStyleBackColor = false;
@@ -4160,10 +4446,10 @@
             this.button21.BackColor = System.Drawing.Color.Yellow;
             this.button21.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button21.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button21.Location = new System.Drawing.Point(0, 76);
+            this.button21.Location = new System.Drawing.Point(0, 94);
             this.button21.Margin = new System.Windows.Forms.Padding(0);
             this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(151, 38);
+            this.button21.Size = new System.Drawing.Size(201, 47);
             this.button21.TabIndex = 1;
             this.button21.Text = "Người hỗ trợ \r\n応援者";
             this.button21.UseVisualStyleBackColor = false;
@@ -4176,7 +4462,7 @@
             this.button25.Location = new System.Drawing.Point(0, 0);
             this.button25.Margin = new System.Windows.Forms.Padding(0);
             this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(151, 38);
+            this.button25.Size = new System.Drawing.Size(201, 47);
             this.button25.TabIndex = 100;
             this.button25.Text = "Thay thế LC (LQC) \r\n交代者(交代対象:LC/LQC)";
             this.button25.UseVisualStyleBackColor = false;
@@ -4186,10 +4472,10 @@
             this.button20.BackColor = System.Drawing.Color.Lime;
             this.button20.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button20.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button20.Location = new System.Drawing.Point(0, 38);
+            this.button20.Location = new System.Drawing.Point(0, 47);
             this.button20.Margin = new System.Windows.Forms.Padding(0);
             this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(151, 38);
+            this.button20.Size = new System.Drawing.Size(201, 47);
             this.button20.TabIndex = 0;
             this.button20.Text = "Người thay thế \r\n交代者\r\n";
             this.button20.UseVisualStyleBackColor = false;
@@ -4199,10 +4485,10 @@
             this.button23.BackColor = System.Drawing.Color.Cyan;
             this.button23.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button23.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button23.Location = new System.Drawing.Point(151, 0);
+            this.button23.Location = new System.Drawing.Point(202, 0);
             this.button23.Margin = new System.Windows.Forms.Padding(0);
             this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(152, 38);
+            this.button23.Size = new System.Drawing.Size(202, 47);
             this.button23.TabIndex = 98;
             this.button23.Text = "Người cũ học vị trí \r\n作業位置勉強ベテラン\r\n";
             this.button23.UseVisualStyleBackColor = false;
@@ -4215,13 +4501,13 @@
             this.tableLayoutPanel31.Controls.Add(this.tableLayoutPanel30, 0, 0);
             this.tableLayoutPanel31.Controls.Add(this.tableLayoutPanel29, 0, 1);
             this.tableLayoutPanel31.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tableLayoutPanel31.Location = new System.Drawing.Point(151, 76);
+            this.tableLayoutPanel31.Location = new System.Drawing.Point(202, 94);
             this.tableLayoutPanel31.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel31.Name = "tableLayoutPanel31";
             this.tableLayoutPanel31.RowCount = 2;
             this.tableLayoutPanel31.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel31.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel31.Size = new System.Drawing.Size(151, 40);
+            this.tableLayoutPanel31.Size = new System.Drawing.Size(201, 49);
             this.tableLayoutPanel31.TabIndex = 107;
             // 
             // tableLayoutPanel30
@@ -4236,7 +4522,7 @@
             this.tableLayoutPanel30.Name = "tableLayoutPanel30";
             this.tableLayoutPanel30.RowCount = 1;
             this.tableLayoutPanel30.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel30.Size = new System.Drawing.Size(151, 20);
+            this.tableLayoutPanel30.Size = new System.Drawing.Size(201, 24);
             this.tableLayoutPanel30.TabIndex = 106;
             // 
             // button13
@@ -4247,7 +4533,7 @@
             this.button13.Location = new System.Drawing.Point(0, 0);
             this.button13.Margin = new System.Windows.Forms.Padding(0);
             this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(151, 20);
+            this.button13.Size = new System.Drawing.Size(201, 24);
             this.button13.TabIndex = 3;
             this.button13.Text = "Người thay thế + Người hỗ trợ";
             this.button13.UseVisualStyleBackColor = false;
@@ -4261,12 +4547,12 @@
             this.tableLayoutPanel29.Controls.Add(this.button24, 0, 0);
             this.tableLayoutPanel29.Controls.Add(this.button32, 1, 0);
             this.tableLayoutPanel29.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tableLayoutPanel29.Location = new System.Drawing.Point(0, 20);
+            this.tableLayoutPanel29.Location = new System.Drawing.Point(0, 24);
             this.tableLayoutPanel29.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel29.Name = "tableLayoutPanel29";
             this.tableLayoutPanel29.RowCount = 1;
             this.tableLayoutPanel29.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel29.Size = new System.Drawing.Size(151, 20);
+            this.tableLayoutPanel29.Size = new System.Drawing.Size(201, 25);
             this.tableLayoutPanel29.TabIndex = 105;
             // 
             // button24
@@ -4277,7 +4563,7 @@
             this.button24.Location = new System.Drawing.Point(0, 0);
             this.button24.Margin = new System.Windows.Forms.Padding(0);
             this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(75, 20);
+            this.button24.Size = new System.Drawing.Size(100, 25);
             this.button24.TabIndex = 1;
             this.button24.Text = "Người thay thế";
             this.button24.UseVisualStyleBackColor = false;
@@ -4287,10 +4573,10 @@
             this.button32.BackColor = System.Drawing.Color.Yellow;
             this.button32.Font = new System.Drawing.Font("Arial", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button32.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button32.Location = new System.Drawing.Point(75, 0);
+            this.button32.Location = new System.Drawing.Point(100, 0);
             this.button32.Margin = new System.Windows.Forms.Padding(0);
             this.button32.Name = "button32";
-            this.button32.Size = new System.Drawing.Size(76, 20);
+            this.button32.Size = new System.Drawing.Size(101, 25);
             this.button32.TabIndex = 97;
             this.button32.Text = "Người hỗ trợ";
             this.button32.UseVisualStyleBackColor = false;
@@ -4306,13 +4592,14 @@
             this.tableLayoutPanel22.Controls.Add(this.button25, 0, 0);
             this.tableLayoutPanel22.Controls.Add(this.button21, 0, 2);
             this.tableLayoutPanel22.Controls.Add(this.button22, 1, 1);
-            this.tableLayoutPanel22.Location = new System.Drawing.Point(1043, 76);
+            this.tableLayoutPanel22.Location = new System.Drawing.Point(1391, 94);
+            this.tableLayoutPanel22.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel22.Name = "tableLayoutPanel22";
             this.tableLayoutPanel22.RowCount = 3;
             this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel22.Size = new System.Drawing.Size(303, 116);
+            this.tableLayoutPanel22.Size = new System.Drawing.Size(404, 143);
             this.tableLayoutPanel22.TabIndex = 92;
             // 
             // lb_vtri54
@@ -4321,9 +4608,10 @@
             this.lb_vtri54.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri54.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri54.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri54.Location = new System.Drawing.Point(3, 30);
+            this.lb_vtri54.Location = new System.Drawing.Point(4, 36);
+            this.lb_vtri54.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri54.Name = "lb_vtri54";
-            this.lb_vtri54.Size = new System.Drawing.Size(76, 15);
+            this.lb_vtri54.Size = new System.Drawing.Size(101, 18);
             this.lb_vtri54.TabIndex = 21;
             this.lb_vtri54.Text = "SUB 1";
             this.lb_vtri54.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4334,9 +4622,10 @@
             this.lb_vtri55.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri55.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri55.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri55.Location = new System.Drawing.Point(85, 30);
+            this.lb_vtri55.Location = new System.Drawing.Point(113, 36);
+            this.lb_vtri55.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri55.Name = "lb_vtri55";
-            this.lb_vtri55.Size = new System.Drawing.Size(76, 15);
+            this.lb_vtri55.Size = new System.Drawing.Size(101, 18);
             this.lb_vtri55.TabIndex = 22;
             this.lb_vtri55.Text = "SUB 2";
             this.lb_vtri55.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4347,9 +4636,10 @@
             this.lb_vtri56.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri56.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri56.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri56.Location = new System.Drawing.Point(167, 30);
+            this.lb_vtri56.Location = new System.Drawing.Point(222, 36);
+            this.lb_vtri56.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri56.Name = "lb_vtri56";
-            this.lb_vtri56.Size = new System.Drawing.Size(76, 15);
+            this.lb_vtri56.Size = new System.Drawing.Size(101, 18);
             this.lb_vtri56.TabIndex = 12;
             this.lb_vtri56.Text = "SUB 3";
             this.lb_vtri56.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4360,9 +4650,10 @@
             this.lb_vtri57.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri57.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri57.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri57.Location = new System.Drawing.Point(249, 30);
+            this.lb_vtri57.Location = new System.Drawing.Point(331, 36);
+            this.lb_vtri57.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri57.Name = "lb_vtri57";
-            this.lb_vtri57.Size = new System.Drawing.Size(76, 14);
+            this.lb_vtri57.Size = new System.Drawing.Size(101, 17);
             this.lb_vtri57.TabIndex = 13;
             this.lb_vtri57.Text = "SUB 4";
             this.lb_vtri57.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4373,9 +4664,10 @@
             this.lb_vtri58.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri58.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri58.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri58.Location = new System.Drawing.Point(331, 30);
+            this.lb_vtri58.Location = new System.Drawing.Point(440, 36);
+            this.lb_vtri58.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri58.Name = "lb_vtri58";
-            this.lb_vtri58.Size = new System.Drawing.Size(76, 14);
+            this.lb_vtri58.Size = new System.Drawing.Size(101, 17);
             this.lb_vtri58.TabIndex = 14;
             this.lb_vtri58.Text = "SUB 5";
             this.lb_vtri58.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4386,9 +4678,10 @@
             this.lb_vtri59.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri59.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri59.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri59.Location = new System.Drawing.Point(413, 30);
+            this.lb_vtri59.Location = new System.Drawing.Point(549, 36);
+            this.lb_vtri59.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri59.Name = "lb_vtri59";
-            this.lb_vtri59.Size = new System.Drawing.Size(76, 14);
+            this.lb_vtri59.Size = new System.Drawing.Size(101, 17);
             this.lb_vtri59.TabIndex = 15;
             this.lb_vtri59.Text = "SUB 6";
             this.lb_vtri59.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4399,9 +4692,10 @@
             this.lb_vtri60.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri60.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri60.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri60.Location = new System.Drawing.Point(495, 30);
+            this.lb_vtri60.Location = new System.Drawing.Point(658, 36);
+            this.lb_vtri60.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri60.Name = "lb_vtri60";
-            this.lb_vtri60.Size = new System.Drawing.Size(76, 14);
+            this.lb_vtri60.Size = new System.Drawing.Size(101, 17);
             this.lb_vtri60.TabIndex = 16;
             this.lb_vtri60.Text = "SUB 7";
             this.lb_vtri60.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4412,9 +4706,10 @@
             this.lb_vtri61.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri61.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri61.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri61.Location = new System.Drawing.Point(577, 30);
+            this.lb_vtri61.Location = new System.Drawing.Point(767, 36);
+            this.lb_vtri61.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri61.Name = "lb_vtri61";
-            this.lb_vtri61.Size = new System.Drawing.Size(76, 14);
+            this.lb_vtri61.Size = new System.Drawing.Size(101, 17);
             this.lb_vtri61.TabIndex = 17;
             this.lb_vtri61.Text = "SUB 8";
             this.lb_vtri61.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4425,9 +4720,10 @@
             this.lb_vtri62.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri62.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri62.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri62.Location = new System.Drawing.Point(659, 30);
+            this.lb_vtri62.Location = new System.Drawing.Point(876, 36);
+            this.lb_vtri62.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri62.Name = "lb_vtri62";
-            this.lb_vtri62.Size = new System.Drawing.Size(76, 14);
+            this.lb_vtri62.Size = new System.Drawing.Size(101, 17);
             this.lb_vtri62.TabIndex = 18;
             this.lb_vtri62.Text = "SUB 9";
             this.lb_vtri62.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4438,9 +4734,10 @@
             this.lb_vtri63.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri63.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri63.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri63.Location = new System.Drawing.Point(741, 30);
+            this.lb_vtri63.Location = new System.Drawing.Point(985, 36);
+            this.lb_vtri63.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri63.Name = "lb_vtri63";
-            this.lb_vtri63.Size = new System.Drawing.Size(78, 14);
+            this.lb_vtri63.Size = new System.Drawing.Size(103, 17);
             this.lb_vtri63.TabIndex = 19;
             this.lb_vtri63.Text = "SUB 10";
             this.lb_vtri63.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4450,9 +4747,10 @@
             this.code56.BackColor = System.Drawing.Color.Red;
             this.code56.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code56.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code56.Location = new System.Drawing.Point(167, 0);
+            this.code56.Location = new System.Drawing.Point(222, 0);
+            this.code56.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code56.Name = "code56";
-            this.code56.Size = new System.Drawing.Size(76, 15);
+            this.code56.Size = new System.Drawing.Size(101, 18);
             this.code56.TabIndex = 26;
             this.code56.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -4461,9 +4759,10 @@
             this.code54.BackColor = System.Drawing.Color.Red;
             this.code54.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code54.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code54.Location = new System.Drawing.Point(3, 0);
+            this.code54.Location = new System.Drawing.Point(4, 0);
+            this.code54.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code54.Name = "code54";
-            this.code54.Size = new System.Drawing.Size(76, 15);
+            this.code54.Size = new System.Drawing.Size(101, 18);
             this.code54.TabIndex = 27;
             this.code54.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -4472,9 +4771,10 @@
             this.code58.BackColor = System.Drawing.Color.Red;
             this.code58.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code58.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code58.Location = new System.Drawing.Point(331, 0);
+            this.code58.Location = new System.Drawing.Point(440, 0);
+            this.code58.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code58.Name = "code58";
-            this.code58.Size = new System.Drawing.Size(76, 15);
+            this.code58.Size = new System.Drawing.Size(101, 18);
             this.code58.TabIndex = 28;
             this.code58.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -4483,9 +4783,10 @@
             this.code57.BackColor = System.Drawing.Color.Red;
             this.code57.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code57.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code57.Location = new System.Drawing.Point(249, 0);
+            this.code57.Location = new System.Drawing.Point(331, 0);
+            this.code57.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code57.Name = "code57";
-            this.code57.Size = new System.Drawing.Size(76, 15);
+            this.code57.Size = new System.Drawing.Size(101, 18);
             this.code57.TabIndex = 29;
             this.code57.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -4494,9 +4795,10 @@
             this.code60.BackColor = System.Drawing.Color.Red;
             this.code60.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code60.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code60.Location = new System.Drawing.Point(495, 0);
+            this.code60.Location = new System.Drawing.Point(658, 0);
+            this.code60.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code60.Name = "code60";
-            this.code60.Size = new System.Drawing.Size(76, 15);
+            this.code60.Size = new System.Drawing.Size(101, 18);
             this.code60.TabIndex = 30;
             this.code60.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -4505,9 +4807,10 @@
             this.code59.BackColor = System.Drawing.Color.Red;
             this.code59.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code59.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code59.Location = new System.Drawing.Point(413, 0);
+            this.code59.Location = new System.Drawing.Point(549, 0);
+            this.code59.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code59.Name = "code59";
-            this.code59.Size = new System.Drawing.Size(76, 15);
+            this.code59.Size = new System.Drawing.Size(101, 18);
             this.code59.TabIndex = 31;
             this.code59.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -4516,9 +4819,10 @@
             this.code62.BackColor = System.Drawing.Color.Red;
             this.code62.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code62.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code62.Location = new System.Drawing.Point(659, 0);
+            this.code62.Location = new System.Drawing.Point(876, 0);
+            this.code62.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code62.Name = "code62";
-            this.code62.Size = new System.Drawing.Size(76, 15);
+            this.code62.Size = new System.Drawing.Size(101, 18);
             this.code62.TabIndex = 32;
             this.code62.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -4527,9 +4831,10 @@
             this.code61.BackColor = System.Drawing.Color.Red;
             this.code61.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code61.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code61.Location = new System.Drawing.Point(577, 0);
+            this.code61.Location = new System.Drawing.Point(767, 0);
+            this.code61.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code61.Name = "code61";
-            this.code61.Size = new System.Drawing.Size(76, 15);
+            this.code61.Size = new System.Drawing.Size(101, 18);
             this.code61.TabIndex = 33;
             this.code61.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -4538,9 +4843,10 @@
             this.code63.BackColor = System.Drawing.Color.Red;
             this.code63.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code63.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code63.Location = new System.Drawing.Point(741, 0);
+            this.code63.Location = new System.Drawing.Point(985, 0);
+            this.code63.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code63.Name = "code63";
-            this.code63.Size = new System.Drawing.Size(78, 15);
+            this.code63.Size = new System.Drawing.Size(103, 18);
             this.code63.TabIndex = 35;
             this.code63.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -4549,9 +4855,10 @@
             this.name54.BackColor = System.Drawing.Color.Red;
             this.name54.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name54.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name54.Location = new System.Drawing.Point(3, 15);
+            this.name54.Location = new System.Drawing.Point(4, 18);
+            this.name54.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name54.Name = "name54";
-            this.name54.Size = new System.Drawing.Size(76, 15);
+            this.name54.Size = new System.Drawing.Size(101, 18);
             this.name54.TabIndex = 36;
             this.name54.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -4560,9 +4867,10 @@
             this.name57.BackColor = System.Drawing.Color.Red;
             this.name57.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name57.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name57.Location = new System.Drawing.Point(249, 15);
+            this.name57.Location = new System.Drawing.Point(331, 18);
+            this.name57.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name57.Name = "name57";
-            this.name57.Size = new System.Drawing.Size(76, 15);
+            this.name57.Size = new System.Drawing.Size(101, 18);
             this.name57.TabIndex = 38;
             this.name57.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -4571,9 +4879,10 @@
             this.name56.BackColor = System.Drawing.Color.Red;
             this.name56.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name56.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name56.Location = new System.Drawing.Point(167, 15);
+            this.name56.Location = new System.Drawing.Point(222, 18);
+            this.name56.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name56.Name = "name56";
-            this.name56.Size = new System.Drawing.Size(76, 15);
+            this.name56.Size = new System.Drawing.Size(101, 18);
             this.name56.TabIndex = 39;
             this.name56.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -4582,9 +4891,10 @@
             this.name59.BackColor = System.Drawing.Color.Red;
             this.name59.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name59.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name59.Location = new System.Drawing.Point(413, 15);
+            this.name59.Location = new System.Drawing.Point(549, 18);
+            this.name59.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name59.Name = "name59";
-            this.name59.Size = new System.Drawing.Size(76, 15);
+            this.name59.Size = new System.Drawing.Size(101, 18);
             this.name59.TabIndex = 40;
             this.name59.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -4593,9 +4903,10 @@
             this.name58.BackColor = System.Drawing.Color.Red;
             this.name58.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name58.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name58.Location = new System.Drawing.Point(331, 15);
+            this.name58.Location = new System.Drawing.Point(440, 18);
+            this.name58.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name58.Name = "name58";
-            this.name58.Size = new System.Drawing.Size(76, 15);
+            this.name58.Size = new System.Drawing.Size(101, 18);
             this.name58.TabIndex = 41;
             this.name58.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -4604,9 +4915,10 @@
             this.name61.BackColor = System.Drawing.Color.Red;
             this.name61.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name61.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name61.Location = new System.Drawing.Point(577, 15);
+            this.name61.Location = new System.Drawing.Point(767, 18);
+            this.name61.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name61.Name = "name61";
-            this.name61.Size = new System.Drawing.Size(76, 15);
+            this.name61.Size = new System.Drawing.Size(101, 18);
             this.name61.TabIndex = 42;
             this.name61.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -4615,9 +4927,10 @@
             this.name60.BackColor = System.Drawing.Color.Red;
             this.name60.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name60.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name60.Location = new System.Drawing.Point(495, 15);
+            this.name60.Location = new System.Drawing.Point(658, 18);
+            this.name60.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name60.Name = "name60";
-            this.name60.Size = new System.Drawing.Size(76, 15);
+            this.name60.Size = new System.Drawing.Size(101, 18);
             this.name60.TabIndex = 43;
             this.name60.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -4626,9 +4939,10 @@
             this.name63.BackColor = System.Drawing.Color.Red;
             this.name63.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name63.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name63.Location = new System.Drawing.Point(741, 15);
+            this.name63.Location = new System.Drawing.Point(985, 18);
+            this.name63.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name63.Name = "name63";
-            this.name63.Size = new System.Drawing.Size(78, 15);
+            this.name63.Size = new System.Drawing.Size(103, 18);
             this.name63.TabIndex = 44;
             this.name63.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -4637,9 +4951,10 @@
             this.name62.BackColor = System.Drawing.Color.Red;
             this.name62.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name62.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name62.Location = new System.Drawing.Point(659, 15);
+            this.name62.Location = new System.Drawing.Point(876, 18);
+            this.name62.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name62.Name = "name62";
-            this.name62.Size = new System.Drawing.Size(76, 15);
+            this.name62.Size = new System.Drawing.Size(101, 18);
             this.name62.TabIndex = 45;
             this.name62.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -4648,9 +4963,10 @@
             this.name55.BackColor = System.Drawing.Color.Red;
             this.name55.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name55.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name55.Location = new System.Drawing.Point(85, 15);
+            this.name55.Location = new System.Drawing.Point(113, 18);
+            this.name55.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name55.Name = "name55";
-            this.name55.Size = new System.Drawing.Size(76, 15);
+            this.name55.Size = new System.Drawing.Size(101, 18);
             this.name55.TabIndex = 48;
             this.name55.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -4659,9 +4975,10 @@
             this.code55.BackColor = System.Drawing.Color.Red;
             this.code55.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code55.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code55.Location = new System.Drawing.Point(85, 0);
+            this.code55.Location = new System.Drawing.Point(113, 0);
+            this.code55.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code55.Name = "code55";
-            this.code55.Size = new System.Drawing.Size(76, 15);
+            this.code55.Size = new System.Drawing.Size(101, 18);
             this.code55.TabIndex = 49;
             this.code55.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -4710,13 +5027,14 @@
             this.tableLayoutPanel17.Controls.Add(this.lb_vtri55, 1, 2);
             this.tableLayoutPanel17.Controls.Add(this.lb_vtri54, 0, 2);
             this.tableLayoutPanel17.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tableLayoutPanel17.Location = new System.Drawing.Point(8, 474);
+            this.tableLayoutPanel17.Location = new System.Drawing.Point(11, 583);
+            this.tableLayoutPanel17.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel17.Name = "tableLayoutPanel17";
             this.tableLayoutPanel17.RowCount = 3;
             this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel17.Size = new System.Drawing.Size(822, 45);
+            this.tableLayoutPanel17.Size = new System.Drawing.Size(1096, 55);
             this.tableLayoutPanel17.TabIndex = 93;
             // 
             // label76
@@ -4725,9 +5043,10 @@
             this.label76.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label76.Font = new System.Drawing.Font("Arial", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label76.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label76.Location = new System.Drawing.Point(8, 524);
+            this.label76.Location = new System.Drawing.Point(11, 645);
+            this.label76.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label76.Name = "label76";
-            this.label76.Size = new System.Drawing.Size(819, 14);
+            this.label76.Size = new System.Drawing.Size(1091, 17);
             this.label76.TabIndex = 94;
             this.label76.Text = "SUB 工程 ----------------------------------------------------------->";
             this.label76.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4735,19 +5054,22 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::PM4MAto.Properties.Resources.LQC__Khiếu_v03654b;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(69, 48);
+            this.pictureBox1.Size = new System.Drawing.Size(92, 59);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.DoubleClick += new System.EventHandler(this.pictureBox1_DoubleClick);
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = global::PM4MAto.Properties.Resources.LQC_Vân_v07287b;
-            this.pictureBox4.Location = new System.Drawing.Point(78, 3);
+            this.pictureBox4.Location = new System.Drawing.Point(104, 4);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(69, 48);
+            this.pictureBox4.Size = new System.Drawing.Size(92, 59);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 1;
             this.pictureBox4.TabStop = false;
@@ -4755,9 +5077,10 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::PM4MAto.Properties.Resources.LC__Nhung_v07651b;
-            this.pictureBox5.Location = new System.Drawing.Point(153, 3);
+            this.pictureBox5.Location = new System.Drawing.Point(204, 4);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(69, 48);
+            this.pictureBox5.Size = new System.Drawing.Size(92, 59);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 2;
             this.pictureBox5.TabStop = false;
@@ -4765,9 +5088,10 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = global::PM4MAto.Properties.Resources.js_Tươi_v00401b;
-            this.pictureBox6.Location = new System.Drawing.Point(228, 3);
+            this.pictureBox6.Location = new System.Drawing.Point(304, 4);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(69, 48);
+            this.pictureBox6.Size = new System.Drawing.Size(92, 59);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 3;
             this.pictureBox6.TabStop = false;
@@ -4775,9 +5099,10 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = global::PM4MAto.Properties.Resources.sup___Phương_v01258b;
-            this.pictureBox7.Location = new System.Drawing.Point(303, 3);
+            this.pictureBox7.Location = new System.Drawing.Point(404, 4);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(69, 48);
+            this.pictureBox7.Size = new System.Drawing.Size(92, 59);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 4;
             this.pictureBox7.TabStop = false;
@@ -4788,9 +5113,10 @@
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label3.Font = new System.Drawing.Font("Arial", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.Window;
-            this.label3.Location = new System.Drawing.Point(3, 54);
+            this.label3.Location = new System.Drawing.Point(4, 67);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 14);
+            this.label3.Size = new System.Drawing.Size(87, 17);
             this.label3.TabIndex = 21;
             this.label3.Text = "LQC- V03654B";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4801,9 +5127,10 @@
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label4.Font = new System.Drawing.Font("Arial", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.Window;
-            this.label4.Location = new System.Drawing.Point(78, 54);
+            this.label4.Location = new System.Drawing.Point(104, 67);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(66, 14);
+            this.label4.Size = new System.Drawing.Size(87, 17);
             this.label4.TabIndex = 22;
             this.label4.Text = "LQC-V07287B";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4814,9 +5141,10 @@
             this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label5.Font = new System.Drawing.Font("Arial", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.Window;
-            this.label5.Location = new System.Drawing.Point(153, 54);
+            this.label5.Location = new System.Drawing.Point(204, 67);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(66, 14);
+            this.label5.Size = new System.Drawing.Size(87, 17);
             this.label5.TabIndex = 23;
             this.label5.Text = "LC- V07651B";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4827,9 +5155,10 @@
             this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label6.Font = new System.Drawing.Font("Arial", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.Window;
-            this.label6.Location = new System.Drawing.Point(228, 54);
+            this.label6.Location = new System.Drawing.Point(304, 67);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(66, 14);
+            this.label6.Size = new System.Drawing.Size(87, 17);
             this.label6.TabIndex = 24;
             this.label6.Text = "JS - V00401B";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4840,9 +5169,10 @@
             this.label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label7.Font = new System.Drawing.Font("Arial", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.Window;
-            this.label7.Location = new System.Drawing.Point(303, 54);
+            this.label7.Location = new System.Drawing.Point(404, 67);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(67, 14);
+            this.label7.Size = new System.Drawing.Size(89, 17);
             this.label7.TabIndex = 25;
             this.label7.Text = "SUP - V01258B";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -4867,12 +5197,13 @@
             this.tableLayoutPanel24.Controls.Add(this.pictureBox4, 1, 0);
             this.tableLayoutPanel24.Controls.Add(this.pictureBox1, 0, 0);
             this.tableLayoutPanel24.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tableLayoutPanel24.Location = new System.Drawing.Point(345, 55);
+            this.tableLayoutPanel24.Location = new System.Drawing.Point(460, 68);
+            this.tableLayoutPanel24.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel24.Name = "tableLayoutPanel24";
             this.tableLayoutPanel24.RowCount = 2;
             this.tableLayoutPanel24.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel24.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 14F));
-            this.tableLayoutPanel24.Size = new System.Drawing.Size(375, 68);
+            this.tableLayoutPanel24.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 17F));
+            this.tableLayoutPanel24.Size = new System.Drawing.Size(500, 84);
             this.tableLayoutPanel24.TabIndex = 96;
             // 
             // tableLayoutPanel25
@@ -4889,7 +5220,7 @@
             this.tableLayoutPanel25.Name = "tableLayoutPanel25";
             this.tableLayoutPanel25.RowCount = 1;
             this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel25.Size = new System.Drawing.Size(342, 46);
+            this.tableLayoutPanel25.Size = new System.Drawing.Size(456, 57);
             this.tableLayoutPanel25.TabIndex = 98;
             // 
             // label309
@@ -4897,9 +5228,10 @@
             this.label309.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label309.AutoSize = true;
             this.label309.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label309.Location = new System.Drawing.Point(166, 27);
+            this.label309.Location = new System.Drawing.Point(221, 33);
+            this.label309.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label309.Name = "label309";
-            this.label309.Size = new System.Drawing.Size(173, 19);
+            this.label309.Size = new System.Drawing.Size(222, 24);
             this.label309.TabIndex = 100;
             this.label309.Text = "One for All, All for One";
             // 
@@ -4909,7 +5241,7 @@
             this.pictureBox3.Location = new System.Drawing.Point(0, 0);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(163, 46);
+            this.pictureBox3.Size = new System.Drawing.Size(217, 57);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 99;
             this.pictureBox3.TabStop = false;
@@ -4921,11 +5253,12 @@
             this.tableLayoutPanel26.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel26.Controls.Add(this.tableLayoutPanel25, 0, 0);
             this.tableLayoutPanel26.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tableLayoutPanel26.Location = new System.Drawing.Point(2, 2);
+            this.tableLayoutPanel26.Location = new System.Drawing.Point(3, 2);
+            this.tableLayoutPanel26.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel26.Name = "tableLayoutPanel26";
             this.tableLayoutPanel26.RowCount = 1;
             this.tableLayoutPanel26.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel26.Size = new System.Drawing.Size(348, 47);
+            this.tableLayoutPanel26.Size = new System.Drawing.Size(464, 58);
             this.tableLayoutPanel26.TabIndex = 99;
             // 
             // button2
@@ -4935,7 +5268,7 @@
             this.button2.Location = new System.Drawing.Point(0, 0);
             this.button2.Margin = new System.Windows.Forms.Padding(0);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(575, 47);
+            this.button2.Size = new System.Drawing.Size(767, 58);
             this.button2.TabIndex = 108;
             this.button2.Text = "BẢNG QUẢN LÝ THAY ĐỔI NHÂN SỰ  人員変更管理ボード";
             this.button2.UseVisualStyleBackColor = true;
@@ -4946,13 +5279,13 @@
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Controls.Add(this.button2, 0, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(353, 2);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(471, 2);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 47F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(575, 47);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 58F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(767, 58);
             this.tableLayoutPanel1.TabIndex = 100;
             // 
             // lbThongBaoDacBiet
@@ -4960,9 +5293,10 @@
             this.lbThongBaoDacBiet.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lbThongBaoDacBiet.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbThongBaoDacBiet.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbThongBaoDacBiet.Location = new System.Drawing.Point(8, 0);
+            this.lbThongBaoDacBiet.Location = new System.Drawing.Point(11, 0);
+            this.lbThongBaoDacBiet.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbThongBaoDacBiet.Name = "lbThongBaoDacBiet";
-            this.lbThongBaoDacBiet.Size = new System.Drawing.Size(215, 46);
+            this.lbThongBaoDacBiet.Size = new System.Drawing.Size(286, 56);
             this.lbThongBaoDacBiet.TabIndex = 22;
             this.lbThongBaoDacBiet.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -4972,13 +5306,13 @@
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.Controls.Add(this.lbThongBaoDacBiet, 0, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(1123, 2);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(1497, 2);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 47F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(226, 47);
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 58F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(301, 58);
             this.tableLayoutPanel2.TabIndex = 101;
             // 
             // label87
@@ -4987,9 +5321,10 @@
             this.label87.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label87.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label87.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label87.Location = new System.Drawing.Point(826, 55);
+            this.label87.Location = new System.Drawing.Point(1101, 68);
+            this.label87.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label87.Name = "label87";
-            this.label87.Size = new System.Drawing.Size(183, 18);
+            this.label87.Size = new System.Drawing.Size(243, 22);
             this.label87.TabIndex = 68;
             this.label87.Text = "NHÂN SỰ DANDORY 段取り人員\r\n";
             this.label87.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -5001,7 +5336,7 @@
             this.button1.Location = new System.Drawing.Point(0, 0);
             this.button1.Margin = new System.Windows.Forms.Padding(0);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(62, 23);
+            this.button1.Size = new System.Drawing.Size(83, 28);
             this.button1.TabIndex = 101;
             this.button1.Text = "LINE";
             this.button1.UseVisualStyleBackColor = true;
@@ -5010,10 +5345,10 @@
             // 
             this.button3.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.Blue;
-            this.button3.Location = new System.Drawing.Point(65, 0);
+            this.button3.Location = new System.Drawing.Point(87, 0);
             this.button3.Margin = new System.Windows.Forms.Padding(0);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(51, 23);
+            this.button3.Size = new System.Drawing.Size(68, 28);
             this.button3.TabIndex = 103;
             this.button3.Text = "SHIFT";
             this.button3.UseVisualStyleBackColor = true;
@@ -5022,10 +5357,10 @@
             // 
             this.button4.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.Blue;
-            this.button4.Location = new System.Drawing.Point(118, 0);
+            this.button4.Location = new System.Drawing.Point(158, 0);
             this.button4.Margin = new System.Windows.Forms.Padding(0);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(76, 23);
+            this.button4.Size = new System.Drawing.Size(101, 28);
             this.button4.TabIndex = 105;
             this.button4.Text = "Tình trạng";
             this.button4.UseVisualStyleBackColor = true;
@@ -5034,10 +5369,10 @@
             // 
             this.button5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(1, 23);
+            this.button5.Location = new System.Drawing.Point(2, 29);
             this.button5.Margin = new System.Windows.Forms.Padding(0);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(62, 24);
+            this.button5.Size = new System.Drawing.Size(83, 29);
             this.button5.TabIndex = 106;
             this.button5.Text = "SI2F";
             this.button5.UseVisualStyleBackColor = true;
@@ -5045,20 +5380,20 @@
             // button6
             // 
             this.button6.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(65, 23);
+            this.button6.Location = new System.Drawing.Point(87, 29);
             this.button6.Margin = new System.Windows.Forms.Padding(0);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(51, 23);
+            this.button6.Size = new System.Drawing.Size(68, 28);
             this.button6.TabIndex = 107;
             this.button6.UseVisualStyleBackColor = true;
             // 
             // button7
             // 
             this.button7.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(118, 23);
+            this.button7.Location = new System.Drawing.Point(158, 29);
             this.button7.Margin = new System.Windows.Forms.Padding(0);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(76, 23);
+            this.button7.Size = new System.Drawing.Size(101, 28);
             this.button7.TabIndex = 108;
             this.button7.UseVisualStyleBackColor = true;
             // 
@@ -5076,13 +5411,13 @@
             this.tableLayoutPanel28.Controls.Add(this.button3, 1, 0);
             this.tableLayoutPanel28.Controls.Add(this.button1, 0, 0);
             this.tableLayoutPanel28.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tableLayoutPanel28.Location = new System.Drawing.Point(929, 2);
+            this.tableLayoutPanel28.Location = new System.Drawing.Point(1239, 2);
             this.tableLayoutPanel28.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel28.Name = "tableLayoutPanel28";
             this.tableLayoutPanel28.RowCount = 2;
             this.tableLayoutPanel28.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel28.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel28.Size = new System.Drawing.Size(199, 47);
+            this.tableLayoutPanel28.Size = new System.Drawing.Size(265, 58);
             this.tableLayoutPanel28.TabIndex = 102;
             // 
             // code5
@@ -5090,9 +5425,10 @@
             this.code5.BackColor = System.Drawing.Color.Red;
             this.code5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code5.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code5.Location = new System.Drawing.Point(86, 0);
+            this.code5.Location = new System.Drawing.Point(115, 0);
+            this.code5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code5.Name = "code5";
-            this.code5.Size = new System.Drawing.Size(76, 15);
+            this.code5.Size = new System.Drawing.Size(101, 18);
             this.code5.TabIndex = 17;
             this.code5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -5101,9 +5437,10 @@
             this.code6.BackColor = System.Drawing.Color.Red;
             this.code6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code6.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code6.Location = new System.Drawing.Point(169, 0);
+            this.code6.Location = new System.Drawing.Point(226, 0);
+            this.code6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code6.Name = "code6";
-            this.code6.Size = new System.Drawing.Size(78, 15);
+            this.code6.Size = new System.Drawing.Size(103, 18);
             this.code6.TabIndex = 18;
             this.code6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -5112,9 +5449,10 @@
             this.name5.BackColor = System.Drawing.Color.Red;
             this.name5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name5.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name5.Location = new System.Drawing.Point(86, 15);
+            this.name5.Location = new System.Drawing.Point(115, 18);
+            this.name5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name5.Name = "name5";
-            this.name5.Size = new System.Drawing.Size(76, 15);
+            this.name5.Size = new System.Drawing.Size(101, 18);
             this.name5.TabIndex = 19;
             this.name5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -5123,9 +5461,10 @@
             this.name6.BackColor = System.Drawing.Color.Red;
             this.name6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name6.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name6.Location = new System.Drawing.Point(169, 15);
+            this.name6.Location = new System.Drawing.Point(226, 18);
+            this.name6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name6.Name = "name6";
-            this.name6.Size = new System.Drawing.Size(78, 15);
+            this.name6.Size = new System.Drawing.Size(103, 18);
             this.name6.TabIndex = 20;
             this.name6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -5134,9 +5473,10 @@
             this.code4.BackColor = System.Drawing.Color.Red;
             this.code4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.code4.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.code4.Location = new System.Drawing.Point(3, 0);
+            this.code4.Location = new System.Drawing.Point(4, 0);
+            this.code4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.code4.Name = "code4";
-            this.code4.Size = new System.Drawing.Size(76, 15);
+            this.code4.Size = new System.Drawing.Size(101, 18);
             this.code4.TabIndex = 21;
             this.code4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -5145,9 +5485,10 @@
             this.name4.BackColor = System.Drawing.Color.Red;
             this.name4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name4.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name4.Location = new System.Drawing.Point(3, 15);
+            this.name4.Location = new System.Drawing.Point(4, 18);
+            this.name4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name4.Name = "name4";
-            this.name4.Size = new System.Drawing.Size(76, 15);
+            this.name4.Size = new System.Drawing.Size(101, 18);
             this.name4.TabIndex = 22;
             this.name4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -5157,9 +5498,10 @@
             this.lb_vtri4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri4.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri4.Location = new System.Drawing.Point(3, 30);
+            this.lb_vtri4.Location = new System.Drawing.Point(4, 36);
+            this.lb_vtri4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri4.Name = "lb_vtri4";
-            this.lb_vtri4.Size = new System.Drawing.Size(76, 14);
+            this.lb_vtri4.Size = new System.Drawing.Size(101, 17);
             this.lb_vtri4.TabIndex = 24;
             this.lb_vtri4.Text = "SETTA 1";
             this.lb_vtri4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -5170,9 +5512,10 @@
             this.lb_vtri5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri5.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri5.Location = new System.Drawing.Point(86, 30);
+            this.lb_vtri5.Location = new System.Drawing.Point(115, 36);
+            this.lb_vtri5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri5.Name = "lb_vtri5";
-            this.lb_vtri5.Size = new System.Drawing.Size(76, 14);
+            this.lb_vtri5.Size = new System.Drawing.Size(101, 17);
             this.lb_vtri5.TabIndex = 25;
             this.lb_vtri5.Text = "SETTA 2";
             this.lb_vtri5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -5183,9 +5526,10 @@
             this.lb_vtri6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_vtri6.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_vtri6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_vtri6.Location = new System.Drawing.Point(169, 30);
+            this.lb_vtri6.Location = new System.Drawing.Point(226, 36);
+            this.lb_vtri6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_vtri6.Name = "lb_vtri6";
-            this.lb_vtri6.Size = new System.Drawing.Size(78, 14);
+            this.lb_vtri6.Size = new System.Drawing.Size(103, 17);
             this.lb_vtri6.TabIndex = 26;
             this.lb_vtri6.Text = "KANBAN";
             this.lb_vtri6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -5207,22 +5551,24 @@
             this.tableLayoutPanel4.Controls.Add(this.code6, 2, 0);
             this.tableLayoutPanel4.Controls.Add(this.code5, 1, 0);
             this.tableLayoutPanel4.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(783, 76);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(1044, 94);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 3;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(251, 45);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(335, 55);
             this.tableLayoutPanel4.TabIndex = 69;
             // 
             // lbdatetime
             // 
             this.lbdatetime.BackColor = System.Drawing.Color.Transparent;
             this.lbdatetime.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbdatetime.Location = new System.Drawing.Point(1203, 52);
+            this.lbdatetime.Location = new System.Drawing.Point(1604, 64);
+            this.lbdatetime.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbdatetime.Name = "lbdatetime";
-            this.lbdatetime.Size = new System.Drawing.Size(146, 23);
+            this.lbdatetime.Size = new System.Drawing.Size(195, 28);
             this.lbdatetime.TabIndex = 102;
             this.lbdatetime.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lbdatetime.Click += new System.EventHandler(this.ClockTimer_Tick);
@@ -5232,9 +5578,10 @@
             this.label310.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label310.BackColor = System.Drawing.Color.Transparent;
             this.label310.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label310.Location = new System.Drawing.Point(1120, 51);
+            this.label310.Location = new System.Drawing.Point(1416, 79);
+            this.label310.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label310.Name = "label310";
-            this.label310.Size = new System.Drawing.Size(90, 24);
+            this.label310.Size = new System.Drawing.Size(120, 30);
             this.label310.TabIndex = 101;
             this.label310.Text = "Date | Time:";
             this.label310.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -5245,10 +5592,10 @@
             this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label8.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label8.Location = new System.Drawing.Point(1043, 192);
+            this.label8.Location = new System.Drawing.Point(1391, 236);
             this.label8.Margin = new System.Windows.Forms.Padding(0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(302, 17);
+            this.label8.Size = new System.Drawing.Size(402, 20);
             this.label8.TabIndex = 104;
             this.label8.Text = "BẢNG THEO DÕI THỜI GIAN DỪNG CHUYỀN";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -5258,22 +5605,27 @@
             this.lb_NghiTrongNgay.BackColor = System.Drawing.Color.White;
             this.lb_NghiTrongNgay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_NghiTrongNgay.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_NghiTrongNgay.Location = new System.Drawing.Point(4, 661);
+            this.lb_NghiTrongNgay.Location = new System.Drawing.Point(5, 814);
+            this.lb_NghiTrongNgay.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_NghiTrongNgay.Name = "lb_NghiTrongNgay";
-            this.lb_NghiTrongNgay.Size = new System.Drawing.Size(269, 56);
+            this.lb_NghiTrongNgay.Size = new System.Drawing.Size(358, 68);
             this.lb_NghiTrongNgay.TabIndex = 105;
             this.lb_NghiTrongNgay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txtDungChuyen
             // 
-            this.txtDungChuyen.ColumnCount = 1;
+            this.txtDungChuyen.ColumnCount = 2;
             this.txtDungChuyen.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.53135F));
-            this.txtDungChuyen.Location = new System.Drawing.Point(1043, 209);
+            this.txtDungChuyen.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 197F));
+            this.txtDungChuyen.Controls.Add(this.dataGridView1, 0, 0);
+            this.txtDungChuyen.Controls.Add(this.btnDungChuyen, 1, 0);
+            this.txtDungChuyen.Location = new System.Drawing.Point(1391, 257);
+            this.txtDungChuyen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDungChuyen.Name = "txtDungChuyen";
             this.txtDungChuyen.RowCount = 1;
             this.txtDungChuyen.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.48107F));
-            this.txtDungChuyen.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 113F));
-            this.txtDungChuyen.Size = new System.Drawing.Size(303, 113);
+            this.txtDungChuyen.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 139F));
+            this.txtDungChuyen.Size = new System.Drawing.Size(404, 139);
             this.txtDungChuyen.TabIndex = 103;
             // 
             // lb_CoNguoiHoc
@@ -5281,9 +5633,10 @@
             this.lb_CoNguoiHoc.BackColor = System.Drawing.Color.White;
             this.lb_CoNguoiHoc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_CoNguoiHoc.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_CoNguoiHoc.Location = new System.Drawing.Point(274, 661);
+            this.lb_CoNguoiHoc.Location = new System.Drawing.Point(365, 814);
+            this.lb_CoNguoiHoc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_CoNguoiHoc.Name = "lb_CoNguoiHoc";
-            this.lb_CoNguoiHoc.Size = new System.Drawing.Size(267, 56);
+            this.lb_CoNguoiHoc.Size = new System.Drawing.Size(355, 68);
             this.lb_CoNguoiHoc.TabIndex = 106;
             this.lb_CoNguoiHoc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -5292,9 +5645,10 @@
             this.lb_ChuaCoNguoiHoc.BackColor = System.Drawing.Color.White;
             this.lb_ChuaCoNguoiHoc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_ChuaCoNguoiHoc.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_ChuaCoNguoiHoc.Location = new System.Drawing.Point(541, 661);
+            this.lb_ChuaCoNguoiHoc.Location = new System.Drawing.Point(721, 814);
+            this.lb_ChuaCoNguoiHoc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_ChuaCoNguoiHoc.Name = "lb_ChuaCoNguoiHoc";
-            this.lb_ChuaCoNguoiHoc.Size = new System.Drawing.Size(267, 56);
+            this.lb_ChuaCoNguoiHoc.Size = new System.Drawing.Size(355, 68);
             this.lb_ChuaCoNguoiHoc.TabIndex = 107;
             this.lb_ChuaCoNguoiHoc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -5303,9 +5657,10 @@
             this.lb_ViTriHoTro.BackColor = System.Drawing.Color.White;
             this.lb_ViTriHoTro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_ViTriHoTro.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_ViTriHoTro.Location = new System.Drawing.Point(810, 660);
+            this.lb_ViTriHoTro.Location = new System.Drawing.Point(1080, 812);
+            this.lb_ViTriHoTro.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_ViTriHoTro.Name = "lb_ViTriHoTro";
-            this.lb_ViTriHoTro.Size = new System.Drawing.Size(267, 56);
+            this.lb_ViTriHoTro.Size = new System.Drawing.Size(355, 68);
             this.lb_ViTriHoTro.TabIndex = 108;
             this.lb_ViTriHoTro.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -5314,18 +5669,49 @@
             this.lb_ViTriHocViec.BackColor = System.Drawing.Color.White;
             this.lb_ViTriHocViec.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_ViTriHocViec.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_ViTriHocViec.Location = new System.Drawing.Point(1079, 660);
+            this.lb_ViTriHocViec.Location = new System.Drawing.Point(1439, 812);
+            this.lb_ViTriHocViec.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_ViTriHocViec.Name = "lb_ViTriHocViec";
-            this.lb_ViTriHocViec.Size = new System.Drawing.Size(267, 56);
+            this.lb_ViTriHocViec.Size = new System.Drawing.Size(355, 68);
             this.lb_ViTriHocViec.TabIndex = 109;
             this.lb_ViTriHocViec.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ThoiGian});
+            this.dataGridView1.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(201, 133);
+            this.dataGridView1.TabIndex = 0;
+            //this.dataGridView1.UserAddedRow += new System.Windows.Forms.DataGridViewRowEventHandler(this.dataGridView1_UserAddedRow);
+            // 
+            // btnDungChuyen
+            // 
+            this.btnDungChuyen.Location = new System.Drawing.Point(210, 3);
+            this.btnDungChuyen.Name = "btnDungChuyen";
+            this.btnDungChuyen.Size = new System.Drawing.Size(131, 34);
+            this.btnDungChuyen.TabIndex = 1;
+            this.btnDungChuyen.Text = "Dừng chuyền";
+            this.btnDungChuyen.UseVisualStyleBackColor = true;
+            this.btnDungChuyen.Click += new System.EventHandler(this.btnDungChuyen_Click);
+            // 
+            // ThoiGian
+            // 
+            this.ThoiGian.HeaderText = "Thời Gian";
+            this.ThoiGian.MinimumWidth = 6;
+            this.ThoiGian.Name = "ThoiGian";
+            this.ThoiGian.Width = 125;
+            // 
             // Frm_Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.ClientSize = new System.Drawing.Size(1440, 717);
             this.Controls.Add(this.lb_ViTriHocViec);
             this.Controls.Add(this.lb_ViTriHoTro);
             this.Controls.Add(this.lb_ChuaCoNguoiHoc);
@@ -5385,9 +5771,11 @@
             this.Controls.Add(this.QL);
             this.Controls.Add(this.tableLayoutPanel5);
             this.Controls.Add(this.tableLayoutPanel3);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Frm_Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_Main";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Frm_Main_FormClosing);
             this.Load += new System.EventHandler(this.Frm_Main_Load);
             this.tableLayoutPanel11.ResumeLayout(false);
             this.tableLayoutPanel12.ResumeLayout(false);
@@ -5426,6 +5814,8 @@
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel28.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
+            this.txtDungChuyen.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -5804,5 +6194,9 @@
         private System.Windows.Forms.Label lb_ChuaCoNguoiHoc;
         private System.Windows.Forms.Label lb_ViTriHoTro;
         private System.Windows.Forms.Label lb_ViTriHocViec;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.Button btnDungChuyen;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ThoiGian;
     }
 }

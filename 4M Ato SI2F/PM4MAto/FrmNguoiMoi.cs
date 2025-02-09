@@ -25,6 +25,7 @@ namespace PM4MAto
             int a = int.TryParse(cbChonCongDoan.SelectedValue?.ToString(), out int result) ? result : 0;
             Frm_Main.LuuThongTin.tt = a;
             Frm_Main.LuuThongTin.vitri = cbChonNguoi.Text;
+            Frm_Main.LuuThongTin.congdoan = cbChonCongDoan.Text;
             this.Close();
         }
         // Lớp dữ liệu cho ComboBox

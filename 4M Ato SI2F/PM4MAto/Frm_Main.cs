@@ -48,6 +48,7 @@ namespace PM4MAto
                 MessageBox.Show("File không tồn tại: " + filePath_user);
 
             UpdateSubCount(data_user);
+            UpdateNghiViecvsChuyenViTri(data_user);
             // them data vao matran control
             controlmatrix.Add(new Control[] { lb_vtri1, lb_vtri2, lb_vtri3, lb_vtri4, lb_vtri5, lb_vtri6, lb_vtri7, lb_vtri9, lb_vtri9, lb_vtri10, lb_vtri11, lb_vtri12, lb_vtri13, lb_vtri14, lb_vtri15, lb_vtri16, lb_vtri17, lb_vtri18, lb_vtri19, lb_vtri20, lb_vtri21, lb_vtri22, lb_vtri23, lb_vtri24, lb_vtri25, lb_vtri26, lb_vtri27, lb_vtri28, lb_vtri29, lb_vtri30, lb_vtri31, lb_vtri32, lb_vtri33, lb_vtri34, lb_vtri35, lb_vtri36, lb_vtri37, lb_vtri38, lb_vtri39, lb_vtri40, lb_vtri41, lb_vtri42, lb_vtri43, lb_vtri44, lb_vtri45, lb_vtri46, lb_vtri47, lb_vtri48, lb_vtri49, lb_vtri50, lb_vtri51, lb_vtri52, lb_vtri53, lb_vtri54, lb_vtri55, lb_vtri56, lb_vtri57, lb_vtri58, lb_vtri59, lb_vtri60, lb_vtri61, lb_vtri62, lb_vtri63, lb_vtri64, lb_vtri72, lb_vtri66, lb_vtri67, lb_vtri68, lb_vtri69, lb_vtri70, lb_vtri71, lb_vtri72, lb_vtri73, lb_vtri74, lb_vtri75, lb_vtri76, lb_vtri77, lb_vtri78 });
             controlmatrix.Add(new Control[] { code1, code2, code3, code4, code5, code6, code7, code8, code9, code10, code11, code12, code13, code14, code15, code16, code17, code18, code19, code20, code21, code22, code23, code24, code25, code26, code27, code28, code29, code30, code31, code32, code33, code34, code35, code36, code37, code38, code39, code40, code41, code42, code43, code44, code42, code43, code44, code48, code49, code50, code51, code52, code53, code54, code55, code56, code57, code58, code59, code60, code61, code62, code63, code64, code72, code66, code67, code68, code69, code70, code71, code72, code73, code74, code75, code76, code77, code78 });
@@ -141,6 +142,7 @@ namespace PM4MAto
             public static string tennv = "";
             public static int tt;
             public static string vitri = "";
+            public static string congdoan = "";
         }
         private void UpdateSubCount(List<string[]> dataUser)
         {
@@ -177,6 +179,19 @@ namespace PM4MAto
             txtOSUBTong.Text = osubCount.ToString();
             txtDOIUNGTong.Text = doiungCount.ToString();
             txtTOTALTong.Text = totalCount.ToString();
+        }
+        private void UpdateNghiViecvsChuyenViTri(List<string[]> dataUser)
+        {
+            string cacvitringhiviecvachuyenvt = "";
+            foreach (var row in dataUser)
+            {
+                if (row.Length > 8 && (row[8] == "Nghi Viec" || row[8] == "Chuyen VT"))
+                {
+                    cacvitringhiviecvachuyenvt += row[4]+ " ,";
+                }
+            }
+            lb_ChuaCoNguoiHoc.Text = cacvitringhiviecvachuyenvt;
+
         }
 
         private void UpdateDanhSachVịTriNghi(string maNhanVienQuetThe = null)
@@ -218,7 +233,7 @@ namespace PM4MAto
             lb_NghiTrongNgay.Text = string.Join(", ", danhSachViTri.Select(v => v.ViTri));
 
             // Hiển thị tổng số vị trí còn lại
-            txtTOTALTong.Text = danhSachViTri.Count.ToString();
+            //txtTOTALTong.Text = danhSachViTri.Count.ToString();
         }
         // Hàm xử lý mã CODE khi quẹt thẻ
         // Khai báo biến scanCounts để lưu trữ số lượng quẹt thẻ tại các vị trí
@@ -240,9 +255,10 @@ namespace PM4MAto
                 { "DOIUNG", 0 },
                 { "TOTAL", 0 }  // Tổng số quẹt
             };
-
+        string ViTriHoTro = "";
         private void ProcessScannedCode()
         {
+
             // Kiểm tra nếu mã quẹt có đúng 7 ký tự và bắt đầu bằng 'V'
             if (scannedCode.Length != 7 || !scannedCode.StartsWith("V"))
             {
@@ -287,12 +303,16 @@ namespace PM4MAto
                 string code = LuuThongTin.manv;
                 string name = LuuThongTin.tennv;
                 string vitri = LuuThongTin.vitri;
+                string congdoan = LuuThongTin.congdoan;
+                
 
                 // Cập nhật dữ liệu cho các trường hợp người mới
                 switch (vitri)
                 {
                     case "Người hỗ trợ":
                         UpdateDuLieuNguoiHoTro(TT, code, name);
+                        ViTriHoTro += congdoan + " ,";
+                        ViTiHoTroNguoiHoTro(ViTriHoTro);
                         break;
                     case "Người thay thế":
                         UpdateDuLieuNguoithaythe(TT, code, name);
@@ -311,8 +331,31 @@ namespace PM4MAto
                         break;
                 }
 
+                //switch (vitri)
+                //{
+                //    case "Quản lý":
+                //        scanCounts["QL"]++; // Tăng đếm cho QL
+                //        string QL = scanCounts["QL"].ToString(); // Cập nhật txtLEADER
+                //        if (txtLEADER.InvokeRequired)
+                //        {
+                //            txtLEADER.Invoke(new Action(() => txtLEADER.Text = QL));
+                //        }
+                //        else
+                //        {
+                //            txtLEADER.Text = QL;
+                //        }
+                //        break;
+                string position = "";
+                if (TT <3)
+                {
+                    position = "LEADER";
+                }
+                else if(TT <5)
+                {
+                    position = "SETTA";
+                }
                 // Cập nhật số lượng quẹt thẻ cho vị trí mới và người ngoài danh sách
-                UpdateScanCountAndDisplay(vitri);
+                UpdateScanCountAndDisplay(position);
             }
         }
         public void UpdateScanCountAndDisplay(string vitri)
@@ -378,6 +421,13 @@ namespace PM4MAto
                 controlmatrix[2][TT].BackColor = Color.Yellow;
             }));
         }
+        private void ViTiHoTroNguoiHoTro(string ViTriHoTro)
+        {
+            this.Invoke(new Action(() =>
+            {
+                lb_ViTriHoTro.Text = ViTriHoTro;
+            }));
+        }
         private void UpdateDuLieuNguoithaythe(int TT, string code, string name)
         {
             this.Invoke(new Action(() =>
@@ -430,6 +480,52 @@ namespace PM4MAto
                 controlmatrix[2][TT].BackColor = Color.Yellow;
             }));
         }
+
+        private void pictureBox1_DoubleClick(object sender, EventArgs e)
+        {
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                openFileDialog.Title = "Chọn ảnh";
+                openFileDialog.Filter = "Ảnh (*.jpg;*.jpeg;*.png;*.bmp;*.gif)|*.jpg;*.jpeg;*.png;*.bmp;*.gif";
+
+                // Thiết lập thư mục mặc định
+                string defaultPath = Path.Combine(Application.StartupPath, "PICTURE");
+                if (Directory.Exists(defaultPath))
+                {
+                    openFileDialog.InitialDirectory = defaultPath;
+                }
+
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    using (var stream = new FileStream(openFileDialog.FileName, FileMode.Open, FileAccess.Read))
+                    {
+                        pictureBox1.Image = System.Drawing.Image.FromStream(stream);
+                    }
+                }
+            }
+        }
+
+        private void Frm_Main_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Bạn có chắc muốn thoát không?", "Xác nhận thoát",
+                                         MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.No)
+            {
+                e.Cancel = true; // Hủy việc đóng form
+            }
+        }
+
+        private void btnDungChuyen_Click(object sender, EventArgs e)
+        {
+            DateTime GioDungChuyen = DateTime.Now;
+            string GioDungChuyenString = GioDungChuyen.ToString("HH:mm:ss"); // Format giờ dễ đọc
+
+            // Thêm hàng mới vào DataGridView
+            dataGridView1.Rows.Add(GioDungChuyenString);
+
+        }
+
     }
-   }
+}
  
