@@ -1,0 +1,304 @@
+﻿Thời gian,Mã nhân viên,Tên nhân viên,Vị trí, Thứ tự công đoạn
+01:11:14,V23513B,A,Quản lý, 2
+01:22:25,V23512B,Tống Thị Thùy Dương,QL, 1
+01:22:41,V22559B,Nguyễn Xuân Tường,QL, 2
+01:23:08,V23512B,Phạm Ánh Dương,QL, 1
+01:23:11,V23513B,Nguyễn Xuân Tường,QL, 2
+01:24:17,V23512B,Tống Thị Thùy Dương,QL, 1
+01:24:30,V12345B,A,Packing, 1
+01:24:40,V23512B,Phạm Ánh Dương,QL, 1
+01:24:44,V23513B,Nguyễn Xuân Tường,QL, 2
+07:55:29,V23512B,Tống Thị Thùy Dương,QL, 1
+07:55:40,V22559B,Nguyễn Xuân Tường,QL, 2
+07:55:48,V15720B,Phạm Thị Mai,Checka, 2
+07:56:02,V20696B,Phạm Văn Quí,Checka, 3
+07:56:07,V14982B,Phạm Thị Mây,Setta, 1
+07:56:17,V24719B,Trịnh Thị Quý,Setta, 2
+07:56:22,V27595B,Đặng Đình Quang,Sub, 1
+07:56:30,V28812B,Vũ Duy Tiến,Sub, 2
+07:56:34,V05954B,Phạm T.Phương Thúy,Sub, 3
+07:56:38,V08406B,Nguyễn Thị Hải Yến,Sub, 4
+07:56:43,V23214B,Nguyễn Thị Huyền Trang,Sub, 5
+07:56:47,V06942B,Đỗ Thị Nga,Sub, 6
+07:56:52,V27392B,Trần Thị Uyên,Sub, 7
+07:56:56,V25737B,Lê Duy Đức,Sub, 8
+07:57:01,V21972B,Trần Thị Rịu,Tape, 1
+07:57:06,V13874B,Phạm Thị Minh Thư,Tape, 2
+07:57:12,V09629B,Phùng Thị Hà,Tape, 3
+07:57:21,G04402B,Nguyễn Trọng Cảnh,Packing, 1
+07:57:26,V27385B,Lâm Viễn Thông,GAIKAN, 2
+07:57:31,V08283B,Tạ Thị Nhuần,GAIKAN, 1
+07:57:36,V26113B,Trương Đức Hòa,Tape, 12
+07:57:41,V22840B,Lê Thị Thoan,Tape, 11
+07:57:46,V16625B,Đinh Thị Hạnh,Tape, 10
+07:57:52,V00172B,Bùi Thị Hiệp,Tape, 9
+07:57:57,V13886B,Bùi Thị Lan Chi,Tape, 8
+07:58:04,V11564B,Nguyễn Thị Nhường,Tape, 7
+07:58:09,V24761B,Vũ Chí Trung,Tape, 6
+07:58:33,V24762B,A,Tape, 4
+07:58:53,V24763B,B,Tape, 5
+07:59:09,V24764B,C,Buhin, 1
+07:59:27,V24765B,D,Checka, 1
+07:59:41,V24766B,E,Quản lý, 2
+08:00:32,V24767B,F,Quản lý, 2
+08:01:38,V27595B,Đặng Đình Quang,Sub, 1
+08:01:46,V28812B,Vũ Duy Tiến,Sub, 2
+08:01:50,V05954B,Phạm T.Phương Thúy,Sub, 3
+08:01:55,V08406B,Nguyễn Thị Hải Yến,Sub, 4
+08:01:59,V23214B,Nguyễn Thị Huyền Trang,Sub, 5
+08:02:05,V06942B,Đỗ Thị Nga,Sub, 6
+08:02:10,V27392B,Trần Thị Uyên,Sub, 7
+08:02:26,V27393B,A,Sub, 8
+08:02:40,V21972B,Trần Thị Rịu,Tape, 1
+08:02:46,V13874B,Phạm Thị Minh Thư,Tape, 2
+08:02:50,V09629B,Phùng Thị Hà,Tape, 3
+08:02:54,V17712B,Trần Thị Thúy,Tape, 4
+08:02:59,V28810B,Nguyễn Hoàng Nhật Lâm,Tape, 5
+08:03:03,V24761B,Vũ Chí Trung,Tape, 6
+08:03:11,V11564B,Nguyễn Thị Nhường,Tape, 7
+08:03:17,V13886B,Bùi Thị Lan Chi,Tape, 8
+08:03:22,V00172B,Bùi Thị Hiệp,Tape, 9
+08:03:27,V16625B,Đinh Thị Hạnh,Tape, 10
+08:03:33,V22840B,Lê Thị Thoan,Tape, 11
+08:03:53,V22841B,B,Tape, 12
+08:04:11,G04402B,Nguyễn Trọng Cảnh,Packing, 1
+08:04:15,V27385B,Lâm Viễn Thông,GAIKAN, 2
+08:04:20,V08283B,Tạ Thị Nhuần,GAIKAN, 1
+08:04:25,V26113B,Trương Đức Hòa,Tape, 12
+08:04:36,V14982B,Phạm Thị Mây,Setta, 1
+08:04:45,V24719B,Trịnh Thị Quý,Setta, 2
+08:04:57,V20696B,Phạm Văn Quí,Checka, 3
+08:05:01,V15720B,Phạm Thị Mai,Checka, 2
+08:05:07,V11768B,Trương Thị Hảo,Checka, 1
+08:05:16,V23512B,Tống Thị Thùy Dương,QL, 1
+08:05:22,V22559B,Nguyễn Xuân Tường,QL, 2
+08:06:35,V22550B,A,Buhin, 1
+08:08:17,V22551B,B,Tape, 10
+08:08:49,V22552B,B,Tape, 12
+08:09:30,V22555B,C,Buhin, 1
+08:16:55,V22555B,A,Setta, 1
+08:17:13,V22556B,B,Setta, 1
+08:17:43,V22557B,A,Quản lý, 1
+08:17:55,V22558B,A,Quản lý, 1
+08:22:24,V22558B,A,Setta, 1
+08:25:32,V22558B,A,Setta, 1
+09:57:45,V23512B,Tống Thị Thùy Dương,QL, 1
+09:57:46,V28810B,Nguyễn Hoàng Nhật Lâm,Tape, 5
+09:57:46,V24761B,Vũ Chí Trung,Tape, 6
+09:57:46,V22559B,Nguyễn Xuân Tường,QL, 2
+09:57:47,V16677B,Phạm Thị Dũng,Buhin, 1
+09:57:47,V11564B,Nguyễn Thị Nhường,Tape, 7
+09:57:47,V13886B,Bùi Thị Lan Chi,Tape, 8
+09:57:48,V11768B,Trương Thị Hảo,Checka, 1
+09:57:48,V15720B,Phạm Thị Mai,Checka, 2
+09:57:48,V00172B,Bùi Thị Hiệp,Tape, 9
+09:57:49,V16625B,Đinh Thị Hạnh,Tape, 10
+09:57:49,V20696B,Phạm Văn Quí,Checka, 3
+09:57:49,V14982B,Phạm Thị Mây,Setta, 1
+09:57:50,V22840B,Lê Thị Thoan,Tape, 11
+09:57:50,V26113B,Trương Đức Hòa,Tape, 12
+09:57:51,V24719B,Trịnh Thị Quý,Setta, 2
+09:57:51,V27595B,Đặng Đình Quang,Sub, 1
+09:57:52,V08283B,Tạ Thị Nhuần,GAIKAN, 1
+09:57:52,V27385B,Lâm Viễn Thông,GAIKAN, 2
+09:57:53,V28812B,Vũ Duy Tiến,Sub, 2
+09:58:08,V05954B,Phạm T.Phương Thúy,Sub, 3
+09:58:08,V08406B,Nguyễn Thị Hải Yến,Sub, 4
+09:58:09,V23214B,Nguyễn Thị Huyền Trang,Sub, 5
+09:58:09,V06942B,Đỗ Thị Nga,Sub, 6
+09:58:09,V27392B,Trần Thị Uyên,Sub, 7
+09:58:10,V25737B,Lê Duy Đức,Sub, 8
+09:58:10,V21972B,Trần Thị Rịu,Tape, 1
+09:58:10,V13874B,Phạm Thị Minh Thư,Tape, 2
+09:58:35,V12355B,Duy,Packing, 1
+10:00:00,V12352B,A,Tape, 3
+10:00:29,V12350B,B,Tape, 4
+10:00:30,V12349B,B,Tape, 4
+10:01:14,V12346B,C,Packing, 1
+10:07:09,V05954B,Phạm T.Phương Thúy,Sub, 3
+10:07:10,V08406B,Nguyễn Thị Hải Yến,Sub, 4
+10:07:10,V23214B,Nguyễn Thị Huyền Trang,Sub, 5
+10:07:14,V06942B,Đỗ Thị Nga,Sub, 6
+10:07:18,V27392B,Trần Thị Uyên,Sub, 7
+10:07:18,V25737B,Lê Duy Đức,Sub, 8
+10:07:19,V21972B,Trần Thị Rịu,Tape, 1
+10:07:19,V13874B,Phạm Thị Minh Thư,Tape, 2
+10:07:19,V09629B,Phùng Thị Hà,Tape, 3
+10:07:20,V17712B,Trần Thị Thúy,Tape, 4
+10:07:27,V27385B,Lâm Viễn Thông,GAIKAN, 2
+10:07:27,V08283B,Tạ Thị Nhuần,GAIKAN, 1
+10:07:32,V28812B,Vũ Duy Tiến,Sub, 2
+10:07:32,V27595B,Đặng Đình Quang,Sub, 1
+10:07:38,V24719B,Trịnh Thị Quý,Setta, 2
+10:07:39,V14982B,Phạm Thị Mây,Setta, 1
+10:07:39,V20696B,Phạm Văn Quí,Checka, 3
+10:07:40,V15720B,Phạm Thị Mai,Checka, 2
+10:07:40,V11768B,Trương Thị Hảo,Checka, 1
+10:07:40,V16677B,Phạm Thị Dũng,Buhin, 1
+10:07:40,V22559B,Nguyễn Xuân Tường,QL, 2
+10:07:41,V23512B,Tống Thị Thùy Dương,QL, 1
+10:08:43,V05954B,Phạm T.Phương Thúy,Sub, 3
+10:08:43,V08406B,Nguyễn Thị Hải Yến,Sub, 4
+10:08:43,V23214B,Nguyễn Thị Huyền Trang,Sub, 5
+10:08:43,V06942B,Đỗ Thị Nga,Sub, 6
+10:08:44,V27392B,Trần Thị Uyên,Sub, 7
+10:08:44,V25737B,Lê Duy Đức,Sub, 8
+10:08:45,V21972B,Trần Thị Rịu,Tape, 1
+10:08:45,V13874B,Phạm Thị Minh Thư,Tape, 2
+10:08:49,V09629B,Phùng Thị Hà,Tape, 3
+10:08:49,V17712B,Trần Thị Thúy,Tape, 4
+10:08:54,V28812B,Vũ Duy Tiến,Sub, 2
+10:08:55,V27595B,Đặng Đình Quang,Sub, 1
+10:09:20,V27595B,Đặng Đình Quang,Sub, 1
+10:09:21,V28812B,Vũ Duy Tiến,Sub, 2
+10:09:23,V23512B,Tống Thị Thùy Dương,QL, 1
+10:09:23,V22559B,Nguyễn Xuân Tường,QL, 2
+10:09:24,V16677B,Phạm Thị Dũng,Buhin, 1
+10:09:24,V11768B,Trương Thị Hảo,Checka, 1
+10:09:24,V15720B,Phạm Thị Mai,Checka, 2
+10:09:25,V20696B,Phạm Văn Quí,Checka, 3
+10:09:25,V14982B,Phạm Thị Mây,Setta, 1
+10:09:26,V24719B,Trịnh Thị Quý,Setta, 2
+10:09:30,V28810B,Nguyễn Hoàng Nhật Lâm,Tape, 5
+10:09:30,V24761B,Vũ Chí Trung,Tape, 6
+10:09:30,V11564B,Nguyễn Thị Nhường,Tape, 7
+10:09:31,V13886B,Bùi Thị Lan Chi,Tape, 8
+10:09:31,V00172B,Bùi Thị Hiệp,Tape, 9
+10:09:31,V16625B,Đinh Thị Hạnh,Tape, 10
+10:09:32,V22840B,Lê Thị Thoan,Tape, 11
+10:09:33,V26113B,Trương Đức Hòa,Tape, 12
+10:09:33,V08283B,Tạ Thị Nhuần,GAIKAN, 1
+10:09:33,V27385B,Lâm Viễn Thông,GAIKAN, 2
+10:09:42,V05954B,Phạm T.Phương Thúy,Sub, 3
+10:09:42,V08406B,Nguyễn Thị Hải Yến,Sub, 4
+10:09:42,V23214B,Nguyễn Thị Huyền Trang,Sub, 5
+10:09:43,V06942B,Đỗ Thị Nga,Sub, 6
+10:09:51,V17712B,Trần Thị Thúy,Tape, 4
+10:09:51,V09629B,Phùng Thị Hà,Tape, 3
+10:43:46,V17712B,Trần Thị Thúy,Tape, 4
+10:43:52,V09629B,Phùng Thị Hà,Tape, 3
+10:43:52,V13874B,Phạm Thị Minh Thư,Tape, 2
+10:43:53,V21972B,Trần Thị Rịu,Tape, 1
+10:43:53,V25737B,Lê Duy Đức,Sub, 8
+10:43:53,V27392B,Trần Thị Uyên,Sub, 7
+10:43:54,V06942B,Đỗ Thị Nga,Sub, 6
+10:43:54,V23214B,Nguyễn Thị Huyền Trang,Sub, 5
+10:43:54,V08406B,Nguyễn Thị Hải Yến,Sub, 4
+10:43:55,V05954B,Phạm T.Phương Thúy,Sub, 3
+10:44:02,V23512B,Tống Thị Thùy Dương,QL, 1
+10:44:02,V28810B,Nguyễn Hoàng Nhật Lâm,Tape, 5
+10:44:03,V24761B,Vũ Chí Trung,Tape, 6
+10:44:03,V22559B,Nguyễn Xuân Tường,QL, 2
+10:44:03,V16677B,Phạm Thị Dũng,Buhin, 1
+10:44:03,V11768B,Trương Thị Hảo,Checka, 1
+10:44:07,V11564B,Nguyễn Thị Nhường,Tape, 7
+10:44:07,V13886B,Bùi Thị Lan Chi,Tape, 8
+10:44:09,V28812B,Vũ Duy Tiến,Sub, 2
+10:44:09,V27595B,Đặng Đình Quang,Sub, 1
+10:44:10,V24719B,Trịnh Thị Quý,Setta, 2
+10:44:10,V14982B,Phạm Thị Mây,Setta, 1
+10:44:10,V20696B,Phạm Văn Quí,Checka, 3
+10:44:12,V15720B,Phạm Thị Mai,Checka, 2
+10:44:35,V27385B,Lâm Viễn Thông,GAIKAN, 2
+10:44:36,V08283B,Tạ Thị Nhuần,GAIKAN, 1
+10:44:36,V26113B,Trương Đức Hòa,Tape, 12
+10:45:11,V12355B,A,Packing, 1
+10:45:52,V12352B,B,Tape, 9
+10:51:20,V12355B,A,Packing, 1
+10:52:37,V12355B,A,Packing, 1
+10:53:12,V12355B,A,Packing, 1
+10:54:51,V05954B,Phạm T.Phương Thúy,Sub, 3
+10:54:51,V08406B,Nguyễn Thị Hải Yến,Sub, 4
+10:54:52,V23214B,Nguyễn Thị Huyền Trang,Sub, 5
+10:54:52,V06942B,Đỗ Thị Nga,Sub, 6
+10:54:52,V27392B,Trần Thị Uyên,Sub, 7
+10:54:53,V25737B,Lê Duy Đức,Sub, 8
+10:54:53,V21972B,Trần Thị Rịu,Tape, 1
+10:54:53,V13874B,Phạm Thị Minh Thư,Tape, 2
+10:54:54,V09629B,Phùng Thị Hà,Tape, 3
+10:54:54,V17712B,Trần Thị Thúy,Tape, 4
+10:55:22,V05954B,Phạm T.Phương Thúy,Sub, 3
+10:55:23,V08406B,Nguyễn Thị Hải Yến,Sub, 4
+10:55:24,V23214B,Nguyễn Thị Huyền Trang,Sub, 5
+10:55:24,V06942B,Đỗ Thị Nga,Sub, 6
+10:55:24,V27392B,Trần Thị Uyên,Sub, 7
+10:55:25,V25737B,Lê Duy Đức,Sub, 8
+10:55:25,V21972B,Trần Thị Rịu,Tape, 1
+10:55:25,V13874B,Phạm Thị Minh Thư,Tape, 2
+10:55:26,V09629B,Phùng Thị Hà,Tape, 3
+10:55:26,V17712B,Trần Thị Thúy,Tape, 4
+10:55:42,V05954B,Phạm T.Phương Thúy,Sub, 3
+10:56:28,V08406B,Nguyễn Thị Hải Yến,Sub, 4
+10:56:29,V23214B,Nguyễn Thị Huyền Trang,Sub, 5
+10:56:30,V06942B,Đỗ Thị Nga,Sub, 6
+10:56:30,V27392B,Trần Thị Uyên,Sub, 7
+10:56:30,V25737B,Lê Duy Đức,Sub, 8
+10:56:31,V21972B,Trần Thị Rịu,Tape, 1
+10:56:31,V13874B,Phạm Thị Minh Thư,Tape, 2
+10:56:31,V09629B,Phùng Thị Hà,Tape, 3
+10:56:32,V17712B,Trần Thị Thúy,Tape, 4
+10:56:37,G04402B,Nguyễn Trọng Cảnh,Packing, 1
+10:56:44,V28812B,Vũ Duy Tiến,Sub, 2
+10:56:44,V27595B,Đặng Đình Quang,Sub, 1
+10:56:47,V24719B,Trịnh Thị Quý,Setta, 2
+10:56:47,V14982B,Phạm Thị Mây,Setta, 1
+10:56:47,V20696B,Phạm Văn Quí,Checka, 3
+10:56:48,V15720B,Phạm Thị Mai,Checka, 2
+10:56:48,V11768B,Trương Thị Hảo,Checka, 1
+10:56:48,V16677B,Phạm Thị Dũng,Buhin, 1
+10:56:49,V22559B,Nguyễn Xuân Tường,QL, 2
+10:56:49,V23512B,Tống Thị Thùy Dương,QL, 1
+10:56:54,V28810B,Nguyễn Hoàng Nhật Lâm,Tape, 5
+10:56:55,V24761B,Vũ Chí Trung,Tape, 6
+10:56:55,V11564B,Nguyễn Thị Nhường,Tape, 7
+10:56:56,V13886B,Bùi Thị Lan Chi,Tape, 8
+10:57:42,V26113B,Trương Đức Hòa,Tape, 12
+10:58:29,V12345B,A,GAIKAN, 2
+10:59:11,V12355B,B,Tape, 10
+10:59:29,V12352B,B,Tape, 11
+11:09:41,V28810B,Nguyễn Hoàng Nhật Lâm,Tape, 5
+11:09:44,V11768B,Trương Thị Hảo,Checka, 1
+11:09:44,V16677B,Phạm Thị Dũng,Buhin, 1
+11:09:49,V20696B,Phạm Văn Quí,Checka, 3
+11:10:03,V23512B,Tống Thị Thùy Dương,QL, 1
+11:10:03,V22559B,Nguyễn Xuân Tường,QL, 2
+11:10:05,V15720B,Phạm Thị Mai,Checka, 2
+11:10:12,V28812B,Vũ Duy Tiến,Sub, 2
+11:10:12,V27595B,Đặng Đình Quang,Sub, 1
+11:16:48,G04402B,Nguyễn Trọng Cảnh,Packing, 1
+11:17:04,V27595B,Đặng Đình Quang,Sub, 1
+11:17:12,V28812B,Vũ Duy Tiến,Sub, 2
+11:17:27,V15720B,Phạm Thị Mai,Checka, 2
+11:20:34,V28812B,Vũ Duy Tiến,Sub, 2
+11:20:48,V24719B,Trịnh Thị Quý,Setta, 2
+11:20:51,V14982B,Phạm Thị Mây,Setta, 1
+11:20:54,V20696B,Phạm Văn Quí,Checka, 3
+11:20:59,V15720B,Phạm Thị Mai,Checka, 2
+11:21:26,V24761B,Vũ Chí Trung,Tape, 6
+11:21:34,V11768B,Trương Thị Hảo,Checka, 1
+11:21:37,V16677B,Phạm Thị Dũng,Buhin, 1
+11:21:41,V22559B,Nguyễn Xuân Tường,QL, 2
+11:21:51,V23512B,Tống Thị Thùy Dương,QL, 1
+11:21:54,V11564B,Nguyễn Thị Nhường,Tape, 7
+11:21:56,V13886B,Bùi Thị Lan Chi,Tape, 8
+11:21:59,V28810B,Nguyễn Hoàng Nhật Lâm,Tape, 5
+11:22:02,V00172B,Bùi Thị Hiệp,Tape, 9
+11:22:04,V16625B,Đinh Thị Hạnh,Tape, 10
+11:22:06,V22840B,Lê Thị Thoan,Tape, 11
+11:22:08,V26113B,Trương Đức Hòa,Tape, 12
+11:22:11,V27385B,Lâm Viễn Thông,GAIKAN, 2
+11:22:14,V08283B,Tạ Thị Nhuần,GAIKAN, 1
+11:22:16,G04402B,Nguyễn Trọng Cảnh,Packing, 1
+11:22:20,V27595B,Đặng Đình Quang,Sub, 1
+11:22:24,V17712B,Trần Thị Thúy,Tape, 4
+11:22:26,V09629B,Phùng Thị Hà,Tape, 3
+11:22:28,V13874B,Phạm Thị Minh Thư,Tape, 2
+11:22:32,V21972B,Trần Thị Rịu,Tape, 1
+11:22:34,V25737B,Lê Duy Đức,Sub, 8
+11:22:37,V27392B,Trần Thị Uyên,Sub, 7
+11:24:08,V12355B,Duy,Sub, 3
+11:24:44,V12345B,A,Sub, 4
+11:25:24,V12350B,B,Sub, 5
+11:26:01,V12346B,B,Sub, 6
+11:27:05,V12348B,C,Sub, 3
+15:31:41,V23512B,Tống Thị Thùy Dương,QL, 1

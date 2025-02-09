@@ -1,0 +1,98 @@
+D:\Soft goc TB\Ato\SI2F\PM4MAto\PM4MAto\bin\Debug\PM4MAto.exe.config
+D:\Soft goc TB\Ato\SI2F\PM4MAto\PM4MAto\bin\Debug\PM4MAto.exe
+D:\Soft goc TB\Ato\SI2F\PM4MAto\PM4MAto\bin\Debug\PM4MAto.pdb
+D:\Soft goc TB\Ato\SI2F\PM4MAto\PM4MAto\obj\Debug\PM4MAto.csproj.AssemblyReference.cache
+D:\Soft goc TB\Ato\SI2F\PM4MAto\PM4MAto\obj\Debug\PM4MAto.FrmLogin.resources
+D:\Soft goc TB\Ato\SI2F\PM4MAto\PM4MAto\obj\Debug\PM4MAto.Properties.Resources.resources
+D:\Soft goc TB\Ato\SI2F\PM4MAto\PM4MAto\obj\Debug\PM4MAto.csproj.GenerateResource.cache
+D:\Soft goc TB\Ato\SI2F\PM4MAto\PM4MAto\obj\Debug\PM4MAto.csproj.CoreCompileInputs.cache
+D:\Soft goc TB\Ato\SI2F\PM4MAto\PM4MAto\obj\Debug\PM4MAto.exe
+D:\Soft goc TB\Ato\SI2F\PM4MAto\PM4MAto\obj\Debug\PM4MAto.pdb
+D:\Soft goc TB\Ato\SI2F\PM4MAto\PM4MAto\obj\Debug\PM4MAto.Frm_Main.resources
+C:\Users\SaoMai\Desktop\SI2F\PM4MAto\PM4MAto\bin\Debug\PM4MAto.exe.config
+C:\Users\SaoMai\Desktop\SI2F\PM4MAto\PM4MAto\bin\Debug\PM4MAto.exe
+C:\Users\SaoMai\Desktop\SI2F\PM4MAto\PM4MAto\bin\Debug\PM4MAto.pdb
+C:\Users\SaoMai\Desktop\SI2F\PM4MAto\PM4MAto\obj\Debug\PM4MAto.csproj.AssemblyReference.cache
+C:\Users\SaoMai\Desktop\SI2F\PM4MAto\PM4MAto\obj\Debug\PM4MAto.FrmLogin.resources
+C:\Users\SaoMai\Desktop\SI2F\PM4MAto\PM4MAto\obj\Debug\PM4MAto.Frm_Main.resources
+C:\Users\SaoMai\Desktop\SI2F\PM4MAto\PM4MAto\obj\Debug\PM4MAto.Properties.Resources.resources
+C:\Users\SaoMai\Desktop\SI2F\PM4MAto\PM4MAto\obj\Debug\PM4MAto.csproj.GenerateResource.cache
+C:\Users\SaoMai\Desktop\SI2F\PM4MAto\PM4MAto\obj\Debug\PM4MAto.csproj.CoreCompileInputs.cache
+C:\Users\SaoMai\Desktop\SI2F\PM4MAto\PM4MAto\obj\Debug\PM4MAto.exe
+C:\Users\SaoMai\Desktop\SI2F\PM4MAto\PM4MAto\obj\Debug\PM4MAto.pdb
+C:\Users\EJ30\Desktop\SI2F\PM4MAto\PM4MAto\bin\Debug\PM4MAto.exe.config
+C:\Users\EJ30\Desktop\SI2F\PM4MAto\PM4MAto\bin\Debug\PM4MAto.exe
+C:\Users\EJ30\Desktop\SI2F\PM4MAto\PM4MAto\bin\Debug\PM4MAto.pdb
+C:\Users\EJ30\Desktop\SI2F\PM4MAto\PM4MAto\obj\Debug\PM4MAto.csproj.AssemblyReference.cache
+C:\Users\EJ30\Desktop\SI2F\PM4MAto\PM4MAto\obj\Debug\PM4MAto.FrmLogin.resources
+C:\Users\EJ30\Desktop\SI2F\PM4MAto\PM4MAto\obj\Debug\PM4MAto.Frm_Main.resources
+C:\Users\EJ30\Desktop\SI2F\PM4MAto\PM4MAto\obj\Debug\PM4MAto.Properties.Resources.resources
+C:\Users\EJ30\Desktop\SI2F\PM4MAto\PM4MAto\obj\Debug\PM4MAto.csproj.GenerateResource.cache
+C:\Users\EJ30\Desktop\SI2F\PM4MAto\PM4MAto\obj\Debug\PM4MAto.csproj.CoreCompileInputs.cache
+C:\Users\EJ30\Desktop\SI2F\PM4MAto\PM4MAto\obj\Debug\PM4MAto.exe
+C:\Users\EJ30\Desktop\SI2F\PM4MAto\PM4MAto\obj\Debug\PM4MAto.pdb
+C:\Users\SaoMai\Desktop\SI2F\PM4MAto\PM4MAto\obj\Debug\PM4MAto.FrmNguoiMoi.resources
+C:\Users\EJ30\Desktop\4M Ato SI2F\PM4MAto\bin\Debug\PM4MAto.exe.config
+C:\Users\EJ30\Desktop\4M Ato SI2F\PM4MAto\bin\Debug\PM4MAto.exe
+C:\Users\EJ30\Desktop\4M Ato SI2F\PM4MAto\bin\Debug\PM4MAto.pdb
+C:\Users\EJ30\Desktop\4M Ato SI2F\PM4MAto\obj\Debug\PM4MAto.csproj.AssemblyReference.cache
+C:\Users\EJ30\Desktop\4M Ato SI2F\PM4MAto\obj\Debug\PM4MAto.FrmLogin.resources
+C:\Users\EJ30\Desktop\4M Ato SI2F\PM4MAto\obj\Debug\PM4MAto.Frm_Main.resources
+C:\Users\EJ30\Desktop\4M Ato SI2F\PM4MAto\obj\Debug\PM4MAto.Properties.Resources.resources
+C:\Users\EJ30\Desktop\4M Ato SI2F\PM4MAto\obj\Debug\PM4MAto.csproj.GenerateResource.cache
+C:\Users\EJ30\Desktop\4M Ato SI2F\PM4MAto\obj\Debug\PM4MAto.csproj.CoreCompileInputs.cache
+C:\Users\EJ30\Desktop\4M Ato SI2F\PM4MAto\obj\Debug\PM4MAto.exe
+C:\Users\EJ30\Desktop\4M Ato SI2F\PM4MAto\obj\Debug\PM4MAto.pdb
+C:\Users\EJ30\Desktop\4M Ato SI2F\PM4MAto\bin\Debug\EPPlus.dll
+C:\Users\EJ30\Desktop\4M Ato SI2F\PM4MAto\bin\Debug\EPPlus.Interfaces.dll
+C:\Users\EJ30\Desktop\4M Ato SI2F\PM4MAto\bin\Debug\EPPlus.System.Drawing.dll
+C:\Users\EJ30\Desktop\4M Ato SI2F\PM4MAto\bin\Debug\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\EJ30\Desktop\4M Ato SI2F\PM4MAto\bin\Debug\System.Buffers.dll
+C:\Users\EJ30\Desktop\4M Ato SI2F\PM4MAto\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\EJ30\Desktop\4M Ato SI2F\PM4MAto\bin\Debug\System.Drawing.Common.dll
+C:\Users\EJ30\Desktop\4M Ato SI2F\PM4MAto\bin\Debug\System.Memory.dll
+C:\Users\EJ30\Desktop\4M Ato SI2F\PM4MAto\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\EJ30\Desktop\4M Ato SI2F\PM4MAto\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\EJ30\Desktop\4M Ato SI2F\PM4MAto\bin\Debug\EPPlus.xml
+C:\Users\EJ30\Desktop\4M Ato SI2F\PM4MAto\bin\Debug\Microsoft.IO.RecyclableMemoryStream.xml
+C:\Users\EJ30\Desktop\4M Ato SI2F\PM4MAto\bin\Debug\System.Buffers.xml
+C:\Users\EJ30\Desktop\4M Ato SI2F\PM4MAto\bin\Debug\System.Drawing.Common.pdb
+C:\Users\EJ30\Desktop\4M Ato SI2F\PM4MAto\bin\Debug\System.Drawing.Common.xml
+C:\Users\EJ30\Desktop\4M Ato SI2F\PM4MAto\bin\Debug\System.Memory.xml
+C:\Users\EJ30\Desktop\4M Ato SI2F\PM4MAto\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\EJ30\Desktop\4M Ato SI2F\PM4MAto\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\EJ30\Desktop\4M Ato SI2F\PM4MAto\obj\Debug\PM4MAto.csproj.Up2Date
+C:\Users\EJ30\Desktop\4M Ato SI2F\PM4MAto\obj\Debug\PM4MAto._4MConNguoi.resources
+C:\Users\SaoMai\Desktop\SI2F\4M Ato SI2F\PM4MAto\bin\Debug\PM4MAto.exe.config
+C:\Users\SaoMai\Desktop\SI2F\4M Ato SI2F\PM4MAto\bin\Debug\PM4MAto.exe
+C:\Users\SaoMai\Desktop\SI2F\4M Ato SI2F\PM4MAto\bin\Debug\PM4MAto.pdb
+C:\Users\SaoMai\Desktop\SI2F\4M Ato SI2F\PM4MAto\bin\Debug\EPPlus.dll
+C:\Users\SaoMai\Desktop\SI2F\4M Ato SI2F\PM4MAto\bin\Debug\EPPlus.Interfaces.dll
+C:\Users\SaoMai\Desktop\SI2F\4M Ato SI2F\PM4MAto\bin\Debug\EPPlus.System.Drawing.dll
+C:\Users\SaoMai\Desktop\SI2F\4M Ato SI2F\PM4MAto\bin\Debug\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\SaoMai\Desktop\SI2F\4M Ato SI2F\PM4MAto\bin\Debug\System.Buffers.dll
+C:\Users\SaoMai\Desktop\SI2F\4M Ato SI2F\PM4MAto\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\SaoMai\Desktop\SI2F\4M Ato SI2F\PM4MAto\bin\Debug\System.Drawing.Common.dll
+C:\Users\SaoMai\Desktop\SI2F\4M Ato SI2F\PM4MAto\bin\Debug\System.Memory.dll
+C:\Users\SaoMai\Desktop\SI2F\4M Ato SI2F\PM4MAto\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\SaoMai\Desktop\SI2F\4M Ato SI2F\PM4MAto\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\SaoMai\Desktop\SI2F\4M Ato SI2F\PM4MAto\bin\Debug\EPPlus.xml
+C:\Users\SaoMai\Desktop\SI2F\4M Ato SI2F\PM4MAto\bin\Debug\Microsoft.IO.RecyclableMemoryStream.xml
+C:\Users\SaoMai\Desktop\SI2F\4M Ato SI2F\PM4MAto\bin\Debug\System.Buffers.xml
+C:\Users\SaoMai\Desktop\SI2F\4M Ato SI2F\PM4MAto\bin\Debug\System.Drawing.Common.pdb
+C:\Users\SaoMai\Desktop\SI2F\4M Ato SI2F\PM4MAto\bin\Debug\System.Drawing.Common.xml
+C:\Users\SaoMai\Desktop\SI2F\4M Ato SI2F\PM4MAto\bin\Debug\System.Memory.xml
+C:\Users\SaoMai\Desktop\SI2F\4M Ato SI2F\PM4MAto\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\SaoMai\Desktop\SI2F\4M Ato SI2F\PM4MAto\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\SaoMai\Desktop\SI2F\4M Ato SI2F\PM4MAto\obj\Debug\PM4MAto.csproj.AssemblyReference.cache
+C:\Users\SaoMai\Desktop\SI2F\4M Ato SI2F\PM4MAto\obj\Debug\PM4MAto.FrmLogin.resources
+C:\Users\SaoMai\Desktop\SI2F\4M Ato SI2F\PM4MAto\obj\Debug\PM4MAto.FrmNguoiMoi.resources
+C:\Users\SaoMai\Desktop\SI2F\4M Ato SI2F\PM4MAto\obj\Debug\PM4MAto._4MConNguoi.resources
+C:\Users\SaoMai\Desktop\SI2F\4M Ato SI2F\PM4MAto\obj\Debug\PM4MAto.Frm_Main.resources
+C:\Users\SaoMai\Desktop\SI2F\4M Ato SI2F\PM4MAto\obj\Debug\PM4MAto.Properties.Resources.resources
+C:\Users\SaoMai\Desktop\SI2F\4M Ato SI2F\PM4MAto\obj\Debug\PM4MAto.csproj.GenerateResource.cache
+C:\Users\SaoMai\Desktop\SI2F\4M Ato SI2F\PM4MAto\obj\Debug\PM4MAto.csproj.CoreCompileInputs.cache
+C:\Users\SaoMai\Desktop\SI2F\4M Ato SI2F\PM4MAto\obj\Debug\PM4MAto.csproj.Up2Date
+C:\Users\SaoMai\Desktop\SI2F\4M Ato SI2F\PM4MAto\obj\Debug\PM4MAto.exe
+C:\Users\SaoMai\Desktop\SI2F\4M Ato SI2F\PM4MAto\obj\Debug\PM4MAto.pdb
+C:\Users\EJ30\Desktop\4M Ato SI2F\PM4MAto\obj\Debug\PM4MAto.c.resources
